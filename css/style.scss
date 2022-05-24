@@ -190,7 +190,6 @@
   }
 }
 
-
 @keyframes triangle-purple-active {
   0% {
     transform: translateX(0px);
@@ -209,13 +208,25 @@
     transform: translateX(0px);
   }
 }
+@keyframes about-subtract {
+  0%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotate(-360deg)
 
+  }
+  
+}
 
 * {
   box-sizing: border-box;
 }
 body {
   background-color: #000;
+  &.active{
+    overflow: hidden;
+  }
   .wrapper {
     width: 100%;
     position: relative;
@@ -276,7 +287,7 @@ body {
         z-index: 1;
         opacity: 0;
         animation: 1.5s triangle-purple 1.5s linear forwards,
-        12s triangle-purple-active 6.5s linear infinite;
+          12s triangle-purple-active 6.5s linear infinite;
       }
       .blue-triangle {
         position: absolute;
@@ -816,6 +827,111 @@ body {
           }
         }
       }
+
+      .about {
+        padding: 10px 0 350px 0;
+        .about-text {
+          font-family: "Barlow", sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 48px;
+          line-height: 58px;
+          color: #ffffff;
+          text-indent: 186px;
+          max-width: 928px;
+          span {
+            background: radial-gradient(
+                60.45% 76.17% at -5.8% 40.18%,
+                #16a9fe 0%,
+                rgba(22, 169, 254, 0) 100%
+              ),
+              radial-gradient(
+                101.15% 101.15% at 50% 101.15%,
+                #0342e7 0%,
+                #cb24ff 53.65%
+              );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-emphasis-color: transparent;
+          }
+        }
+        .about__flex {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 140px 0 0 200px;
+          .about-blocktext {
+            font-family: "Barlow";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 34px;
+            color: #ffffff;
+            max-width: 406px;
+            position: relative;
+            &::before {
+              content: "";
+              border: 1px solid #fff;
+              width: 32px;
+              height: 32px;
+              position: absolute;
+              top: -30px;
+              left: 100%;
+              border-left: 0;
+              border-bottom: 0;
+            }
+            &::after {
+              content: "";
+              border: 1px solid #fff;
+              width: 32px;
+              height: 32px;
+              position: absolute;
+              right: 100%;
+              top: 100%;
+              border-top: 0;
+              border-right: 0;
+            }
+          }
+          .about-circle{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 135px 0 0;
+            img{
+              width: 197px;
+            }
+            &::before{
+              content: "";
+              width: 380px;
+              height: 380px;
+              background-image: url(../img/about/about-subtract.svg);
+              background-repeat: no-repeat;
+              background-position: center;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: rotate(0) translate(-50%, -50%);
+              animation: 12s about-subtract linear infinite;
+            }
+            &::after{
+              content: "";
+              width: 470px;
+              height: 470px;
+              background-image: url(../img/about/about-circle-arrow.svg);
+              background-repeat: no-repeat;
+              background-position: center;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: rotate(0) translate(-50%, -50%);
+              animation: 12s about-subtract linear infinite reverse;
+            }
+          }
+        }
+      }
+
     }
   }
 }

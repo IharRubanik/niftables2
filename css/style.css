@@ -462,6 +462,28 @@
   }
 }
 
+@-webkit-keyframes about-subtract {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+            transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes about-subtract {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-360deg);
+            transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -469,6 +491,10 @@
 
 body {
   background-color: #000;
+}
+
+body.active {
+  overflow: hidden;
 }
 
 body .wrapper {
@@ -1302,5 +1328,126 @@ body .wrapper .container .main .main-info .main-info__bottom button img {
   position: absolute;
   bottom: 38px;
   z-index: 1;
+}
+
+body .wrapper .container .about {
+  padding: 10px 0 350px 0;
+}
+
+body .wrapper .container .about .about-text {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
+  text-indent: 186px;
+  max-width: 928px;
+}
+
+body .wrapper .container .about .about-text span {
+  background: radial-gradient(60.45% 76.17% at -5.8% 40.18%, #16a9fe 0%, rgba(22, 169, 254, 0) 100%), radial-gradient(101.15% 101.15% at 50% 101.15%, #0342e7 0%, #cb24ff 53.65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-emphasis-color: transparent;
+          text-emphasis-color: transparent;
+}
+
+body .wrapper .container .about .about__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 140px 0 0 200px;
+}
+
+body .wrapper .container .about .about__flex .about-blocktext {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #ffffff;
+  max-width: 406px;
+  position: relative;
+}
+
+body .wrapper .container .about .about__flex .about-blocktext::before {
+  content: "";
+  border: 1px solid #fff;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: -30px;
+  left: 100%;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+body .wrapper .container .about .about__flex .about-blocktext::after {
+  content: "";
+  border: 1px solid #fff;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 100%;
+  top: 100%;
+  border-top: 0;
+  border-right: 0;
+}
+
+body .wrapper .container .about .about__flex .about-circle {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 135px 0 0;
+}
+
+body .wrapper .container .about .about__flex .about-circle img {
+  width: 197px;
+}
+
+body .wrapper .container .about .about__flex .about-circle::before {
+  content: "";
+  width: 380px;
+  height: 380px;
+  background-image: url(../img/about/about-subtract.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: rotate(0) translate(-50%, -50%);
+          transform: rotate(0) translate(-50%, -50%);
+  -webkit-animation: 12s about-subtract linear infinite;
+          animation: 12s about-subtract linear infinite;
+}
+
+body .wrapper .container .about .about__flex .about-circle::after {
+  content: "";
+  width: 470px;
+  height: 470px;
+  background-image: url(../img/about/about-circle-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: rotate(0) translate(-50%, -50%);
+          transform: rotate(0) translate(-50%, -50%);
+  animation: 12s about-subtract linear infinite reverse;
 }
 /*# sourceMappingURL=style.css.map */
