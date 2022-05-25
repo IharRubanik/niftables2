@@ -500,6 +500,7 @@ body.active {
 body .wrapper {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 body .wrapper .background {
