@@ -609,7 +609,7 @@ body .wrapper .header .header-name {
   left: 96px;
   color: #fff;
   position: absolute;
-  gap: 28px;
+  gap: 20px;
   z-index: 100;
 }
 
@@ -755,6 +755,7 @@ body .wrapper .header .header-inner .header-button::after {
 body .wrapper .header .header-inner .header-button:hover {
   border-color: #0342e7;
   gap: 4px;
+  border-top: 1px solid #0B0B0C;
 }
 
 body .wrapper .header .header-inner .header-button:hover:after {

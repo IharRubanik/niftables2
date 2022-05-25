@@ -314,7 +314,7 @@ body {
         left: 96px;
         color: #fff;
         position: absolute;
-        gap: 28px;
+        gap: 20px;
         z-index: 100;
         strong {
           font-family: "Akzidenz-Grotesk Pro", sans-serif;
@@ -416,6 +416,7 @@ body {
           &:hover {
             border-color: #0342e7;
             gap: 4px;
+            border-top: 1px solid #0B0B0C;
           }
           &:hover:after {
             transition: width 0s linear, transform 0.3s ease-out;
