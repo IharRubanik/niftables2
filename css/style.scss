@@ -343,7 +343,7 @@ body {
         z-index: 99;
         top: 0;
         left: 0;
-        background: #000 url(img/bg-site.png);
+        background: #0B0B0C url(img/bg-site.png);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -381,6 +381,7 @@ body {
           &.active {
             border-right-color: #0342e7;
             border-bottom-color: #0342e7;
+            border-top: 1px solid #0B0B0C;
             &::after {
               width: 100%;
               transform: translateX(0);
