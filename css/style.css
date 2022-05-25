@@ -490,7 +490,7 @@
 }
 
 body {
-  background-color: #000;
+  background-color: #0B0B0C;
 }
 
 body.active {
@@ -694,8 +694,8 @@ body .wrapper .header .header-inner .header-button {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  -webkit-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
   gap: 6px;
   overflow: hidden;
   position: relative;
@@ -713,10 +713,10 @@ body .wrapper .header .header-inner .header-button.active::after {
 }
 
 body .wrapper .header .header-inner .header-button.active span {
-  -webkit-transition: -webkit-transform 0.15s ease-in-out;
-  transition: -webkit-transform 0.15s ease-in-out;
-  transition: transform 0.15s ease-in-out;
-  transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
   margin: 0;
   position: absolute;
   height: 30px;
@@ -767,10 +767,10 @@ body .wrapper .header .header-inner .header-button:hover:after {
 }
 
 body .wrapper .header .header-inner .header-button span {
-  -webkit-transition: -webkit-transform 0.15s ease-in-out;
-  transition: -webkit-transform 0.15s ease-in-out;
-  transition: transform 0.15s ease-in-out;
-  transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
   -webkit-transform-origin: center;
           transform-origin: center;
   width: 2px;
@@ -1449,5 +1449,98 @@ body .wrapper .container .about .about__flex .about-circle::after {
   -webkit-transform: rotate(0) translate(-50%, -50%);
           transform: rotate(0) translate(-50%, -50%);
   animation: 12s about-subtract linear infinite reverse;
+}
+
+body .wrapper .container .features {
+  position: relative;
+  height: 1000px;
+}
+
+body .wrapper .container .features .features__container-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  background-image: url(../img/features/circle.svg);
+  background-size: 58px 58px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  width: 306px;
+  height: 58px;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .wrapper .container .features .features__container-circle:hover {
+  width: 363px;
+  height: 178px;
+  background-size: 152px 152px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body .wrapper .container .features .features__container-circle:hover img {
+  margin: 100px 72px 0 0;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body .wrapper .container .features .features__container-circle:hover h3 {
+  font-size: 18px;
+  line-height: 34px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin: 0 100px 0 0;
+}
+
+body .wrapper .container .features .features__container-circle:hover p {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body .wrapper .container .features .features__container-circle img {
+  width: 8px;
+  margin: 65px 72px 0 0;
+}
+
+body .wrapper .container .features .features__container-circle h3 {
+  font-family: "Akzidenz-Grotesk Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 36px 0 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body .wrapper .container .features .features__container-circle p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+  max-width: 270px;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
 }
 /*# sourceMappingURL=style.css.map */
