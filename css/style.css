@@ -627,7 +627,7 @@ body .wrapper .header .header-name span {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #616161;
+  color: #4E5465;
 }
 
 body .wrapper .header .header-name.active {
@@ -635,7 +635,11 @@ body .wrapper .header .header-name.active {
 }
 
 body .wrapper .header .header-name.active strong {
-  color: #000;
+  color: #0B0B0C;
+}
+
+body .wrapper .header .header-name.active span {
+  color: #9598A3;
 }
 
 body .wrapper .header .header-inner {
@@ -724,10 +728,10 @@ body .wrapper .header .header-inner .header-button.active::after {
 }
 
 body .wrapper .header .header-inner .header-button.active span {
-  -webkit-transition: -webkit-transform 0.2s ease-out;
-  transition: -webkit-transform 0.2s ease-out;
-  transition: transform 0.2s ease-out;
-  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
+  transition: transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
   margin: 0;
   position: absolute;
   height: 30px;
@@ -778,10 +782,10 @@ body .wrapper .header .header-inner .header-button:hover:after {
 }
 
 body .wrapper .header .header-inner .header-button span {
-  -webkit-transition: -webkit-transform 0.2s ease-out;
-  transition: -webkit-transform 0.2s ease-out;
-  transition: transform 0.2s ease-out;
-  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
+  transition: transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
   -webkit-transform-origin: center;
           transform-origin: center;
   width: 2px;
@@ -836,8 +840,8 @@ body .wrapper .header .header-content {
   height: 100%;
   -webkit-transform: translateX(-150%);
           transform: translateX(-150%);
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out;
+  -webkit-transition: .6s ease-out;
+  transition: .6s ease-out;
   width: 100%;
   left: 0;
   top: 0;
@@ -893,7 +897,7 @@ body .wrapper .header .header-content .header-content__inner .header-content__na
 body .wrapper .header .header-content .header-content__inner .header-content__nav a {
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
-  color: #000;
+  color: #0B0B0C;
   text-decoration: none;
   font-size: 42px;
   font-family: "Barlow", sans-serif;
@@ -959,8 +963,8 @@ body .wrapper .header .header-content .header-content__inner .header-contact .he
   position: absolute;
   width: 35px;
   height: 35px;
-  border-top: 1px solid #000;
-  border-left: 1px solid #000;
+  border-top: 1px solid #0B0B0C;
+  border-left: 1px solid #0B0B0C;
   left: 0;
   top: 0;
 }
@@ -1037,7 +1041,7 @@ body .wrapper .header .header-content .header-content__inner .header-subscribe .
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: radial-gradient(60.45% 76.17% at -5.8% 40.18%, #16a9fe 0, rgba(22, 169, 254, 0) 100%), radial-gradient(101.15% 101.15% at 50% 101.15%, #0342e7 0, #cb24ff 53.65%);
+  background: radial-gradient(90.75% 78.93% at 40.93% 85.95%, rgba(3, 66, 231, 0.9) 0%, rgba(3, 66, 231, 0) 100%), radial-gradient(86.4% 76.86% at 0% 7.02%, rgba(22, 169, 254, 0.95) 0%, rgba(22, 169, 254, 0) 100%), #CB24FF;
 }
 
 body .wrapper .header .header-content .header-content__inner .header-subscribe .header-subscribe__block strong {
@@ -1205,7 +1209,7 @@ body .wrapper .container .main .main-info .main-info__text b {
   font-family: "Akzidenz-Grotesk Pro", sans-serif;
   margin-bottom: 26px;
   display: block;
-  background: radial-gradient(60.45% 76.17% at -5.8% 40.18%, #16a9fe 0, rgba(22, 169, 254, 0) 100%), radial-gradient(101.15% 101.15% at 50% 101.15%, #0342e7 0, #cb24ff 53.65%) #fff;
+  background: radial-gradient(50.1% 194.12% at 0% 0%, #16A9FE 0%, rgba(22, 169, 254, 0) 100%), radial-gradient(43.79% 213.24% at 35.23% 88.24%, #0342E7 0%, #CB24FF 100%) #fff;
   background-repeat: no-repeat;
   background-position: -640px;
   -webkit-animation: nft-gradient-text 6s linear infinite;
@@ -1357,7 +1361,7 @@ body .wrapper .container .about .about-text {
 }
 
 body .wrapper .container .about .about-text span {
-  background: radial-gradient(60.45% 76.17% at -5.8% 40.18%, #16a9fe 0%, rgba(22, 169, 254, 0) 100%), radial-gradient(101.15% 101.15% at 50% 101.15%, #0342e7 0%, #cb24ff 53.65%);
+  background: radial-gradient(50.1% 194.12% at 0% 0%, #16A9FE 0%, rgba(22, 169, 254, 0) 100%), radial-gradient(43.79% 213.24% at 35.23% 88.24%, #0342E7 0%, #CB24FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
