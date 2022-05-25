@@ -990,7 +990,7 @@ body .wrapper .header .header-content .header-content__inner .header-contact .he
   display: inline-block;
   padding-left: 36px;
   color: #cb24ff;
-  font-family: Barlow-Medium, sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 20px;
   text-decoration: none;
   background: url(../img/header/mail-icon.svg) left center no-repeat;
@@ -1132,7 +1132,7 @@ body .wrapper .container {
 
 body .wrapper .container .main {
   height: 1121px;
-  padding: 200px 0 0 0;
+  padding: 233px 0 0 0;
 }
 
 body .wrapper .container .main .main-info {
@@ -1183,6 +1183,8 @@ body .wrapper .container .main .main-info .main-info__text span.main-first-span:
   border-bottom: 0;
   left: 100%;
   top: -27px;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
 }
 
 body .wrapper .container .main .main-info .main-info__text span.main-second-span {
@@ -1346,7 +1348,7 @@ body .wrapper .container .main .main-info .main-info__bottom button img {
 }
 
 body .wrapper .container .about {
-  padding: 10px 0 350px 0;
+  padding: 30px 0 350px 0;
 }
 
 body .wrapper .container .about .about-text {
@@ -1383,6 +1385,9 @@ body .wrapper .container .about .about__flex {
 }
 
 body .wrapper .container .about .about__flex .about-blocktext {
+  padding: 10px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   font-family: "Barlow";
   font-style: normal;
   font-weight: 400;
@@ -1447,8 +1452,8 @@ body .wrapper .container .about .about__flex .about-circle::before {
   left: 50%;
   -webkit-transform: rotate(0) translate(-50%, -50%);
           transform: rotate(0) translate(-50%, -50%);
-  -webkit-animation: 12s about-subtract linear infinite;
-          animation: 12s about-subtract linear infinite;
+  -webkit-animation: 16s about-subtract linear infinite;
+          animation: 16s about-subtract linear infinite;
 }
 
 body .wrapper .container .about .about__flex .about-circle::after {
@@ -1463,7 +1468,7 @@ body .wrapper .container .about .about__flex .about-circle::after {
   left: 50%;
   -webkit-transform: rotate(0) translate(-50%, -50%);
           transform: rotate(0) translate(-50%, -50%);
-  animation: 12s about-subtract linear infinite reverse;
+  animation: 16s about-subtract linear infinite reverse;
 }
 
 body .wrapper .container .features {

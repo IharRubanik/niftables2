@@ -570,7 +570,7 @@ body {
                 display: inline-block;
                 padding-left: 36px;
                 color: #cb24ff;
-                font-family: Barlow-Medium, sans-serif;
+                font-family: 'Barlow', sans-serif;
                 font-size: 20px;
                 text-decoration: none;
                 background: url(../img/header/mail-icon.svg) left center
@@ -668,7 +668,7 @@ body {
       margin: 0 auto;
       .main {
         height: 1121px;
-        padding: 200px 0 0 0;
+        padding: 233px 0 0 0;
         .main-info {
           color: #fff;
           display: flex;
@@ -700,6 +700,7 @@ body {
                   border-bottom: 0;
                   left: 100%;
                   top: -27px;
+                  transform: translateX(20px);
                 }
               }
               &.main-second-span {
@@ -821,7 +822,7 @@ body {
       }
 
       .about {
-        padding: 10px 0 350px 0;
+        padding: 30px 0 350px 0;
         .about-text {
           font-family: "Barlow", sans-serif;
           font-style: normal;
@@ -845,6 +846,8 @@ body {
           justify-content: space-between;
           margin: 140px 0 0 200px;
           .about-blocktext {
+            padding: 10px;
+            box-sizing: content-box;
             font-family: "Barlow";
             font-style: normal;
             font-weight: 400;
@@ -896,7 +899,7 @@ body {
               top: 50%;
               left: 50%;
               transform: rotate(0) translate(-50%, -50%);
-              animation: 12s about-subtract linear infinite;
+              animation: 16s about-subtract linear infinite;
             }
             &::after {
               content: "";
@@ -909,7 +912,7 @@ body {
               top: 50%;
               left: 50%;
               transform: rotate(0) translate(-50%, -50%);
-              animation: 12s about-subtract linear infinite reverse;
+              animation: 16s about-subtract linear infinite reverse;
             }
           }
         }
