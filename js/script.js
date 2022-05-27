@@ -12,36 +12,51 @@ document.querySelector(".header-button").onclick = function () {
 };
 
 
-const gridItems = document.querySelectorAll('.process-parent__item');
 
-window.addEventListener('scroll', function () {
-    const sticky = document.querySelector('.process-parent'),
-        scroll = window.pageYOffset - sticky.offsetTop,
-        height = sticky.scrollHeight;
-        
-    let i = 0;
 
-    scroll < (1 * (height / 6) - 500) ? i = 0 :
-    scroll < (2 * (height / 6) - 500) ? i = 1 :
-    scroll < (3 * (height / 6) - 500) ? i = 2 :
-    scroll < (4 * (height / 6) - 500) ? i = 3 :
-    scroll < (5 * (height / 6) - 500) ? i = 4 : i = 5;
+/* Индекс слайда по умолчанию */
+var slideIndex = 1;
+showSlides(slideIndex);
 
-    for (let j = 0; j < gridItems.length; j++){
-        gridItems[j].classList.remove('view');
-        gridItems[j].classList.remove('active');
-        if (j <= i) {
-            gridItems[j].classList.add('view');
-        }
-    }
-    gridItems[i].classList.add('active')
-});
-
-function reScroll(num, e){
-    const sticky = document.querySelector('.process-parent'),
-        scroll = window.pageYOffset + sticky.offsetTop,
-        height = sticky.scrollHeight,
-        targ = e.target;
-        
-    window.scrollTo(0, sticky.offsetTop + (num * (height / 6) - (height / 6 / 3)))    
+/* Функция увеличивает индекс на 1, показывает следующй слайд*/
+function plusSlide() {
+    showSlides(slideIndex += 1);
 }
+
+/* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+function minusSlide() {
+    showSlides(slideIndex -= 1);  
+}
+
+/* Устанавливает текущий слайд */
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+/* Основная функция слайдера */
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("features__slider-item");
+    var dots = document.getElementsByClassName("slider-dots_item");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        // slides[i].style.display = "none";
+        // slides[i].style.opacity = "0";
+        slides[i].classList.remove("active");
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active", "");
+    }
+    // slides[slideIndex - 1].style.display = "block";
+    // slides[slideIndex - 1].style.opacity = "1";
+    slides[slideIndex - 1].classList.add("active");
+    dots[slideIndex - 1].className += " active";
+}
+
+
+
