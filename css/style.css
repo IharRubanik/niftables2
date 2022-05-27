@@ -514,23 +514,23 @@
 
 @-webkit-keyframes test {
   0% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
   }
 }
 
 @keyframes test {
   0% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
   }
 }
 
@@ -1891,11 +1891,10 @@ body .wrapper .container .features .features__slider .features__slider-wrapper .
   position: absolute;
   right: 0;
   top: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   -webkit-transform: translate(100%);
           transform: translate(100%);
-  transition: 0.5s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 body .wrapper .container .features .features__slider .features__slider-wrapper .features__slider-container .features__slider-item.active {
@@ -1906,6 +1905,19 @@ body .wrapper .container .features .features__slider .features__slider-wrapper .
 body .wrapper .container .features .features__slider .features__slider-wrapper .features__slider-container .features__slider-item.active .slideText {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+body .wrapper .container .features .features__slider .features__slider-wrapper .features__slider-container .features__slider-item.tre {
+  -webkit-animation: test 1s;
+          animation: test 1s;
+}
+
+body .wrapper .container .features .features__slider .features__slider-wrapper .features__slider-container .features__slider-item.tre .slideText {
+  -webkit-transform: translateX(85%);
+          transform: translateX(85%);
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 body .wrapper .container .features .features__slider .features__slider-wrapper .features__slider-container .features__slider-item .slideText {

@@ -47,14 +47,21 @@ function showSlides(n) {
     for (i = 0; i < slides.length; i++) {
         // slides[i].style.display = "none";
         // slides[i].style.opacity = "0";
-        slides[i].classList.remove("active");
+        // slides[i].classList.remove("active");
+        // slides[i].style.animation = "test 1s";
+        slides[i].classList.replace("active", "tre");
+        slides[slideIndex - 1].classList.remove("tre");
+
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace("active", "");
     }
     // slides[slideIndex - 1].style.display = "block";
     // slides[slideIndex - 1].style.opacity = "1";
+    // slides[slideIndex - 1].classList.add("active");
     slides[slideIndex - 1].classList.add("active");
+    // slides[slideIndex + 1].classList.remove("tre");
+
     dots[slideIndex - 1].className += " active";
 }
 

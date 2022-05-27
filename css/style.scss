@@ -230,10 +230,10 @@
 
 @keyframes test {
   0% {
-    transform: rotate(180deg);
+    transform: translateX(0);
   }
   100% {
-    transform: rotate(0deg);
+    transform: translateX(-200%);
   }
 }
 
@@ -1263,17 +1263,20 @@ body {
                 position: absolute;
                 right: 0;
                 top: 0;
-                transition: 0.5s;
-                // opacity: 0;
                 transform: translate(100%);
-                transition: 0.5s;
-                
+                transition: 1s;
                 &.active {
                   transform: translate(0);
-                  // opacity: 1;
-                  // animation: test 1 forwards;
-                  .slideText{
-                    transform: translateX(-50%)
+                  .slideText {
+                    transform: translateX(-50%);
+                  }
+                }
+                &.tre {
+                  animation: test 1s;
+                  .slideText {
+                    transform: translateX(85%);
+                    opacity: 0;
+                    transition: 1s;
                   }
                 }
                 .slideText {
@@ -1281,8 +1284,6 @@ body {
                   position: absolute;
                   top: 308px;
                   left: 50px;
-                  ;
-                  // animation: fade 1.5s;
                   h4 {
                     font-family: "Akzidenz-Grotesk Pro", sans-serif;
                     font-style: normal;
