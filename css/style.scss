@@ -219,14 +219,7 @@
     transform: translateX(0px);
   }
 }
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 
 @keyframes test {
   0% {
@@ -1019,7 +1012,7 @@ body {
                 width: 152px;
                 height: 152px;
                 top: -50px;
-                transform: rotate(-90deg);
+                transform: rotate(-25deg);
                 transition: 0.3s;
               }
               .features-arrow {
