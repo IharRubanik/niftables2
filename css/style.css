@@ -1576,8 +1576,8 @@ body .wrapper .container .features .features__wrapper-circle .features__containe
   width: 152px;
   height: 152px;
   top: -50px;
-  -webkit-transform: rotate(-25deg);
-          transform: rotate(-25deg);
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
