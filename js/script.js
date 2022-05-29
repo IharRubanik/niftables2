@@ -11,59 +11,63 @@ document.querySelector(".header-button").onclick = function () {
   }
 };
 
-
-
+let slides = document.getElementsByClassName("features__slider-item");
+let dots = document.getElementsByClassName("slider-dots_item");
+let active;
+let tre;
 
 /* Индекс слайда по умолчанию */
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
+
+/* Устанавливает текущий слайд */
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
 
 /* Функция увеличивает индекс на 1, показывает следующй слайд*/
 function plusSlide() {
-    showSlides(slideIndex += 1);
+  for (i = 0; i < slides.length; i++){
+    slides[i].classList.remove("active-reverse", "tre-reverse")
+    slides[slideIndex - 1].classList.add("tre")
+  }
+  active = "active";
+  tre = "tre";
+  showSlides((slideIndex += 1));
 }
 
 /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
 function minusSlide() {
-    showSlides(slideIndex -= 1);  
+  for (i = 0; i < slides.length; i++){
+    slides[i].classList.remove("active", "tre")
+    slides[slideIndex - 1].classList.add("tre-reverse")
+  }
+  active = "active-reverse";
+  tre = "tre-reverse";
+  showSlides((slideIndex -= 1));
 }
 
-/* Устанавливает текущий слайд */
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
+slides[slideIndex - 1].classList.add("active");
+
 
 /* Основная функция слайдера */
 function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("features__slider-item");
-    var dots = document.getElementsByClassName("slider-dots_item");
-    if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        // slides[i].style.display = "none";
-        // slides[i].style.opacity = "0";
-        // slides[i].classList.remove("active");
-        // slides[i].style.animation = "test 1s";
-        slides[i].classList.replace("active", "tre");
-        slides[slideIndex - 1].classList.remove("tre");
 
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("active", "");
-    }
-    // slides[slideIndex - 1].style.display = "block";
-    // slides[slideIndex - 1].style.opacity = "1";
-    // slides[slideIndex - 1].classList.add("active");
-    slides[slideIndex - 1].classList.add("active");
-    // slides[slideIndex + 1].classList.remove("tre");
+  let i;
 
-    dots[slideIndex - 1].className += " active";
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].classList.replace(active, tre);
+    slides[slideIndex - 1].classList.remove(tre);     
+  }
+  slides[slideIndex - 1].classList.add(active);
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace("active", "");
+  }
+  dots[slideIndex - 1].className += " active";
 }
-
-
-

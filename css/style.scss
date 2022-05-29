@@ -219,14 +219,71 @@
     transform: translateX(0px);
   }
 }
+@keyframes features-slide-img-active {
+  0% {
+    transform: translate(100%);
+  }
 
-
-@keyframes test {
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes features-slide-text-active {
+  0% {
+    transform: translateX(85%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes features-slide-img-tre {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-200%);
+  }
+}
+@keyframes features-slide-text-tre {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes features-slide-img-active-reverse {
+  0% {
+    transform: translate(-200%);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes features-slide-text-active-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(60%);
+  }
+}
+
+@keyframes features-slide-img-tre-reverse {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes features-slide-text-tre-reverse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -1256,27 +1313,15 @@ body {
                 position: absolute;
                 right: 0;
                 top: 0;
-                transform: translate(100%);
-                transition: 1s;
-                &.active {
-                  transform: translate(0);
-                  .slideText {
-                    transform: translateX(-50%);
-                  }
-                }
-                &.tre {
-                  animation: test 1s;
-                  .slideText {
-                    transform: translateX(85%);
-                    opacity: 0;
-                    transition: 1s;
-                  }
+                img {
+                  transform: translate(100%);
                 }
                 .slideText {
                   width: 580px;
                   position: absolute;
                   top: 308px;
                   left: 50px;
+                  transform: translate(100%);
                   h4 {
                     font-family: "Akzidenz-Grotesk Pro", sans-serif;
                     font-style: normal;
@@ -1294,6 +1339,42 @@ body {
                     font-size: 20px;
                     line-height: 30px;
                     color: #ffffff;
+                  }
+                }
+                &.active {
+                  img {
+                    animation: features-slide-img-active 1s forwards;
+                  }
+                  .slideText {
+                    animation: features-slide-text-active 1s forwards;
+                  }
+                }
+                &.tre {
+                  img {
+                    animation: features-slide-img-tre 1s;
+                  }
+                  .slideText {
+                    animation: features-slide-text-tre 1s forwards;
+                    transform: translateX(-50%);
+                  }
+                }
+
+                &.active-reverse {
+                  img {
+                    animation: features-slide-img-active-reverse 1s forwards;
+                  }
+                  .slideText {
+                    animation: features-slide-text-tre-reverse 1s forwards;
+                    transform: translateX(-50%);
+                    opacity: 0;
+                  }
+                }
+                &.tre-reverse {
+                  img {
+                    animation: features-slide-img-tre-reverse 1s forwards;
+                  }
+                  .slideText {
+                    animation: features-slide-text-active-reverse 1s;
                   }
                 }
               }
