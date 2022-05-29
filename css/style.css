@@ -1851,6 +1851,12 @@ body .wrapper .container .features .features__slider .features__slider-wrapper {
   overflow: hidden;
 }
 
+body .wrapper .container .features .features__slider .features__slider-wrapper #c1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 body .wrapper .container .features .features__slider .features__slider-wrapper .slider__button {
   position: absolute;
   top: 50px;

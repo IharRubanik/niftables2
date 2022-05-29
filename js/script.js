@@ -11,7 +11,7 @@ document.querySelector(".header-button").onclick = function () {
   }
 };
 
-// let slider = document.getElementsByClassName("features__slider-container");
+let canvas = document.getElementById("c1");
 let slides = document.getElementsByClassName("features__slider-item");
 let dots = document.getElementsByClassName("slider-dots_item");
 let active;
@@ -78,9 +78,9 @@ function showSlides(n) {
 
 
 // Вешаем на прикосновение функцию handleTouchStart
-document.addEventListener('touchstart', handleTouchStart, false);  
+canvas.addEventListener('touchstart', handleTouchStart, false);  
 // А на движение пальцем по экрану - handleTouchMove      
-document.addEventListener('touchmove', handleTouchMove, false);
+canvas.addEventListener('touchmove', handleTouchMove, false);
 
 var xDown = null;                                                        
 var yDown = null;                                                        
