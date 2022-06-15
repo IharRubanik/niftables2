@@ -1,0 +1,53 @@
+<svg width="147" height="154" viewBox="0 0 147 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.6" filter="url(#filter0_f_321_10847)">
+<path d="M36.5 26.8706L36.5 124.871L120.5 75.8706L36.5 26.8706Z" stroke="#CB24FF" stroke-width="8"/>
+</g>
+<g filter="url(#filter1_f_321_10847)">
+<path d="M36.5 26.8706L36.5 124.871L120.5 75.8706L36.5 26.8706Z" stroke="#CB24FF" stroke-width="4"/>
+</g>
+<g opacity="0.9" filter="url(#filter2_f_321_10847)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M36 124.871L36 96.8709L37 96.8709L37 124L58.5 111.459L58.5 112.616L36.752 125.303L36 125.741L36 124.871ZM63.5 109.7L63.5 108.542L112.5 79.9585L112.5 80.8707L112.921 80.8707L63.5 109.7ZM121.492 75.8707L120.752 75.4388L76.5 49.6252L76.5 50.7829L119.508 75.8707L121.492 75.8707ZM71.5 46.7085L36.752 26.4388L36 26.0002L36 26.8707L36 91.8709L37 91.8709L37 27.7412L71.5 47.8662L71.5 46.7085Z" fill="white"/>
+</g>
+<g opacity="0.9" filter="url(#filter3_f_321_10847)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35 96.8706L35 124.871L35 127.482L37.2558 126.166L59.5 113.191L59.5 109.717L38 122.259L38 96.8706L35 96.8706ZM76.4999 51.9405L76.4999 48.4674L121.256 74.5749L123.477 75.8706L117.523 75.8706L76.4999 51.9405Z" fill="white"/>
+</g>
+<g filter="url(#filter4_f_321_10847)">
+<path d="M53.5 76.3706L81.5 76.3706M81.5 76.3706L72.75 67.8706M81.5 76.3706L72.75 84.8706" stroke="#CB24FF" stroke-width="4"/>
+</g>
+<g filter="url(#filter5_f_321_10847)">
+<path d="M53.5 76.3706L81.5 76.3706M81.5 76.3706L72.75 67.8706M81.5 76.3706L72.75 84.8706" stroke="#CB24FF" stroke-width="3"/>
+</g>
+<path opacity="0.6" d="M53.5 76.3706L81.5 76.3706M81.5 76.3706L72.75 67.8706M81.5 76.3706L72.75 84.8706" stroke="white" stroke-width="1.5"/>
+<defs>
+<filter id="filter0_f_321_10847" x="17.5" y="4.90649" width="125.939" height="141.928" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="7.5" result="effect1_foregroundBlur_321_10847"/>
+</filter>
+<filter id="filter1_f_321_10847" x="28.5" y="17.3884" width="101.969" height="116.964" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="3" result="effect1_foregroundBlur_321_10847"/>
+</filter>
+<filter id="filter2_f_321_10847" x="35" y="25.0002" width="87.4923" height="101.741" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_321_10847"/>
+</filter>
+<filter id="filter3_f_321_10847" x="33" y="46.4673" width="92.477" height="83.0149" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur_321_10847"/>
+</filter>
+<filter id="filter4_f_321_10847" x="38.5" y="51.436" width="60.8703" height="49.8691" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="7.5" result="effect1_foregroundBlur_321_10847"/>
+</filter>
+<filter id="filter5_f_321_10847" x="48.5" y="61.7947" width="40.1527" height="29.1519" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2.5" result="effect1_foregroundBlur_321_10847"/>
+</filter>
+</defs>
+</svg>
