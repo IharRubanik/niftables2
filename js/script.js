@@ -11,9 +11,7 @@ document.querySelector(".header-button").onclick = function () {
   }
 };
 
-
 // Process
-
 const sticky = document.querySelector(".process-parent");
 const gridItems = document.querySelectorAll(".process-parent__item");
 const processArrow = document.querySelector(".process__arrow");
@@ -34,13 +32,11 @@ const line8 = document.querySelector(".line-8");
 const line9 = document.querySelector(".line-9");
 const line10 = document.querySelector(".line-10");
 
-
 window.addEventListener("scroll", function() {
   const scroll = window.pageYOffset - sticky.offsetTop,
     height = sticky.scrollHeight;
 
   let i = 0;
-
   scroll < 1 * (height / 6) - 600
     ? (i = 0)
     : scroll < 2 * (height / 6) - 600
@@ -56,8 +52,6 @@ window.addEventListener("scroll", function() {
     for (let j = 0; j < gridItems.length; j++) {
       gridItems[j].classList.remove("active");
       gridItems[j].classList.remove("next");
-      // gridItems[j].classList.remove("prev");
-  
       if (j < i) {
         gridItems[j].classList.add("prev");
         gridItems[j].classList.remove("next");
@@ -70,7 +64,6 @@ window.addEventListener("scroll", function() {
       }
     }
 
-
  if (gridItems[i].classList.contains("prev")){
 gridItems[i].classList.add("active-reverse");
 gridItems[i].classList.remove("active");
@@ -79,11 +72,7 @@ gridItems[i].classList.remove("prev");
  gridItems[i].classList.add("active");
 }
 
-
-
-
 // Line
-
   if (i == 0) {
     processArrow.style.width = "11.042vw"
   }
@@ -103,31 +92,20 @@ gridItems[i].classList.remove("prev");
   else if (i == 5){
     processArrow.style.width = "72.865vw"
   }
-
   for (var x = 0; x < processArrowItem.length; x++) {
     manElem[x].classList.add("active");
     line[x].classList.add("active");
     processArrowItem[x].classList.remove("back");
-    // manElem[x].classList.remove("back");
     if (x < i) {
       processArrowItem[x].classList.add("back");
       processArrowItem[x].classList.remove("active");
       manElem[x].classList.add("active");
-      
-
-      // line1.classList.add("active")
-      // OvalColor2.classList.add("active")
-      // OvalColor3.classList.add("active")
-      // OvalColor4.classList.add("active")
-
-      // OvalItem[x].classList.add("active");
     }
      else if (x == i) {
       processArrowItem[x].classList.remove("back");
       processArrowItem[x].classList.add("active");
       processArrowItem[x].classList.remove("next");
       manElem[x].classList.add("active");
-      // OvalItem[x].classList.remove("active");
       
     }
      else if (x > i) {
@@ -135,21 +113,14 @@ gridItems[i].classList.remove("prev");
       processArrowItem[x].classList.remove("active");
       manElem[x].classList.remove("active");  
     }
-
-
-
-
-
     if (i == 1) {
       line1.classList.add("active");
       line2.classList.add("active");
-      
     }
     else if (i < 1) {
       line1.classList.remove("active");
       line2.classList.remove("active");
     }
-  
     if (i == 2) {
       line3.classList.add("active");
       line4.classList.add("active");
@@ -177,249 +148,148 @@ gridItems[i].classList.remove("prev");
     if (i == 5) {
       line9.classList.add("active");
       line10.classList.add("active");
-      oval.classList.add("active");
-      
+      oval.classList.add("active");  
     }
     else if (i < 5) {
       line9.classList.remove("active");
       line10.classList.remove("active");
       oval.classList.remove("active");
     }
-
-
-
   }
- 
-
- 
-
-
 });
 
+const slider1 = document.querySelector('.slider1')
+const slider2 = document.querySelector('.slider2')
 
-let canvas = document.getElementById("c1");
-let dots;
-let slides;
-let active;
-let tre;
-
-/* Индекс слайда по умолчанию */
-let slideIndex = 1;
-// showSlides(slideIndex);
-
-
-/* Устанавливает текущий слайд */
-// function currentSlide(n) {
-//   showSlides((slideIndex = n)); 
-// }
-
-
-
-
-/* Функция увеличивает индекс на 1, показывает следующй слайд*/
-function plusSlide() {
-  let slides = document.getElementsByClassName("features__slider-item");
-  dots = document.getElementsByClassName("slider-dots_item");
-  active = "active";
-  tre = "tre";
-/* Основная функция слайдера */
-function showSlides(n) {
-
-  let i;
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].classList.replace(active, tre);
-    slides[slideIndex - 1].classList.remove(tre);     
-  }
-  slides[slideIndex - 1].classList.add(active);   
+// функция следующий слайд
+function nextSlide(slides, dots) {
+    for(let i = 0; i < slides.length; i++ ) {    
+        if (slides[i].classList.contains('active') || slides[i].classList.contains('active-reverse')) {  
+            slides[i].classList.remove('active-reverse')
+            slides[i].classList.add('active')
+            if(i !== slides.length - 1) {
+                slides[i].classList.remove('prev')
+                slides[i].classList.remove('active') 
+                slides[i].classList.add('prev')
+                slides[i + 1].classList.add('active')  
+                slides[i + 1].classList.remove('prev')
+                slides[i + 1].classList.remove('next')
+                dots[i].classList.remove('active')
+                dots[i + 1].classList.add('active')
+            } 
+            else{
+                slides[i].classList.remove('active') 
+                slides[i].classList.add('prev')
+                slides[0].classList.add('active')       
+                slides[0].classList.remove('prev')       
+                slides[0].classList.remove('next') 
+                dots[i].classList.remove('active') 
+                dots[0].classList.add('active')                
+            }
+            break 
+        }  
+    }  
 }
-
-  for (i = 0; i < slides.length; i++){
-    slides[i].classList.remove("active-reverse", "tre-reverse")
-    slides[slideIndex - 1].classList.add("tre")
-  }
-  
-  showSlides((slideIndex += 1));
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace("active", "");
-  }
-  dots[slideIndex - 1].className += " active";
-  
-}
-
-/* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
-function minusSlide() {
-
-/* Основная функция слайдера */
-function showSlides(n) {
-
-  let i;
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].classList.replace(active, tre);
-    slides[slideIndex - 1].classList.remove(tre);     
-  }
-  slides[slideIndex - 1].classList.add(active);
-    
-}
-
-
-
-  let slides = document.getElementsByClassName("features__slider-item");
-  dots = document.getElementsByClassName("slider-dots_item");
-  for (i = 0; i < slides.length; i++){
-    slides[i].classList.remove("active", "tre")
-    slides[slideIndex - 1].classList.add("tre-reverse")
-  }
-  active = "active-reverse";
-  tre = "tre-reverse";
-  showSlides((slideIndex -= 1));
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace("active", "");
-  }
-  dots[slideIndex - 1].className += " active";
-}
-
-// tokenomics
-
-function minusSlidePortfolio() {
-
-/* Основная функция слайдера */
-function showSlides(n) {
-
-  let i;
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].classList.replace(active, tre);
-    slides[slideIndex - 1].classList.remove(tre);     
-  }
-  slides[slideIndex - 1].classList.add(active);
-    
-}
-
-
-  let slides = document.getElementsByClassName("tokenomics__slider-item");
-  dots = document.getElementsByClassName("header-list__item");
-  for (i = 0; i < slides.length; i++){
-    slides[i].classList.remove("active", "tre")
-    slides[slideIndex - 1].classList.add("tre-reverse")
-  }
-  active = "active-reverse";
-  tre = "tre-reverse";
-  showSlides((slideIndex -= 1));
-}
-
-function plusSlidePortfolio() {
-
-/* Основная функция слайдера */
-function showSlides(n) {
-
-  let i;
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].classList.replace(active, tre);
-    slides[slideIndex - 1].classList.remove(tre);     
-  }
-  slides[slideIndex - 1].classList.add(active);
-    
-}
-
-  let slides = document.getElementsByClassName  ("tokenomics__slider-item");
-  dots = document.getElementsByClassName("header-list__item");
-  for (i = 0; i < slides.length; i++){
-    slides[i].classList.remove("active-reverse", "tre-reverse")
-    slides[slideIndex - 1].classList.add("tre")
-  }
-  active = "active";
-  tre = "tre";
-  showSlides((slideIndex += 1));
-
-}
-
-// slides[slideIndex - 1].classList.add("active");
-
-
-/* Основная функция слайдера */
-// function showSlides(n) {
-
-//   let i;
-
-//   if (n > slides.length) {
-//     slideIndex = 1;
-//   }
-//   if (n < 1) {
-//     slideIndex = slides.length;
-//   }
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].classList.replace(active, tre);
-//     slides[slideIndex - 1].classList.remove(tre);     
-//   }
-//   slides[slideIndex - 1].classList.add(active);
-    
-// }
-
-
-// Вешаем на прикосновение функцию handleTouchStart
-canvas.addEventListener('touchstart', handleTouchStart, false);  
-// А на движение пальцем по экрану - handleTouchMove      
-canvas.addEventListener('touchmove', handleTouchMove, false);
-
-var xDown = null;                                                        
-var yDown = null;                                                        
-
-function handleTouchStart(evt) {                                         
-    xDown = evt.touches[0].clientX;                                      
-    yDown = evt.touches[0].clientY;                                      
-};                                                
-
-function handleTouchMove(evt) {
-    if ( ! xDown || ! yDown ) {
-        return;
+// функция предыдущий слайд
+function prevSlide(slides, dots) {
+    for(let i = 0; i < slides.length; i++ ) {
+        if (slides[i].classList.contains('active') || slides[i].classList.contains('active-reverse')) {
+            slides[i].classList.remove('active')
+            slides[i].classList.add('active-reverse')
+            if(i !== 0 ) {
+                slides[i].classList.remove('active-reverse')
+                slides[i].classList.add('next')
+                slides[i - 1].classList.add('active-reverse')
+                slides[i - 1].classList.remove('next')
+                slides[i - 1].classList.remove('prev')
+                dots[i].classList.remove('active')
+                dots[i - 1].classList.add('active')
+            }
+            else{
+                slides[i].classList.add('next')
+                slides[i].classList.remove('active-reverse')
+                slides[slides.length -1].classList.add('active-reverse')
+                slides[slides.length -1].classList.remove('next')
+                slides[slides.length -1].classList.remove('prev')
+                dots[i].classList.remove('active')
+                dots[slides.length -1].classList.add('active')
+            }
+            break 
+        }  
     }
+}
 
-    var xUp = evt.touches[0].clientX;                                    
-    var yUp = evt.touches[0].clientY;
 
-    var xDiff = xDown - xUp;
-    var yDiff = yDown - yUp;
-    // немного поясню здесь. Тут берутся модули движения по оси абсцисс и ординат (почему модули? потому что если движение сделано влево или вниз, то его показатель будет отрицательным) и сравнивается, чего было больше: движения по абсциссам или ординатам. Нужно это для того, чтобы, если пользователь провел вправо, но немного наискосок вниз, сработал именно коллбэк для движения вправо, а ни как-то иначе.
-    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-        if ( xDiff > 0 ) {
-          plusSlide()
-            /* left swipe */ 
-        } else {
-            /* right swipe */
-            minusSlide()
-        }                       
-    } 
-    /* reset values */
-    xDown = null;
-    // yDown = null;                                             
-};
+// // let canvas = document.getElementById("c1");
+
+// // Вешаем на прикосновение функцию handleTouchStart
+// canvas.addEventListener('touchstart', handleTouchStart, false);  
+// // А на движение пальцем по экрану - handleTouchMove      
+// canvas.addEventListener('touchmove', handleTouchMove, false);
+
+// var xDown = null;                                                        
+// var yDown = null;                                                        
+
+// function handleTouchStart(evt) {                                         
+//     xDown = evt.touches[0].clientX;                                      
+//     yDown = evt.touches[0].clientY;                                      
+// };                                                
+
+// function handleTouchMove(evt) {
+//     if ( ! xDown || ! yDown ) {
+//         return;
+//     }
+
+//     var xUp = evt.touches[0].clientX;                                    
+//     var yUp = evt.touches[0].clientY;
+
+//     var xDiff = xDown - xUp;
+//     var yDiff = yDown - yUp;
+//     // немного поясню здесь. Тут берутся модули движения по оси абсцисс и ординат (почему модули? потому что если движение сделано влево или вниз, то его показатель будет отрицательным) и сравнивается, чего было больше: движения по абсциссам или ординатам. Нужно это для того, чтобы, если пользователь провел вправо, но немного наискосок вниз, сработал именно коллбэк для движения вправо, а ни как-то иначе.
+//     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+//         if ( xDiff > 0 ) {
+//           plusSlide()
+//             /* left swipe */ 
+//         } else {
+//             /* right swipe */
+//             minusSlide()
+//         }                       
+//     } 
+//     /* reset values */
+//     xDown = null;
+//     // yDown = null;                                             
+// };
+
+
+
+
+// собираем элементы слайдера
+function toogleSlider(slider) {
+  const buttons = slider.querySelectorAll('.button')
+  const slides = slider.querySelectorAll('.slider-item')
+  const dots = slider.querySelectorAll('.dots')
+  // const canvass = slider.querySelector('.canvas')
+  function onButtonClick(e) {
+      let direction = e.currentTarget.dataset.direction
+      if (direction === 'next') {
+          nextSlide(slides, dots)
+      }
+      else {
+          prevSlide(slides, dots)
+      }
+  }
+  for(let i = 0; i <buttons.length; i++) {
+      buttons[i].addEventListener('click', onButtonClick)
+  }
+ 
+}
+toogleSlider(slider1)
+toogleSlider(slider2)
+
+
+
+
+
 
 // let vision = document.getElementsByClassName("vision__sticky");
 // // console.log(vision);
