@@ -2112,7 +2112,7 @@ body {
       }
     }
     .tokenomics {
-      padding: 6.771vw 0 3.646vw 0;
+      padding: 6.771vw 0 0 0;
       height: 48.698vw;
       display: flex;
       justify-content: space-between;
@@ -2189,7 +2189,6 @@ body {
               img {
                 width: 0.521vw;
                 position: absolute;
-                height: 0.625vw;
                 transform: rotate(180deg) translateX(0.052vw);
                 z-index: 1;
               }
@@ -2231,7 +2230,6 @@ body {
                 width: 0.521vw;
                 transform: translateX(0.052vw);
                 position: absolute;
-                height: 0.625vw;
                 z-index: 1;
               }
             }
@@ -2358,7 +2356,7 @@ body {
       grid-template-columns: repeat(7, 1fr);
       grid-template-rows: repeat(5, 6.25vw);
       grid-gap: 1.094vw;
-      padding: 0 0 12.5vw 0;
+      padding: 3.646vw 0 12.5vw 0;
       .partners__title {
         grid-column-start: 1;
         grid-column-end: 3;

@@ -3107,7 +3107,7 @@ body .wrapper .vision .vision__sticky .vision__content .container__stage .vision
 }
 
 body .wrapper .tokenomics {
-  padding: 6.771vw 0 3.646vw 0;
+  padding: 6.771vw 0 0 0;
   height: 48.698vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3224,7 +3224,6 @@ body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomic
 body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button .prev img {
   width: 0.521vw;
   position: absolute;
-  height: 0.625vw;
   -webkit-transform: rotate(180deg) translateX(0.052vw);
           transform: rotate(180deg) translateX(0.052vw);
   z-index: 1;
@@ -3286,7 +3285,6 @@ body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomic
   -webkit-transform: translateX(0.052vw);
           transform: translateX(0.052vw);
   position: absolute;
-  height: 0.625vw;
   z-index: 1;
 }
 
@@ -3449,7 +3447,7 @@ body .wrapper .partners {
   -ms-grid-rows: (6.25vw)[5];
       grid-template-rows: repeat(5, 6.25vw);
   grid-gap: 1.094vw;
-  padding: 0 0 12.5vw 0;
+  padding: 3.646vw 0 12.5vw 0;
 }
 
 body .wrapper .partners .partners__title {
