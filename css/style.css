@@ -1965,7 +1965,7 @@ body .wrapper .process .process-container .process-parent .process-parent__stick
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.927vw;
+  gap: .3vw;
 }
 
 body .wrapper .process .process-container .process-parent .process-parent__sticky .process-parent__sticky-container .process-parent__item .process-parent__container img {
@@ -2130,14 +2130,14 @@ body .wrapper .process .process-container .process-parent .process-parent__stick
 
 body .wrapper .process .process-container .process-parent .process-parent__sticky .process-parent__sticky-container .process__arrow::after {
   content: "";
-  width: 2.917vw;
+  width: 0.521vw;
   height: 100%;
   position: absolute;
   right: 0;
   background-image: url(../img/process/arrow-line.svg);
   background-repeat: no-repeat;
   background-position: center right;
-  background-size: 0.938vw;
+  background-size: 0.521vw 1.042vw;
 }
 
 body .wrapper .process .process-container .process-parent .process-parent__sticky .process-parent__sticky-container .process__arrow .line {
@@ -2146,7 +2146,7 @@ body .wrapper .process .process-container .process-parent .process-parent__stick
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 99.58%;
-  height: 0.052vw;
+  height: 0.052083333333333vw;
   background-color: #ffffff;
 }
 
@@ -2238,18 +2238,23 @@ body .wrapper .process .process-container .process-parent .process-parent__stick
   right: 0;
   width: 0.729vw;
   height: 100%;
-  background-color: #0b0b0c;
+  background-image: url(../img/process/noise.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .wrapper .process .process-container .process-parent .process-parent__sticky .process-parent__sticky-container .process__arrow .process__arrow-item .item__block .item__block-line .dotted-line {
   width: 0.052vw;
-  height: 100%;
+  height: 86%;
   border-left: 0.052vw dashed #cb24ff;
 }
 
