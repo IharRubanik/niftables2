@@ -872,6 +872,36 @@
   }
 }
 
+@-webkit-keyframes woman {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes woman {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 input {
   border-radius: 0;
 }
@@ -902,7 +932,7 @@ body .wrapper {
 }
 
 body .wrapper::after {
-  content: '';
+  content: "";
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -1099,6 +1129,8 @@ body .wrapper .header .header-inner .header-logo {
       -ms-flex-pack: center;
           justify-content: center;
   border-bottom: #0b0b0c 0.052vw solid;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 body .wrapper .header .header-inner .header-logo img {
@@ -1709,7 +1741,7 @@ body .wrapper .main .main-info .main-info__bottom button::after {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-out;
   transition: opacity 0.3s ease-out;
-  background-color: #16A9FE;
+  background-color: #16a9fe;
   -webkit-filter: blur(35px);
           filter: blur(35px);
   width: 7.24vw;
@@ -1925,6 +1957,8 @@ body .wrapper .process .process-container .process-parent .process-parent__stick
 }
 
 body .wrapper .process .process-container .process-parent .process-parent__sticky .process-parent__sticky-container .process-parent__item .process-parent__container {
+  -webkit-transform: translateX(-0.938vw);
+          transform: translateX(-0.938vw);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1936,7 +1970,7 @@ body .wrapper .process .process-container .process-parent .process-parent__stick
 
 body .wrapper .process .process-container .process-parent .process-parent__sticky .process-parent__sticky-container .process-parent__item .process-parent__container img {
   opacity: 0;
-  width: 3.646vw;
+  width: 6.146vw;
 }
 
 body .wrapper .process .process-container .process-parent .process-parent__sticky .process-parent__sticky-container .process-parent__item .process-parent__container .process-parent__descripcion {
@@ -2881,6 +2915,7 @@ body .wrapper .features .features__slider .slider__plagination span.active {
 body .wrapper .vision {
   width: 100%;
   height: 781.25vw;
+  padding: 6.771vw 0 0 0;
 }
 
 body .wrapper .vision .vision__sticky {
@@ -2900,9 +2935,22 @@ body .wrapper .vision .vision__sticky {
           justify-content: center;
 }
 
-body .wrapper .vision .vision__sticky .vision__content {
+body .wrapper .vision .vision__sticky .woman-head {
   position: absolute;
-  left: 90%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 43.646vw;
+  -webkit-animation: woman 6s linear 1s infinite;
+          animation: woman 6s linear 1s infinite;
+}
+
+body .wrapper .vision .vision__sticky .vision__content {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  position: absolute;
+  left: 100%;
   height: 43.594vw;
   width: auto;
   display: -webkit-box;
@@ -2942,9 +2990,111 @@ body .wrapper .vision .vision__sticky .vision__content .container__stage {
           align-items: center;
 }
 
-body .wrapper .vision .vision__sticky .vision__content .container__stage img {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper {
+  width: 493.177vw;
+  height: 21.198vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 17.969vw 0 0;
+}
+
+body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet {
+  position: relative;
+  height: inherit;
+  width: 42.448vw;
+}
+
+body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet span {
+  position: absolute;
+  top: 0.885vw;
+  left: -0.26vw;
+  font-family: "Akzidenz-Grotesk Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.917vw;
+  line-height: 16.51vw;
+  text-transform: uppercase;
+  opacity: 0.1;
+  text-shadow: white 0vw 0.052vw 0px, white 0vw -0.052vw 0px, white 0.052vw 0vw 0px, white -0.052vw 0vw 0px, white 0.052vw 0.052vw 0px, white 0.052vw -0.052vw 0px, white -0.052vw 0.052vw 0px, white -0.052vw -0.052vw 0px;
+}
+
+body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet strong {
+  position: absolute;
+  top: 11.354vw;
+  left: 0;
+  font-family: "Akzidenz-Grotesk Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.708vw;
+  line-height: 3.49vw;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet img {
+  position: absolute;
+  right: 7.656vw;
+  width: 9.063vw;
+  bottom: 0;
+}
+
+body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet .planet5 {
+  -webkit-transform: scale(1.65) translateY(-11%);
+          transform: scale(1.65) translateY(-11%);
+}
+
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line {
+  width: 493.177vw;
+}
+
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #line_purpure {
+  stroke-dasharray: 9469;
+}
+
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container {
+  width: 100%;
+  padding: 0 6.51vw 0 31.25vw;
+  -webkit-transform: translateY(-3.646vw);
+          transform: translateY(-3.646vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container .descripcion-item {
+  width: 22.396vw;
+}
+
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container .descripcion-item h4 {
+  font-family: "Akzidenz-Grotesk Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25vw;
+  line-height: 1.771vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container .descripcion-item p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.042vw;
+  line-height: 1.563vw;
+  color: #ffffff;
 }
 
 body .wrapper .tokenomics {
@@ -3157,13 +3307,13 @@ body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomic
 }
 
 body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item.active {
-  -webkit-animation: 1s tokenomics-slide-active  forwards;
-          animation: 1s tokenomics-slide-active  forwards;
+  -webkit-animation: 1s tokenomics-slide-active forwards;
+          animation: 1s tokenomics-slide-active forwards;
 }
 
 body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item.active h3 {
-  -webkit-animation: 1s tokenomics-slide-title-active  forwards;
-          animation: 1s tokenomics-slide-title-active  forwards;
+  -webkit-animation: 1s tokenomics-slide-title-active forwards;
+          animation: 1s tokenomics-slide-title-active forwards;
 }
 
 body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item.prev {

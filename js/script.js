@@ -280,50 +280,28 @@ function toogleSlider(slider) {
   }
   for(let i = 0; i <buttons.length; i++) {
       buttons[i].addEventListener('click', onButtonClick)
-  }
- 
+  } 
 }
 toogleSlider(slider1)
 toogleSlider(slider2)
-
-
-
-
-
-
-// let vision = document.getElementsByClassName("vision__sticky");
-// // console.log(vision);
-
-
-//  document.onwheel = function(event) {
-//   // console.log(event);
-//   if (event.deltaY > 0) {
-//     console.log("вверх")
-//   }
-//   else {
-//     console.log ("вниз")
-//   }
-//   let speed = event.deltaY;
-//   speed = Math.abs(speed);
-// }
-
-// let left = 12;
-
-// document.getElementsByClassName('vision__sticky').onwheel = function (event) {
-// let line = event.deltaY;
-// left = left + line;
-// document.getElementsByClassName('vision__content').style.left = left  + "px";
-// }
+function vision() {
+  
+}
 
 // Vision
-// var left = 90;
-// document.getElementById('test').onwheel = function (event){
-// 	var line = event.deltaY;
-// 	left = left - 0.1*line;
-// 	document.getElementById('test2').style.left = left + '%';
 
-// 	// return false;
-// }
+const wrapper = document.querySelector('.vision'),
+			block = document.querySelector('.vision__content');   
+      const visionLine = document.querySelector('#line_purpure');
+      
+     window.addEventListener('scroll', function() {
+      // console.log('wrap',wrapper.getBoundingClientRect())
+      // console.log('block',block.getBoundingClientRect())
+      block.style.transform = `translateX(${wrapper.getBoundingClientRect().y + block.getBoundingClientRect().y}px)`
+
+      visionLine.style.strokeDashoffset = 10869 - block.getBoundingClientRect().y
+      // console.log(10869 - block.getBoundingClientRect().y)
+     })
 
 
 
