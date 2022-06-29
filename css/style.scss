@@ -2187,9 +2187,10 @@ body {
                 transform: translateX(100%);
               }
               img {
+                width: 0.521vw;
                 position: absolute;
                 height: 0.625vw;
-                transform: rotate(180deg);
+                transform: rotate(180deg) translateX(0.052vw);
                 z-index: 1;
               }
             }
@@ -2227,6 +2228,8 @@ body {
                 transform: translateX(-100%);
               }
               img {
+                width: 0.521vw;
+                transform: translateX(0.052vw);
                 position: absolute;
                 height: 0.625vw;
                 z-index: 1;

@@ -3222,10 +3222,11 @@ body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomic
 }
 
 body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button .prev img {
+  width: 0.521vw;
   position: absolute;
   height: 0.625vw;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(180deg) translateX(0.052vw);
+          transform: rotate(180deg) translateX(0.052vw);
   z-index: 1;
 }
 
@@ -3281,6 +3282,9 @@ body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomic
 }
 
 body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button .next img {
+  width: 0.521vw;
+  -webkit-transform: translateX(0.052vw);
+          transform: translateX(0.052vw);
   position: absolute;
   height: 0.625vw;
   z-index: 1;
