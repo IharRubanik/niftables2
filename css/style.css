@@ -2990,12 +2990,6 @@ body .wrapper .vision .vision__sticky .vision__content .container__stage {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper {
