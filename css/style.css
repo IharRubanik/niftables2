@@ -3051,6 +3051,7 @@ body .wrapper .vision .vision__sticky .vision__content .container__stage .planet
 
 body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line {
   width: 493.177vw;
+  height: auto;
 }
 
 body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #line_purpure {
