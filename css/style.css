@@ -1780,7 +1780,7 @@ body .wrapper .main .main-info .main-info__bottom button img {
 }
 
 body .wrapper .about {
-  padding: 1.563vw 0 18.229vw 0;
+  padding: 1.563vw 0 10.417vw 0;
 }
 
 body .wrapper .about .about-text {
@@ -1965,7 +1965,7 @@ body .wrapper .process .process-container .process-parent .process-parent__stick
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: .3vw;
+  gap: 0.3vw;
 }
 
 body .wrapper .process .process-container .process-parent .process-parent__sticky .process-parent__sticky-container .process-parent__item .process-parent__container img {
@@ -1976,7 +1976,7 @@ body .wrapper .process .process-container .process-parent .process-parent__stick
 body .wrapper .process .process-container .process-parent .process-parent__sticky .process-parent__sticky-container .process-parent__item .process-parent__container .process-parent__descripcion {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 1.719vw 1.771vw 1.563vw 0;
+  padding: 1.5vw 1.771vw 1.563vw 0;
   width: 17.396vw;
   position: relative;
 }
@@ -2211,7 +2211,7 @@ body .wrapper .process .process-container .process-parent .process-parent__stick
   font-style: normal;
   font-weight: 500;
   font-size: 0.625vw;
-  line-height: 0.781vw;
+  line-height: 1vw;
   text-transform: uppercase;
   color: #4e5465;
 }
@@ -2446,7 +2446,7 @@ body .wrapper .features .features__title {
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
-  left: 38.229vw;
+  left: 37.38vw;
 }
 
 body .wrapper .features .features__background-title {
@@ -2652,11 +2652,10 @@ body .wrapper .features .features__slider .features__slider-container {
           justify-content: flex-end;
   width: 100%;
   height: 21.875vw;
-  background: radial-gradient(68.04% 84.29% at 0% 0%, #16a9fe 0%, rgba(22, 169, 254, 0) 100%), radial-gradient(93.24% 100% at 45.66% 100%, #0342e7 0%, #cb24ff 77.16%);
+  background: radial-gradient(90.75% 78.93% at 40.93% 85.95%, rgba(3, 66, 231, 0.9) 0%, rgba(3, 66, 231, 0) 100%), radial-gradient(86.4% 76.86% at 0% 7.02%, rgba(22, 169, 254, 0.95) 0%, rgba(22, 169, 254, 0) 100%), #cb24ff;
 }
 
 body .wrapper .features .features__slider .features__slider-container #c1 {
-  position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -2667,9 +2666,11 @@ body .wrapper .features .features__slider .features__slider-container #c1 {
 
 body .wrapper .features .features__slider .features__slider-container::before {
   position: absolute;
+  left: 0;
+  top: 0;
   content: "";
   width: 100%;
-  height: 100%;
+  height: 22vw;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 11, 12, 0)), to(#0b0b0c));
   background: linear-gradient(180deg, rgba(11, 11, 12, 0) 0%, #0b0b0c 100%);
 }
@@ -2823,9 +2824,9 @@ body .wrapper .features .features__slider .slider__button .prev::after {
 
 body .wrapper .features .features__slider .slider__button .prev img {
   position: absolute;
-  height: 0.625vw;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  width: 0.521vw;
+  -webkit-transform: rotate(180deg) translateX(0.052vw);
+          transform: rotate(180deg) translateX(0.052vw);
   z-index: 1;
 }
 
@@ -2880,8 +2881,10 @@ body .wrapper .features .features__slider .slider__button .next::after {
 
 body .wrapper .features .features__slider .slider__button .next img {
   position: absolute;
-  height: 0.625vw;
+  width: 0.521vw;
   z-index: 1;
+  -webkit-transform: translateX(1px);
+          transform: translateX(1px);
 }
 
 body .wrapper .features .features__slider .slider__plagination {
@@ -3094,6 +3097,7 @@ body .wrapper .vision .vision__sticky .vision__content .container__stage .vision
 }
 
 body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container .descripcion-item p {
+  margin: 0.781vw 0 0 0;
   font-family: "Barlow";
   font-style: normal;
   font-weight: 300;
@@ -3103,7 +3107,7 @@ body .wrapper .vision .vision__sticky .vision__content .container__stage .vision
 }
 
 body .wrapper .tokenomics {
-  padding: 6.771vw 0 0;
+  padding: 6.771vw 0 3.646vw 0;
   height: 48.698vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3124,6 +3128,10 @@ body .wrapper .tokenomics::after {
   background-image: url(../img/tokenomics/slider-bg.svg);
   background-repeat: no-repeat;
   background-size: 42.604vw auto;
+}
+
+body .wrapper .tokenomics .tokenomics__left-block {
+  z-index: 1;
 }
 
 body .wrapper .tokenomics .tokenomics__left-block .tokenomics__title {
@@ -3603,6 +3611,7 @@ body .wrapper .contacts .footer-contact .footer-contact__item {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 1;
 }
 
 body .wrapper .contacts .footer-contact .footer-contact__item::before {
