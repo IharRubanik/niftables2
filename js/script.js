@@ -1,3 +1,5 @@
+
+
 let body = document.querySelector(".body");
 let process = document.querySelector(".process");
 
@@ -37,15 +39,15 @@ window.addEventListener("scroll", function() {
     height = sticky.scrollHeight;
 
   let i = 0;
-  scroll < 1 * (height / 6) - 600
+  scroll < 1 * (height / 6) - 400
     ? (i = 0)
-    : scroll < 2 * (height / 6) - 600
+    : scroll < 2 * (height / 6) - 400
     ? (i = 1)
-    : scroll < 3 * (height / 6) - 600
+    : scroll < 3 * (height / 6) - 400
     ? (i = 2)
-    : scroll < 4 * (height / 6) - 600
+    : scroll < 4 * (height / 6) - 400
     ? (i = 3)
-    : scroll < 5 * (height / 6) - 600
+    : scroll < 5 * (height / 6) - 400
     ? (i = 4)
     : (i = 5);
 
@@ -291,17 +293,98 @@ function vision() {
 // Vision
 
 const wrapper = document.querySelector('.vision'),
-			block = document.querySelector('.vision__content');   
-      const visionLine = document.querySelector('#line_purpure');
-      
-     window.addEventListener('scroll', function() {
-      // console.log('wrap',wrapper.getBoundingClientRect())
-      // console.log('block',block.getBoundingClientRect())
-      block.style.transform = `translateX(${wrapper.getBoundingClientRect().y + block.getBoundingClientRect().y}px)`
+			block = document.querySelector('.vision__content'),
+			block_caption = document.querySelector('.vision__content h3'),
+      visionLine = document.querySelector('#line_purpure'),
+      planetTitles = document.querySelectorAll('.planet-wrapper .planet');
 
-      visionLine.style.strokeDashoffset = 10869 - block.getBoundingClientRect().y
-      // console.log(10869 - block.getBoundingClientRect().y)
+     window.addEventListener('scroll', function() {
+
+      let containerStageWidth = document.querySelector('.container__stage').clientWidth,
+          stageScrolled = -1 * (wrapper.getBoundingClientRect().y + block.getBoundingClientRect().y + block_caption.clientWidth);
+          percentScrolled = stageScrolled / (containerStageWidth/100);
+          visionLineWidth = document.querySelector('.vision-line').clientWidth;
+
+      console.log(Math.floor(percentScrolled,'%'));
+
+      // VISION CONTENT MOTION
+      block.style.transform = `translateX(${wrapper.getBoundingClientRect().y + block.getBoundingClientRect().y}px)`
+      // SVG PROGRESS
+      visionLine.style.strokeDashoffset = 9469 - (percentScrolled - 10) * (9469/100);
+
+      if (percentScrolled >= 16) {
+        planetTitles[0].classList.add('active');
+        document.querySelector('#triangle1').style.opacity = 0;
+        document.querySelector('#triangle1-1').style.opacity = 1;
+      } else {
+        planetTitles[0].classList.remove('active');
+        document.querySelector('#triangle1').style.opacity = 1;
+        document.querySelector('#triangle1-1').style.opacity = 0;
+      }
+
+      if (percentScrolled >= 30.5) {
+        planetTitles[1].classList.add('active');
+        document.querySelector('#triangle2').style.opacity = 0;
+        document.querySelector('#triangle2-2').style.opacity = 1;
+      } else {
+        planetTitles[1].classList.remove('active');
+        document.querySelector('#triangle2').style.opacity = 1;
+        document.querySelector('#triangle2-2').style.opacity = 0;
+      }
+
+      if (percentScrolled >= 45.3) {
+        planetTitles[2].classList.add('active');
+        document.querySelector('#triangle3').style.opacity = 0;
+        document.querySelector('#triangle3-3').style.opacity = 1;
+      } else {
+        planetTitles[2].classList.remove('active');
+        document.querySelector('#triangle3').style.opacity = 1;
+        document.querySelector('#triangle3-3').style.opacity = 0;
+      }
+
+      if (percentScrolled >= 60) {
+        planetTitles[3].classList.add('active');
+        document.querySelector('#triangle4').style.opacity = 0;
+        document.querySelector('#triangle4-4').style.opacity = 1;
+      } else {
+        planetTitles[3].classList.remove('active');
+        document.querySelector('#triangle4').style.opacity = 1;
+        document.querySelector('#triangle4-4').style.opacity = 0;
+      }
+
+      if (percentScrolled >= 74.7) {
+        planetTitles[4].classList.add('active');
+        document.querySelector('#triangle5').style.opacity = 0;
+        document.querySelector('#triangle5-5').style.opacity = 1;
+      } else {
+        planetTitles[4].classList.remove('active');
+        document.querySelector('#triangle5').style.opacity = 1;
+        document.querySelector('#triangle5-5').style.opacity = 0;
+      }
+
+      if (percentScrolled >= 89.3) {
+        planetTitles[5].classList.add('active');
+        document.querySelector('#triangle6').style.opacity = 0;
+        document.querySelector('#triangle6-6').style.opacity = 1;
+      } else {
+        planetTitles[5].classList.remove('active');
+        document.querySelector('#triangle6').style.opacity = 1;
+        document.querySelector('#triangle6-6').style.opacity = 0;
+      }
+
+      if (percentScrolled >= 104.2) {
+        planetTitles[6].classList.add('active');
+        document.querySelector('#triangle7').style.opacity = 0;
+        document.querySelector('#triangle7-7').style.opacity = 1;
+      } else {
+        planetTitles[6].classList.remove('active');
+        document.querySelector('#triangle7').style.opacity = 1;
+        document.querySelector('#triangle7-7').style.opacity = 0;
+      }
      })
+
+   
+    
 
 
 

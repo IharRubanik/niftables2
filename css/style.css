@@ -876,10 +876,7 @@
   0% {
     opacity: 1;
   }
-  45% {
-    opacity: 0;
-  }
-  55% {
+  50% {
     opacity: 0;
   }
   100% {
@@ -891,10 +888,7 @@
   0% {
     opacity: 1;
   }
-  45% {
-    opacity: 0;
-  }
-  55% {
+  50% {
     opacity: 0;
   }
   100% {
@@ -1906,7 +1900,7 @@ body .wrapper .about .about__flex .about-circle::after {
 }
 
 body .wrapper .process .process-container .process-parent {
-  height: 312.5vw;
+  height: 364.583vw;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2883,8 +2877,8 @@ body .wrapper .features .features__slider .slider__button .next img {
   position: absolute;
   width: 0.521vw;
   z-index: 1;
-  -webkit-transform: translateX(1px);
-          transform: translateX(1px);
+  -webkit-transform: translateX(0.052vw);
+          transform: translateX(0.052vw);
 }
 
 body .wrapper .features .features__slider .slider__plagination {
@@ -2950,8 +2944,17 @@ body .wrapper .vision .vision__sticky .woman-head {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 43.646vw;
-  -webkit-animation: woman 6s linear 1s infinite;
-          animation: woman 6s linear 1s infinite;
+}
+
+body .wrapper .vision .vision__sticky .woman-head2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 43.646vw;
+  -webkit-animation: woman 5s linear 1s infinite;
+          animation: woman 5s linear 1s infinite;
 }
 
 body .wrapper .vision .vision__sticky .vision__content {
@@ -2967,7 +2970,6 @@ body .wrapper .vision .vision__sticky .vision__content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 29.01vw;
 }
 
 body .wrapper .vision .vision__sticky .vision__content h3 {
@@ -2979,6 +2981,7 @@ body .wrapper .vision .vision__sticky .vision__content h3 {
   text-transform: uppercase;
   color: #ffffff;
   white-space: nowrap;
+  padding: 0 29.01vw 0 0;
 }
 
 body .wrapper .vision .vision__sticky .vision__content .container__stage {
@@ -3026,7 +3029,7 @@ body .wrapper .vision .vision__sticky .vision__content .container__stage .planet
 
 body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet strong {
   position: absolute;
-  top: 11.354vw;
+  top: 11vw;
   left: 0;
   font-family: "Akzidenz-Grotesk Pro";
   font-style: normal;
@@ -3035,6 +3038,8 @@ body .wrapper .vision .vision__sticky .vision__content .container__stage .planet
   line-height: 3.49vw;
   text-transform: uppercase;
   color: #ffffff;
+  -webkit-transition: .5s color;
+  transition: .5s color;
 }
 
 body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet img {
@@ -3049,6 +3054,10 @@ body .wrapper .vision .vision__sticky .vision__content .container__stage .planet
           transform: scale(1.65) translateY(-11%);
 }
 
+body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet.active strong {
+  color: #cb24ff;
+}
+
 body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line {
   width: 493.177vw;
   height: auto;
@@ -3056,6 +3065,24 @@ body .wrapper .vision .vision__sticky .vision__content .container__stage .vision
 
 body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #line_purpure {
   stroke-dasharray: 9469;
+}
+
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #triangle1,
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #triangle1-1,
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #triangle2,
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #triangle2-2,
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #triangle3,
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #triangle3-3,
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #triangle4,
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #triangle4-4,
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #triangle5,
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #triangle5-5,
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #triangle6,
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #triangle6-6,
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #triangle7,
+body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line #triangle7-7 {
+  -webkit-transition: .5s opacity;
+  transition: .5s opacity;
 }
 
 body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container {
@@ -3570,6 +3597,200 @@ body .wrapper .partners .partners__gris-item-strong {
   -ms-grid-column: 4;
       grid-column-start: 4;
   grid-column-end: 6;
+}
+
+body .wrapper .media-about {
+  position: relative;
+  background: radial-gradient(90.75% 78.93% at 40.93% 85.95%, rgba(3, 66, 231, 0.9) 0%, rgba(3, 66, 231, 0) 100%), radial-gradient(86.4% 76.86% at 0% 7.02%, rgba(22, 169, 254, 0.95) 0%, rgba(22, 169, 254, 0) 100%), #cb24ff;
+}
+
+body .wrapper .media-about .media-about_container h3 {
+  color: #fff;
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.938vw;
+  line-height: 1.771vw;
+  text-transform: uppercase;
+  position: absolute;
+  -webkit-transform: translateY(-3.906vw);
+          transform: translateY(-3.906vw);
+}
+
+body .wrapper .media-about .media-about_container h3::after {
+  display: block;
+  content: "";
+  height: 1.771vw;
+  width: 0.052vw;
+  border-left: dashed 0.052vw white;
+  -webkit-transform: translateY(0.365vw);
+          transform: translateY(0.365vw);
+}
+
+body .wrapper .media-about .media-about_container .media-about-slider {
+  position: relative;
+  height: 8.073vw;
+  width: 100%;
+}
+
+body .wrapper .media-about .media-about_container .media-about-slider .media-about-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.781vw;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+body .wrapper .media-about .media-about_container .media-about-slider .media-about-wrapper .media-about-slide {
+  width: 8.333vw !important;
+  height: 3.906vw;
+  background: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .wrapper .media-about .media-about_container .media-about-slider .media-about-wrapper .media-about-slide:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .wrapper .media-about .media-about_container .media-about-slider .media-about-wrapper .media-about-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body .wrapper .media-about .prev {
+  position: absolute;
+  top: 50%;
+  left: 8.646vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 0;
+  background: none;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  border: 0.052vw solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .wrapper .media-about .prev:hover {
+  border: 0.052vw solid #0342e7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .wrapper .media-about .prev:hover::after {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+body .wrapper .media-about .prev::after {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0342e7;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  border-radius: 50%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+body .wrapper .media-about .prev img {
+  position: absolute;
+  width: 0.521vw;
+  -webkit-transform: rotate(180deg) translateX(0.052vw);
+          transform: rotate(180deg) translateX(0.052vw);
+  z-index: 1;
+}
+
+body .wrapper .media-about .next {
+  position: absolute;
+  top: 50%;
+  right: 8.646vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 0;
+  background: none;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  border: 0.052vw solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .wrapper .media-about .next:hover {
+  border: 0.052vw solid #0342e7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .wrapper .media-about .next:hover::after {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+body .wrapper .media-about .next::after {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0342e7;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  border-radius: 50%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+body .wrapper .media-about .next img {
+  position: absolute;
+  width: 0.521vw;
+  z-index: 1;
+  -webkit-transform: translateX(0.052vw);
+          transform: translateX(0.052vw);
+}
+
+body .wrapper .contacts {
+  padding: 9.896vw 0 0 0;
 }
 
 body .wrapper .contacts .footer__background {
