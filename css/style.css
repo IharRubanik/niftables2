@@ -2953,8 +2953,8 @@ body .wrapper .vision .vision__sticky .woman-head2 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 43.646vw;
-  -webkit-animation: woman 5s linear 1s infinite;
-          animation: woman 5s linear 1s infinite;
+  -webkit-animation: woman 2s linear 1s infinite;
+          animation: woman 2s linear 1s infinite;
 }
 
 body .wrapper .vision .vision__sticky .vision__content {

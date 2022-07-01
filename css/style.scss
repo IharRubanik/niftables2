@@ -1985,7 +1985,7 @@ body {
           top: 50%;
           transform: translate(-50%, -50%);
           width: 43.646vw;
-          animation: woman 5s linear 1s infinite;
+          animation: woman 2s linear 1s infinite;
         }
         .vision__content {
           transform: translateX(0%);
@@ -2830,4 +2830,7 @@ body {
       }
     }
   }
+}
+@media (max-width: 1024px) {
+
 }
