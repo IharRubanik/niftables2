@@ -314,7 +314,7 @@
     width: 1.563vw;
   }
   body .wrapper .main {
-    height: 75.879vw;
+    height: 72.559vw;
     padding: 19.043vw 2.93vw 0 2.93vw;
   }
   body .wrapper .main .main-info .main-info__text span {
@@ -378,7 +378,7 @@
     bottom: 2.93vw;
   }
   body .wrapper .about {
-    padding: 2.93vw 2.93vw 14.531vw 2.93vw;
+    padding: 4.395vw 2.93vw 14.531vw 2.93vw;
   }
   body .wrapper .about .about-text {
     font-size: 3.516vw;
@@ -433,7 +433,7 @@
     height: 33.691vw;
   }
   body .wrapper .process {
-    padding: 5vw 0 11.72vw 0;
+    padding: 5vw 0 9.766vw 0;
   }
   body .wrapper .process .process-container .process-parent {
     height: 49.414vw;
@@ -556,8 +556,8 @@
             transform: scale(0.8);
   }
   body .wrapper .features {
-    padding: 0;
-    height: 98.633vw;
+    padding: 1.953vw 0 0 0;
+    height: 97.633vw;
   }
   body .wrapper .features .features__title {
     font-size: 3.711vw;
@@ -567,7 +567,7 @@
     z-index: 1;
   }
   body .wrapper .features .features__background-title {
-    top: 11.719vw;
+    top: 1.953vw;
     right: 0.293vw;
     left: auto;
     font-size: 14.355vw;
@@ -625,40 +625,40 @@
     line-height: 1.855vw;
   }
   body .wrapper .features .features-customization {
-    top: 41.699vw;
+    top: 29.98vw;
     left: 6.348vw;
   }
   body .wrapper .features .features-control {
-    left: 68.652vw;
-    top: 29.688vw;
+    top: 54.101vw;
+    left: 6.348vw;
   }
   body .wrapper .features .features-utility {
     left: 6.348vw;
-    top: 53.711vw;
+    top: 41.992vw;
   }
   body .wrapper .features .features-creativity {
     left: 68.652vw;
-    top: 17.676vw;
+    top: 5.957vw;
   }
   body .wrapper .features .features-redeem {
-    top: 65.82vw;
-    left: 6.348vw;
+    left: 68.652vw;
+    top: 17.969vw;
   }
   body .wrapper .features .features-service {
-    top: 29.688vw;
+    top: 17.969vw;
     left: 41.211vw;
   }
   body .wrapper .features .features-royalties {
-    top: 77.832vw;
+    top: 66.113vw;
     left: 6.348vw;
   }
   body .wrapper .features .features-streams {
-    top: 41.699vw;
+    top: 29.98vw;
     left: 41.211vw;
   }
   body .wrapper .features .features__slider {
     right: 2.93vw;
-    top: 53.516vw;
+    top: 41.797vw;
     width: 55.859vw;
     height: 44.629vw;
   }
@@ -689,8 +689,8 @@
             animation: 1s features-slide-img-prev-mobile;
   }
   body .wrapper .features .features__slider .features__slider-container .slider-item.active-reverse img {
-    -webkit-animation: 1s features-slide-img-active-reverse-mobile forwards;
-            animation: 1s features-slide-img-active-reverse-mobile forwards;
+    -webkit-animation: 1s features-slide-img-active-reverse-mobile forwards;
+            animation: 1s features-slide-img-active-reverse-mobile forwards;
   }
   body .wrapper .features .features__slider .slider__button {
     top: 2.637vw;
@@ -739,7 +739,7 @@
   }
   body .wrapper .vision {
     height: auto;
-    padding: 12.695vw 0 0 0;
+    padding: 9.766vw 0 2.441vw 0;
   }
   body .wrapper .vision .vision-line-tablet {
     display: block;
@@ -908,6 +908,10 @@
   body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet:nth-child(5) {
     height: 18.555vw;
   }
+  body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet:nth-child(5) span {
+    -webkit-transform: translateY(-2.637vw);
+            transform: translateY(-2.637vw);
+  }
   body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet:nth-child(5) strong {
     top: 4.395vw;
   }
@@ -996,12 +1000,12 @@
     width: 71.289vw;
     height: 76.262vw;
     background-size: 68.359vw auto;
-    top: 19.141vw;
+    top: 25.141vw;
     left: -6.25vw;
   }
   body .wrapper .tokenomics .tokenomics__left-block #c2 {
     left: 0;
-    top: 58.594vw;
+    top: 62.594vw;
     width: 100%;
     height: 17.09vw;
   }
@@ -1010,7 +1014,7 @@
     line-height: 4.785vw;
   }
   body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider {
-    top: 59.277vw;
+    top: 64.5vw;
     left: 30.078vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1090,7 +1094,7 @@
     gap: 2.051vw;
     margin: 0;
     position: absolute;
-    top: 9.766vw;
+    top: 14.766vw;
     left: 10.742vw;
   }
   body .wrapper .tokenomics .tokenomics__right-block .tokenomics__items-container {
@@ -1122,7 +1126,7 @@
     bottom: auto;
   }
   body .wrapper .partners {
-    padding: 0 2.93vw 14.648vw 2.93vw;
+    padding: 4.883vw 2.93vw 16.9vw 2.93vw;
     grid-gap: 1.465vw;
     -ms-grid-rows: (8.301vw)[5];
         grid-template-rows: repeat(5, 8.301vw);
@@ -1175,7 +1179,7 @@
     display: none;
   }
   body .wrapper .contacts {
-    padding: 14.648vw 2.93vw 0 2.93vw;
+    padding: 11.2vw 2.93vw 0 2.93vw;
   }
   body .wrapper .contacts .footer__background {
     width: 65.039vw;
