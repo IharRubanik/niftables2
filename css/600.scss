@@ -260,31 +260,73 @@
                 display: none;
               }
               .header-subscribe__block {
-                width: 100%;
-                padding: 6.667vw 6.667vw 7.467vw 6.667vw;
+                margin: 82px 0 0 0;
+                width: 345px;
+                height: 207px;
+                padding: 26px 28px 28px 28px;
                 strong {
-                  font-size: 5.333vw;
+                  font-size: 20px;
+                  line-height: 26px;
                 }
                 span {
-                  margin: 1.333vw 0 0 0;
-                  font-size: 4vw;
+                  margin: 5px 0 0 0;
+                  font-size: 15px;
+                  line-height: 19px;
+                }
+                p {
+                  transform: translateY(0);
+                  text-align: left;
+                  font-size: 18px;
+                  line-height: 22px;
+                  margin: 12px 0 0 0;
                 }
                 .form__container {
-                  margin: 16.267vw 0 0 0;
-                  gap: 2.845vw;
+                  margin: 27px 0 0 0;
+                  gap: 27px;
                   input {
-                    font-size: 4.267vw;
-                    width: 100%;
+                    font-size: 16px;
+                    line-height: 19px;
+                    border-radius: 0;
+                    border-bottom: 1px solid #fff;
+                    &::placeholder {
+                      transform: translateY(-5px);
+                    }
                   }
                   button {
-                    width: 11.733vw;
-                    height: 11.733vw;
+                    width: 44px;
+                    height: 44px;
                     img {
-                      width: 4.267vw;
+                      width: 16px;
                     }
                   }
                 }
               }
+              // .header-subscribe__block {
+              //   width: 100%;
+              //   padding: 6.667vw 6.667vw 7.467vw 6.667vw;
+              //   strong {
+              //     font-size: 5.333vw;
+              //   }
+              //   span {
+              //     margin: 1.333vw 0 0 0;
+              //     font-size: 4vw;
+              //   }
+              //   .form__container {
+              //     margin: 16.267vw 0 0 0;
+              //     gap: 2.845vw;
+              //     input {
+              //       font-size: 4.267vw;
+              //       width: 100%;
+              //     }
+              //     button {
+              //       width: 11.733vw;
+              //       height: 11.733vw;
+              //       img {
+              //         width: 4.267vw;
+              //       }
+              //     }
+              //   }
+              // }
             }
           }
         }
@@ -953,13 +995,13 @@
           .footer-contact__item {
             padding: 28px 0 0 28px;
             width: 343px;
-            &::before{
+            &::before {
               width: 18px;
               height: 18px;
               border-top: 1px solid #ffffff;
               border-left: 1px solid #ffffff;
             }
-            strong{
+            strong {
               font-size: 20px;
               line-height: 30px;
             }
@@ -968,16 +1010,27 @@
               line-height: 26px;
               margin: 8px 0 0 0;
             }
-            a{
+            a {
               padding: 0 0 5px 34px;
               font-size: 20px;
               line-height: 30px;
               background-size: 21px 14px;
+              &:hover {
+                span {
+                  border-bottom: 1px solid #cb24ff;
+                }
+              }
+              span {
+                line-height: 30px;
+                padding-bottom: 5px;
+                border-bottom: 1px solid rgba(203, 36, 255, 0.2);
+              }
             }
           }
         }
         .foorer__container {
           margin: 62px 0 0 0;
+          padding: 0px;
           .footer-subscribe__linkblock {
             span {
               width: 70px;
@@ -988,6 +1041,63 @@
               width: 128px;
               height: 128px;
               border: 1px solid #fff;
+              font-size: 12px;
+              line-height: 15px;
+              &::before {
+                top: 27px;
+                left: 8px;
+                width: 56px;
+                height: 13px;
+                background-size: 56px;
+              }
+              svg {
+                width: 14px;
+                height: auto;
+                padding: 6px;
+                bottom: 19px;
+              }
+            }
+          }
+          .header-subscribe__block {
+            margin: 82px 0 0 0;
+            width: 345px;
+            height: 207px;
+            padding: 26px 28px 28px 28px;
+            strong {
+              font-size: 20px;
+              line-height: 26px;
+            }
+            span {
+              margin: 5px 0 0 0;
+              font-size: 15px;
+              line-height: 19px;
+            }
+            p {
+              transform: translateY(0);
+              text-align: left;
+              font-size: 18px;
+              line-height: 22px;
+              margin: 12px 0 0 0;
+            }
+            .form__container {
+              margin: 27px 0 0 0;
+              gap: 27px;
+              input {
+                font-size: 16px;
+                line-height: 19px;
+                border-radius: 0;
+                border-bottom: 1px solid #fff;
+                &::placeholder {
+                  transform: translateY(-5px);
+                }
+              }
+              button {
+                width: 44px;
+                height: 44px;
+                img {
+                  width: 16px;
+                }
+              }
             }
           }
         }

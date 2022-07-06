@@ -1799,6 +1799,19 @@ body .wrapper .header .header-content .header-content__inner .header-subscribe .
   text-transform: uppercase;
 }
 
+body .wrapper .header .header-content .header-content__inner .header-subscribe .header-subscribe__block p {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #ffffff;
+  opacity: 0.5;
+  -webkit-transform: translateY(-62px);
+          transform: translateY(-62px);
+}
+
 body .wrapper .header .header-content .header-content__inner .header-subscribe .header-subscribe__block .form__container {
   margin: 2.083vw 0 0 0;
   display: -webkit-box;
