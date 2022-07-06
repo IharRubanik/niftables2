@@ -362,6 +362,7 @@ function scrollTo(element) {
   });
 }
 
+// Scroll script
 document.querySelectorAll('.scroll-link').forEach(el => el.addEventListener('click', function(e) {
   e.preventDefault();
   scrollTo(document.getElementById(`${el.href.split('#')[1]}`));
