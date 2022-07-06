@@ -14,11 +14,25 @@
 //# sourceMappingURL=swiper-bundle.min.js.map
 
 new Swiper(".media-about-slider", {
-    slidesPerView: 8,
-    loop: true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
+    spaceBetween: 18,
+    loop: true,
     speed: 800,
+    breakpoints: {
+        1025: {
+            slidesPerView: 8,
+            spaceBetween: 18,
+        },
+        601: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+        },
+        200: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        }
+    }
   });
