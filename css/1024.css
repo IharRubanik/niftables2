@@ -1,4 +1,26 @@
 @media (max-width: 1024px) {
+  @-webkit-keyframes nft-gradient-text {
+    0% {
+      background-position: -42.499vw;
+    }
+    70% {
+      background-position: 44.499vw;
+    }
+    100% {
+      background-position: 42.499vw;
+    }
+  }
+  @keyframes nft-gradient-text {
+    0% {
+      background-position: -42.499vw;
+    }
+    70% {
+      background-position: 44.499vw;
+    }
+    100% {
+      background-position: 42.499vw;
+    }
+  }
   .container {
     width: 100%;
     margin: 0 auto;

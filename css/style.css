@@ -2173,10 +2173,13 @@ body .wrapper .main .main-info .main-info__text b {
   background: radial-gradient(50.1% 194.12% at 0% 0%, #16a9fe 0%, rgba(22, 169, 254, 0) 100%), radial-gradient(43.79% 213.24% at 35.23% 88.24%, #0342e7 0%, #cb24ff 100%) #fff;
   background-repeat: no-repeat;
   background-position: -33.333vw;
-  -webkit-animation: nft-gradient-text 6s linear infinite;
-          animation: nft-gradient-text 6s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+body .wrapper .main .main-info .main-info__text b.active {
+  -webkit-animation: nft-gradient-text 6s linear infinite;
+          animation: nft-gradient-text 6s linear infinite;
 }
 
 body .wrapper .main .main-info .main-info__bottom {

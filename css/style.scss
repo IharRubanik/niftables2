@@ -1180,9 +1180,12 @@ body {
                   #cb24ff 100%
                 )
                 #fff;
+            &.active {
+              animation: nft-gradient-text 6s linear infinite;
+            }
             background-repeat: no-repeat;
             background-position: -33.333vw;
-            animation: nft-gradient-text 6s linear infinite;
+            
 
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

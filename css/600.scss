@@ -1,4 +1,17 @@
 @media (max-width: 600px) {
+
+  @keyframes nft-gradient-text {
+    0% {
+      background-position: -90.05vw;
+    }
+    70% {
+      background-position: 90.512vw;
+    }
+    100% {
+      background-position: 90.05vw;
+    }
+  }
+
   .container {
     padding-left: 4vw;
     padding-right: 4vw;

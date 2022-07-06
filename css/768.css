@@ -1,4 +1,26 @@
 @media (max-width: 768px) {
+  @-webkit-keyframes nft-gradient-text {
+    0% {
+      background-position: -56.665vw;
+    }
+    70% {
+      background-position: 59.332vw;
+    }
+    100% {
+      background-position: 56.665vw;
+    }
+  }
+  @keyframes nft-gradient-text {
+    0% {
+      background-position: -56.665vw;
+    }
+    70% {
+      background-position: 59.332vw;
+    }
+    100% {
+      background-position: 56.665vw;
+    }
+  }
   body .wrapper .background {
     height: 101.215vw;
     top: 0;
