@@ -3,6 +3,23 @@
     padding-left: 4vw;
     padding-right: 4vw;
   }
+  body .wrapper .preloader .preloader__container {
+    gap: 14.65px;
+  }
+  body .wrapper .preloader .preloader__container svg {
+    width: 54px;
+  }
+  body .wrapper .preloader .preloader__container .preloader__title h2 {
+    font-size: 21.3px;
+    line-height: 27px;
+  }
+  body .wrapper .preloader .preloader__container .preloader__title span {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  body .wrapper .preloader .preloader-loading {
+    width: 32px;
+  }
   body .wrapper .background {
     height: 207.288vw;
     top: 0;

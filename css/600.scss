@@ -5,6 +5,27 @@
   }
   body {
     .wrapper {
+      .preloader {
+        .preloader__container {
+          gap: 14.65px;
+          svg {
+            width: 54px;
+          }
+          .preloader__title {
+            h2 {
+              font-size: 21.3px;
+              line-height: 27px;
+            }
+            span {
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+        }
+        .preloader-loading {
+          width: 32px;
+        }
+      }
       .background {
         height: 207.288vw;
         top: 0;
