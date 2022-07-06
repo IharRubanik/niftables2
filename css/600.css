@@ -227,7 +227,7 @@
   }
   body .wrapper .header .header-content .header-content__inner {
     width: 100%;
-    gap: 13.333vw;
+    gap: 12vw;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -266,7 +266,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 5.333vw;
+    gap: 9.333vw;
   }
   body .wrapper .header .header-content .header-content__inner .header-contact .header-contact__item {
     padding: 6.933vw 0 0 7.733vw;
@@ -304,9 +304,9 @@
     display: none;
   }
   body .wrapper .header .header-content .header-content__inner .header-subscribe .header-subscribe__block {
-    margin: 21.867vw 0 0 0;
+    margin: 0;
     width: 92vw;
-    height: 55.2vw;
+    height: auto;
     padding: 6.933vw 7.467vw 7.467vw 7.467vw;
   }
   body .wrapper .header .header-content .header-content__inner .header-subscribe .header-subscribe__block strong {

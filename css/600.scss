@@ -197,7 +197,7 @@
           overflow-y: scroll;
           .header-content__inner {
             width: 100%;
-            gap: 13.333vw;
+            gap: 12vw;
             justify-content: flex-start;
             flex-direction: column;
             .header-content__nav {
@@ -222,7 +222,7 @@
             }
             .header-contact {
               flex-direction: column;
-              gap: 5.333vw;
+              gap: 9.333vw;
               .header-contact__item {
                 padding: 6.933vw 0 0 7.733vw;
                 width: 93.333vw;
@@ -259,9 +259,9 @@
                 display: none;
               }
               .header-subscribe__block {
-                margin: 21.867vw 0 0 0;
+                margin: 0;
                 width: 92vw;
-                height: 55.2vw;
+                height: auto;
                 padding: 6.933vw 7.467vw 7.467vw 7.467vw;
                 strong {
                   font-size: 5.333vw;
