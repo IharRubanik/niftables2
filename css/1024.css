@@ -99,7 +99,7 @@
   body .wrapper .header .header-inner .header-logo {
     height: 5.859vw;
     width: 5.859vw;
-    border-bottom: #0b0b0c 0.052vw solid;
+    border-bottom: 0;
   }
   body .wrapper .header .header-inner .header-logo img {
     width: 4.199vw;
@@ -378,7 +378,7 @@
     bottom: 2.93vw;
   }
   body .wrapper .about {
-    padding: 2.93vw 2.93vw 19.531vw 2.93vw;
+    padding: 2.93vw 2.93vw 14.531vw 2.93vw;
   }
   body .wrapper .about .about-text {
     font-size: 3.516vw;
@@ -431,6 +431,9 @@
   body .wrapper .about .about__flex .about-circle::after {
     width: 33.691vw;
     height: 33.691vw;
+  }
+  body .wrapper .process {
+    padding: 5vw 0 11.72vw 0;
   }
   body .wrapper .process .process-container .process-parent {
     height: 49.414vw;
@@ -553,7 +556,7 @@
             transform: scale(0.8);
   }
   body .wrapper .features {
-    padding: 11.719vw 0 0 0;
+    padding: 0;
     height: 98.633vw;
   }
   body .wrapper .features .features__title {
@@ -686,8 +689,8 @@
             animation: 1s features-slide-img-prev-mobile;
   }
   body .wrapper .features .features__slider .features__slider-container .slider-item.active-reverse img {
-    -webkit-animation: 1s features-slide-img-active-reverse-mobile forwards;
-            animation: 1s features-slide-img-active-reverse-mobile forwards;
+    -webkit-animation: 1s features-slide-img-active-reverse-mobile forwards;
+            animation: 1s features-slide-img-active-reverse-mobile forwards;
   }
   body .wrapper .features .features__slider .slider__button {
     top: 2.637vw;
@@ -986,7 +989,7 @@
     line-height: 1.44;
   }
   body .wrapper .tokenomics {
-    padding: 0 2.93vw 0 2.93vw;
+    padding: 5vw 2.93vw 0 2.93vw;
     height: 97.656vw;
   }
   body .wrapper .tokenomics::after {

@@ -84,7 +84,6 @@
           .header-logo {
             height: 7.813vw;
             width: 7.813vw;
-            border-bottom: #0b0b0c 0.069vw solid;
             img {
               width: 5.599vw;
             }
@@ -386,6 +385,7 @@
         }
       }
       .process {
+        padding: 5vw 0 9.345vw 0;
         .process-container {
           .process-parent {
             height: 65.885vw;
@@ -505,7 +505,7 @@
         }
       }
       .features {
-        padding: 15.625vw 0 0 0;
+        padding: 5vw 0 0 0;
         height: 156.25vw;
         .features__title {
           font-size: 4.948vw;
@@ -701,7 +701,7 @@
       }
       .vision {
         height: auto;
-        padding: 16.927vw 0 0 0;
+        padding: 16.927vw 0 14vw 0;
         .vision__sticky {
           .woman-head {
             width: 60.156vw;
@@ -844,7 +844,7 @@
       }
       .tokenomics {
         height: 169.271vw;
-        padding: 19.531vw 3.906vw 0 3.906vw;
+        padding: 5.531vw 3.906vw 0 3.906vw;
         &::after {
           width: 95.052vw;
           height: 101.682vw;

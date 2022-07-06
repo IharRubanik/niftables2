@@ -88,7 +88,6 @@
   body .wrapper .header .header-inner .header-logo {
     height: 7.813vw;
     width: 7.813vw;
-    border-bottom: #0b0b0c 0.069vw solid;
   }
   body .wrapper .header .header-inner .header-logo img {
     width: 5.599vw;
@@ -422,6 +421,9 @@
     width: 44.922vw;
     height: 44.922vw;
   }
+  body .wrapper .process {
+    padding: 5vw 0 9.345vw 0;
+  }
   body .wrapper .process .process-container .process-parent {
     height: 65.885vw;
   }
@@ -441,7 +443,7 @@
     gap: 0.781vw;
   }
   body .wrapper .process .process-container .process-parent .process-parent__sticky .process-parent__sticky-container .process-parent__item .process-parent__container img {
-    width: 90.002px;
+    width: 11.719vw;
   }
   body .wrapper .process .process-container .process-parent .process-parent__sticky .process-parent__sticky-container .process-parent__item .process-parent__container .process-parent__descripcion {
     width: 36.458vw;
@@ -534,7 +536,7 @@
             transform: scale(1.3);
   }
   body .wrapper .features {
-    padding: 15.625vw 0 0 0;
+    padding: 5vw 0 0 0;
     height: 156.25vw;
   }
   body .wrapper .features .features__title {
@@ -732,7 +734,7 @@
   }
   body .wrapper .vision {
     height: auto;
-    padding: 16.927vw 0 0 0;
+    padding: 16.927vw 0 14vw 0;
   }
   body .wrapper .vision .vision__sticky .woman-head {
     width: 60.156vw;
@@ -869,7 +871,7 @@
   }
   body .wrapper .tokenomics {
     height: 169.271vw;
-    padding: 19.531vw 3.906vw 0 3.906vw;
+    padding: 5.531vw 3.906vw 0 3.906vw;
   }
   body .wrapper .tokenomics::after {
     width: 95.052vw;

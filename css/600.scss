@@ -75,7 +75,7 @@
         .header-name {
           position: absolute;
           display: flex;
-          top: 4vw;
+          top: 3.5vw;
           left: 17.867vw;
           gap: 0;
           flex-direction: column;
@@ -118,7 +118,7 @@
             gap: 1.6vw;
             width: 24vw;
             order: 3;
-            top: -1.6vw;
+            top: -1.333vw;
             right: 1.333vw;
             transform: rotate(90deg);
             width: 13.333vw;
@@ -169,8 +169,8 @@
             left: 0;
             height: 13.333vw;
             background: #000;
-            width: 100%;
-            padding: 0 27.5vw 0 10.667vw;
+            width: calc(100% - 16vw);
+            padding: 0 10.667vw;
             transition: 0.6s transform;
             z-index: 1;
             .header-list__item {
@@ -1259,4 +1259,10 @@
       }
     }
   }
+
+  canvas#c3 {
+    height: calc(100% + 50vw);
+  }
+
 }
+
