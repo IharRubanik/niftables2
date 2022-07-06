@@ -618,3 +618,6 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
         block.style.transform = `translateX(0px)`
       }
     })
+
+
+    // Коммент добавил Игорь
