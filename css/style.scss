@@ -556,6 +556,10 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: .5s opacity;
+      &.remove {
+        opacity: 0;
+      }
       .preloader__container {
         display: flex;
         align-items: center;
@@ -693,8 +697,10 @@ body {
         width: 44.74vw;
         z-index: 1;
         opacity: 0;
-        animation: 1s triangle-purple 1.5s linear forwards,
+        &.active {
+          animation: 1s triangle-purple 1.5s linear forwards,
           12s triangle-purple-active 3.5s linear infinite;
+        }
       }
       .blue-triangle {
         width: 30.625vw;
@@ -703,8 +709,10 @@ body {
         left: 55.833vw;
         z-index: 1;
         opacity: 0;
-        animation: 1s triangle-blue 2.5s linear forwards,
+        &.active {
+          animation: 1s triangle-blue 2.5s linear forwards,
           12s triangle-blue-active 3.5s linear infinite;
+        }
       }
       .city {
         position: absolute;

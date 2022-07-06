@@ -1,3 +1,20 @@
+window.addEventListener('DOMContentLoaded', function() {
+  
+  window.addEventListener('load', function() {
+
+    function ifPreloaderLoad() {
+      document.querySelector('.preloader').classList.add('remove');
+      document.querySelector('.blue-triangle').classList.add('active');
+      document.querySelector('.purple-triangle').classList.add('active');
+    }
+    function removePreloader() {
+      document.querySelector('.preloader').remove();
+    }
+
+    setTimeout(ifPreloaderLoad, 3000);
+    setTimeout(removePreloader, 3500);
+  })
+
 let body = document.querySelector(".body");
 let process = document.querySelector(".process");
 
@@ -622,3 +639,4 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
 
 
     // Коммент добавил Игорь
+})
