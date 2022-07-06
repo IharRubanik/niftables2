@@ -93,7 +93,7 @@
           .header-logo {
             height: 5.859vw;
             width: 5.859vw;
-            border-bottom: #0b0b0c 0.052vw solid;
+            border-bottom: 0;
             img {
               width: 4.199vw;
             }
@@ -342,7 +342,7 @@
         }
       }
       .about {
-        padding: 2.93vw 2.93vw 19.531vw 2.93vw;
+        padding: 2.93vw 2.93vw 14.531vw 2.93vw;
         .about-text {
           font-size: 3.516vw;
           line-height: 4.199vw;
@@ -395,6 +395,7 @@
         }
       }
       .process {
+        padding: 5vw 0 11.72vw 0;
         .process-container {
           .process-parent {
             height: 49.414vw;
@@ -520,7 +521,7 @@
         }
       }
       .features {
-        padding: 11.719vw 0 0 0;
+        padding: 0;
         height: 98.633vw;
         .features__title {
           font-size: 3.711vw;
@@ -929,7 +930,7 @@
         }
       }
       .tokenomics {
-        padding: 0 2.93vw 0 2.93vw;
+        padding: 5vw 2.93vw 0 2.93vw;
         height: 97.656vw;
         &::after {
           width: 71.289vw;
