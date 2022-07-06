@@ -1322,6 +1322,12 @@ body .wrapper .preloader {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: .5s opacity;
+  transition: .5s opacity;
+}
+
+body .wrapper .preloader.remove {
+  opacity: 0;
 }
 
 body .wrapper .preloader .preloader__container {
@@ -1496,8 +1502,11 @@ body .wrapper .background .purple-triangle {
   width: 44.74vw;
   z-index: 1;
   opacity: 0;
-  -webkit-animation: 1s triangle-purple 1.5s linear forwards, 12s triangle-purple-active 3.5s linear infinite;
-          animation: 1s triangle-purple 1.5s linear forwards, 12s triangle-purple-active 3.5s linear infinite;
+}
+
+body .wrapper .background .purple-triangle.active {
+  -webkit-animation: 1s triangle-purple 1.5s linear forwards, 12s triangle-purple-active 3.5s linear infinite;
+          animation: 1s triangle-purple 1.5s linear forwards, 12s triangle-purple-active 3.5s linear infinite;
 }
 
 body .wrapper .background .blue-triangle {
@@ -1507,8 +1516,11 @@ body .wrapper .background .blue-triangle {
   left: 55.833vw;
   z-index: 1;
   opacity: 0;
-  -webkit-animation: 1s triangle-blue 2.5s linear forwards, 12s triangle-blue-active 3.5s linear infinite;
-          animation: 1s triangle-blue 2.5s linear forwards, 12s triangle-blue-active 3.5s linear infinite;
+}
+
+body .wrapper .background .blue-triangle.active {
+  -webkit-animation: 1s triangle-blue 2.5s linear forwards, 12s triangle-blue-active 3.5s linear infinite;
+          animation: 1s triangle-blue 2.5s linear forwards, 12s triangle-blue-active 3.5s linear infinite;
 }
 
 body .wrapper .background .city {
@@ -3533,7 +3545,7 @@ body .wrapper .vision .vision__sticky .vision__content .container__stage .planet
   line-height: 16.51vw;
   text-transform: uppercase;
   opacity: 0.1;
-  text-shadow: white 0vw 0.052vw 0px, white 0vw -0.052vw 0px, white 0.052vw 0vw 0px, white -0.052vw 0vw 0px, white 0.052vw 0.052vw 0px, white 0.052vw -0.052vw 0px, white -0.052vw 0.052vw 0px, white -0.052vw -0.052vw 0px;
+  text-shadow: white 0vw 0.052vw 0px, white 0vw -0.052vw 0px, white 0.052vw 0vw 0px, white -0.052vw 0vw 0px, white 0.052vw 0.052vw 0px, white 0.052vw -0.052vw 0px, white -0.052vw 0.052vw 0px, white -0.052vw -0.052vw 0px;
 }
 
 body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet strong {
@@ -4452,7 +4464,7 @@ body .wrapper .contacts .foorer__container .footer-subscribe__linkblock .footer-
   font-size: 0.833vw;
   line-height: 1.042vw;
   position: relative;
-  transition: background 0.2s ease-in, transform 0.2s ease-in, border 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  transition: background 0.2s ease-in, transform 0.2s ease-in, border 0.2s ease-in, -webkit-transform 0.2s ease-in;
   text-decoration: none;
 }
 
