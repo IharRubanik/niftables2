@@ -326,7 +326,6 @@ function handleTouchMove(evt) {
       this.classList.add('touch');
     }
 
-
     var xUp = evt.changedTouches[0].clientX;                                    
     var yUp = evt.changedTouches[0].clientY;
 
@@ -347,6 +346,7 @@ function handleTouchMove(evt) {
           if (this.id === 'c3') {
             if (processProgress <= 4) {
               processProgress++;
+              initProcess(processProgress);
             }
           }
         } else {
@@ -360,10 +360,10 @@ function handleTouchMove(evt) {
           if (this.id === 'c3') {
             if (processProgress != 0) {
               processProgress--;
+              initProcess(processProgress);
             }
           }
         }         
-        setTimeout(initProcess(processProgress), 1)
         // initProcess(processProgress);
     } 
     /* reset values */
