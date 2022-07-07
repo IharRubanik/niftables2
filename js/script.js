@@ -281,6 +281,17 @@ function prevSlide(slides, dots) {
     }
 }
 
+
+function disableScrolling(){
+  var x=window.scrollX;
+  var y=window.scrollY;
+  window.onscroll=function(){window.scrollTo(x, y);};
+}
+
+function enableScrolling(){
+  window.onscroll=function(){};
+}
+
 const canvas1 = document.getElementById("c1"),
       canvas2 = document.getElementById("c2"),
       canvas3 = document.getElementById("c3");
@@ -302,11 +313,11 @@ var yDown = null;
 function handleTouchStart(evt) {                                         
     xDown = evt.changedTouches[0].clientX;                                      
     yDown = evt.changedTouches[0].clientY; 
-    this.classList.add('touch');
+    disableScrolling()
 };          
 
 function handleTouchEnd() {                                         
-  this.classList.remove('touch');
+  enableScrolling()
 };         
 
 function handleTouchMove(evt) {
