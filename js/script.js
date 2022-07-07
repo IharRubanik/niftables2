@@ -312,8 +312,6 @@ function processProgressMinus() {
   }
 }
 
-
-
 var xDown = null;                                                        
 var yDown = null;                                                    
 
@@ -400,6 +398,16 @@ function scrollTo(element) {
     top: window.innerWidth <= 375 ? element.offsetTop : element.offsetTop - document.querySelector('.header-logo').clientHeight
   });
 }
+
+document.querySelector('.header-subscribe input').addEventListener('focus', function() {
+  console.log('focus')
+  alert(document.querySelector('body').clientHeight - window.pageYOffset)
+  
+})
+document.querySelector('.header-subscribe input').addEventListener('blur', function() {
+  console.log('blur')
+  alert(document.querySelector('body').clientHeight - window.pageYOffset)
+})
 
 // Scroll script
 document.querySelectorAll('.scroll-link').forEach(el => el.addEventListener('click', function(e) {
