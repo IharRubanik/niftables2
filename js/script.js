@@ -281,17 +281,6 @@ function prevSlide(slides, dots) {
     }
 }
 
-
-function disableScrolling(){
-  var x=window.scrollX;
-  var y=window.scrollY;
-  window.onscroll=function(){window.scrollTo(x, y);};
-}
-
-function enableScrolling(){
-  window.onscroll=function(){};
-}
-
 const canvas1 = document.getElementById("c1"),
       canvas2 = document.getElementById("c2"),
       canvas3 = document.getElementById("c3");
@@ -307,24 +296,45 @@ window.addEventListener('touchend', function(e) {
   endSwipeY = e.changedTouches[0].clientY;
 })
 
+// Вешаем на прикосновение функцию handleTouchStart
+canvas1.addEventListener('touchstart', handleTouchStart, false);  
+canvas2.addEventListener('touchstart', handleTouchStart, false);  
+canvas3.addEventListener('touchstart', handleTouchStart, false);
+// А на движение пальцем по экрану - handleTouchMove      
+canvas1.addEventListener('touchmove', handleTouchMove, false);
+canvas2.addEventListener('touchmove', handleTouchMove, false);
+canvas3.addEventListener('touchmove', handleTouchMove, false);
+
+function disableScrolling(){
+  var x=window.scrollX;
+  var y=window.scrollY;
+  window.onscroll=function(){window.scrollTo(x, y);};
+}
+
+function enableScrolling(){
+  window.onscroll=function(){};
+}
+
 var xDown = null;                                                        
 var yDown = null;                                                    
 
 function handleTouchStart(evt) {                                         
     xDown = evt.changedTouches[0].clientX;                                      
     yDown = evt.changedTouches[0].clientY; 
-    disableScrolling()
 };          
-
-function handleTouchEnd() {                                         
-  enableScrolling()
-};         
 
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
         return;
     }
-    disableScrolling()
+
+    if (Math.abs(startSwipeY - endSwipeY) >= 40) {
+      // this.classList.remove('touch');
+      enableScrolling()
+    } else {
+      // this.classList.add('touch');
+      disableScrolling()
+    }
 
     var xUp = evt.changedTouches[0].clientX;                                    
     var yUp = evt.changedTouches[0].clientY;
@@ -370,21 +380,6 @@ function handleTouchMove(evt) {
     xDown = null;
     // yDown = null;                                             
 };
-
-// Вешаем на прикосновение функцию handleTouchStart
-canvas1.addEventListener('touchstart', handleTouchStart, false);  
-canvas2.addEventListener('touchstart', handleTouchStart, false);  
-canvas3.addEventListener('touchstart', handleTouchStart, false);
-// А на движение пальцем по экрану - handleTouchMove      
-canvas1.addEventListener('touchmove', handleTouchMove, false);
-canvas2.addEventListener('touchmove', handleTouchMove, false);
-canvas3.addEventListener('touchmove', handleTouchMove, false);
-// Вешаем на прикосновение функцию handleTouchStart
-canvas1.addEventListener('touchend', handleTouchEnd, false);  
-canvas2.addEventListener('touchend', handleTouchEnd, false);  
-canvas3.addEventListener('touchend', handleTouchEnd, false);
-
-
 
 // собираем элементы слайдера
 function toogleSlider(slider) {
