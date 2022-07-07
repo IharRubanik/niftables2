@@ -578,9 +578,6 @@
     transform: translateX(-50%) rotate(360deg);
   }
 }
-
-
-
 input {
   border-radius: 0;
 }
@@ -597,6 +594,7 @@ input {
 html{
   overflow-y: hidden;
   overflow-x: hidden;
+  width: 100%;
   &::-webkit-scrollbar {
     width: 8px;
   }
@@ -609,6 +607,7 @@ html{
   }
 }
 body {
+  width: 100%;
   background-color: #0b0b0c;
   &.active {
     overflow: hidden;
@@ -618,6 +617,7 @@ body {
     position: relative;
     overflow-x: clip;
     .preloader {
+      overflow-x: hidden;
       position: fixed;
       top: 0;
       left: 0;
@@ -1187,6 +1187,7 @@ body {
       }
     }
     .main {
+      overflow-x: hidden;
       height: 58.385vw;
       padding: 12.135vw 0 0 0;
       .main-info {
@@ -1350,6 +1351,7 @@ body {
       }
     }
     .about {
+      overflow: hidden;
       padding: 1.563vw 0 10.417vw 0;
       .about-text {
         font-family: "Barlow", sans-serif;
@@ -2285,6 +2287,7 @@ body {
     }
 
     .vision {
+      position: relative;
       width: 100%;
       height: 781.25vw;
       padding: 0;
