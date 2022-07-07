@@ -401,11 +401,7 @@ function scrollTo(element) {
 
 document.querySelector('.header-subscribe input').addEventListener('focus', function() {
   document.querySelector('.header-content').style.paddingBottom = `40vw`;
-  document.querySelector('.header-content').scroll({
-    behavior: 'smooth',
-    left: 0,
-    top: document.querySelector('.header-subscribe').offsetTop
-  });
+  document.querySelector('.header-content').scroll({top:1000})
 })
 document.querySelector('.header-subscribe input').addEventListener('blur', function() {
   document.querySelector('.header-content').style.paddingBottom = 0;
