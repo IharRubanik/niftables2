@@ -176,6 +176,7 @@ const scroll = window.pageYOffset - sticky.offsetTop,
         scroll < 5 * (height / 6) - 600 ?
         (zi = 4) :
         (zi = 5);
+        alert('danger!')
         initProcess(zi)
     }
   }
