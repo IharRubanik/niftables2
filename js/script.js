@@ -186,20 +186,17 @@ window.addEventListener("scroll", function () {
 })
 
 window.addEventListener('resize', function() {
-  checkProcessSize()
-  initProcess(0);
+  checkProcessSize();
+  if (window.innerWidth > 600) {
+    initProcess(0);
+  }
 })
 
 window.addEventListener('orientationchange', function() {
   checkProcessSize()
-  initProcess(0);
-})
-
-window.addEventListener('resize', function() {
-  checkProcessSize()
-})
-window.addEventListener('orientationchange', function() {
-  checkProcessSize()
+  if (window.innerWidth > 600) {
+    initProcess(0);
+  }
 })
 
 const slider1 = document.querySelector('.slider1');
@@ -288,44 +285,47 @@ const canvas1 = document.getElementById("c1"),
       canvas2 = document.getElementById("c2"),
       canvas3 = document.getElementById("c3");
 
+let startSwipeY = 0,
+    endSwipeY = 0,
+    processProgress = 0;
+
 // Вешаем на прикосновение функцию handleTouchStart
 canvas1.addEventListener('touchstart', handleTouchStart, false);  
 canvas2.addEventListener('touchstart', handleTouchStart, false);  
-canvas3.addEventListener('touchstart', handleTouchStart, false);  
+canvas3.addEventListener('touchstart', handleTouchStart, false);
 // А на движение пальцем по экрану - handleTouchMove      
 canvas1.addEventListener('touchmove', handleTouchMove, false);
 canvas2.addEventListener('touchmove', handleTouchMove, false);
-canvas3.addEventListener('touchmove', handleTouchMove, false);
+canvas3.addEventListener('touchend', handleTouchMove, false);
 
-let processProgress = 0;
-
-function processProgressPlus() {
-  if (processProgress <= 4) {
-    processProgress = processProgress + 1;
-    initProcess(processProgress);
-  }
-}
-
-function processProgressMinus() {
-  if (processProgress !== 0) {
-    processProgress = processProgress - 1;
-    initProcess(processProgress);
-  }
-}
+window.addEventListener('touchstart', function(e) {
+  startSwipeY = e.changedTouches[0].clientY;
+})
+window.addEventListener('touchend', function(e) {
+  endSwipeY = e.changedTouches[0].clientY;
+})
 
 var xDown = null;                                                        
 var yDown = null;                                                    
 
 function handleTouchStart(evt) {                                         
     xDown = evt.changedTouches[0].clientX;                                      
-    yDown = evt.changedTouches[0].clientY;        
-                                  
-};                                                
+    yDown = evt.changedTouches[0].clientY; 
+    
+    
+};          
 
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
         return;
     }
+
+    if (Math.abs(startSwipeY - endSwipeY) >= 40) {
+      this.classList.remove('touch');
+    } else {
+      this.classList.add('touch');
+    }
+
 
     var xUp = evt.changedTouches[0].clientX;                                    
     var yUp = evt.changedTouches[0].clientY;
@@ -346,7 +346,7 @@ function handleTouchMove(evt) {
           }
           if (this.id === 'c3') {
             if (processProgress <= 4) {
-              processProgressPlus()
+              processProgress++;
             }
           }
         } else {
@@ -359,10 +359,12 @@ function handleTouchMove(evt) {
           }
           if (this.id === 'c3') {
             if (processProgress != 0) {
-              processProgressMinus()
+              processProgress--;
             }
           }
-        }                       
+        }         
+        setTimeout(initProcess(processProgress), 1)
+        // initProcess(processProgress);
     } 
     /* reset values */
     xDown = null;
