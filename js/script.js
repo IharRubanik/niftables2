@@ -305,16 +305,6 @@ canvas1.addEventListener('touchmove', handleTouchMove, false);
 canvas2.addEventListener('touchmove', handleTouchMove, false);
 canvas3.addEventListener('touchmove', handleTouchMove, false);
 
-function disableScrolling(){
-  var x=window.scrollX;
-  var y=window.scrollY;
-  window.onscroll=function(){window.scrollTo(x, y);};
-}
-
-function enableScrolling(){
-  window.onscroll=function(){};
-}
-
 var xDown = null;                                                        
 var yDown = null;                                                    
 
