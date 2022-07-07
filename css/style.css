@@ -1422,7 +1422,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: #CB24FF;
+  background-color: #cb24ff;
   border-radius: 0%;
 }
 
@@ -1771,8 +1771,8 @@ body .wrapper .preloader {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: .5s opacity;
-  transition: .5s opacity;
+  -webkit-transition: 0.5s opacity;
+  transition: 0.5s opacity;
 }
 
 body .wrapper .preloader.remove {
@@ -1789,8 +1789,8 @@ body .wrapper .preloader .preloader__container {
   gap: 22px;
   -webkit-transform: translateX(42%);
           transform: translateX(42%);
-  -webkit-animation: .5s preloader__container-anime 2.5s forwards;
-          animation: .5s preloader__container-anime 2.5s forwards;
+  -webkit-animation: 0.5s preloader__container-anime 2.5s forwards;
+          animation: 0.5s preloader__container-anime 2.5s forwards;
 }
 
 body .wrapper .preloader .preloader__container svg {
@@ -1945,9 +1945,9 @@ body .wrapper .background .main__man {
 }
 
 body .wrapper .background .purple-triangle {
-  top: 10.156vw;
-  left: 62.031vw;
-  width: 18.281vw;
+  top: -18.75vw;
+  left: 46.563vw;
+  width: 47.24vw;
   height: auto;
   position: absolute;
   z-index: 1;
@@ -1960,11 +1960,11 @@ body .wrapper .background .purple-triangle.active {
 }
 
 body .wrapper .background .blue-triangle {
-  width: 30.625vw;
+  top: 5vw;
+  left: 54.427vw;
+  width: 31.719vw;
   height: auto;
   position: absolute;
-  top: 6.302vw;
-  left: 55.833vw;
   z-index: 1;
   opacity: 0;
 }
@@ -1978,11 +1978,14 @@ body .wrapper .background .city {
   position: absolute;
   width: 44.323vw;
   top: 0;
-  top: 2.344vw;
-  left: 53.125vw;
+  top: 0.625vw;
+  left: 51.458vw;
   opacity: 0;
-  -webkit-animation: 1s city 1.5s linear forwards;
-          animation: 1s city 1.5s linear forwards;
+}
+
+body .wrapper .background .city.active {
+  -webkit-animation: 1s city 2.5s linear forwards;
+          animation: 1s city 2.5s linear forwards;
 }
 
 body .wrapper .header {
@@ -3823,7 +3826,7 @@ body .wrapper .tokenomics::after {
   left: -6.146vw;
   width: 42.604vw;
   height: 48.75vw;
-  background-image: url(../img/tokenomics/slider-bg.svg);
+  background-image: url(../img/tokenomics/slider-bg.png);
   background-repeat: no-repeat;
   background-size: 42.604vw auto;
 }
