@@ -1,5 +1,4 @@
 @media (max-width: 1024px) {
-
   @keyframes nft-gradient-text {
     0% {
       background-position: -42.499vw;
@@ -27,29 +26,35 @@
         .main__smoke-buttom3 {
           width: 64.844vw;
           left: -13.477vw;
-          top:  28.32vw;
+          top: 28.32vw;
           bottom: auto;
+          animation: main__smoke-buttom3-1024 30s linear infinite;
+          transform: translate(-18.457vw, -6.641vw);
         }
         .main__smoke-top2 {
           top: -2.637vw;
           left: auto;
           right: -45.703vw;
           width: 54.395vw;
+          transform: translate(-13.574vw, 10.059vw);
         }
         .main__smoke-buttom2 {
           top: 0.977vw;
           left: 28.32vw;
           width: 88.867vw;
+          transform: translate(-18.262vw, 3.613vw);
         }
         .main__smoke-buttom {
           left: 41.699vw;
           top: -11.328vw;
           width: 92.578vw;
+          transform: translate(-14.941vw, 0.977vw);
         }
         .main__smoke-top {
           left: 62.5vw;
           top: -0.391vw;
           width: 54.688vw;
+          transform: translate(-24.414vw, 13.574vw);
         }
         .main__man {
           width: 139.648vw;
@@ -126,12 +131,14 @@
               width: 0.195vw;
             }
             &::after {
-              transition: width 0s linear, height 0.3s ease-out;
+              // transition: width 0s linear, height 0.3s ease-out;
+              transition: 1s;
             }
             &.active {
               border-color: #0342e7;
               &::after {
                 background: #0342e7 !important;
+                transition: 1s;
               }
               span {
                 height: 2.93vw;
@@ -232,61 +239,62 @@
                 }
               }
             }
-            .header-subscribe {
-              right: 12.402vw;
-              bottom: 0;
-              gap: 3.542vw;
-              .header-subscribe__plane {
-                width: 48.633vw;
+  
+          }
+          .header-subscribe {
+            right: 12.402vw;
+            bottom: 0;
+            gap: 3.542vw;
+            .header-subscribe__plane {
+              width: 48.633vw;
+            }
+            .header-subscribe__block {
+              margin: 4.199vw 0 0 0;
+              width: 36.133vw;
+              height: 20.215vw;
+              padding: 2.539vw 2.734vw 2.734vw 2.734vw;
+              strong {
+                font-size: 1.953vw;
+                line-height: 2.539vw;
               }
-              .header-subscribe__block {
-                margin: 4.199vw 0 0 0;
-                width: 36.133vw;
-                height: 20.215vw;
-                padding: 2.539vw 2.734vw 2.734vw 2.734vw;
-                strong {
-                  font-size: 1.953vw;
-                  line-height: 2.539vw;
-                }
-                span {
-                  margin: 0.488vw 0 0 0;
-                  font-size: 1.465vw;
+              span {
+                margin: 0.488vw 0 0 0;
+                font-size: 1.465vw;
+                line-height: 1.855vw;
+              }
+              p {
+                transform: translateY(0);
+                text-align: left;
+                font-size: 1.758vw;
+                line-height: 2.148vw;
+                margin: 0.977vw 0 0 0;
+              }
+              .form__container {
+                margin: 2.637vw 0 0 0;
+                gap: 2.246vw;
+                input {
+                  font-size: 1.563vw;
                   line-height: 1.855vw;
-                }
-                p {
-                  transform: translateY(0);
-                  text-align: left;
-                  font-size: 1.758vw;
-                  line-height: 2.148vw;
-                  margin: 0.977vw 0 0 0;
-                }
-                .form__container {
-                  margin: 2.637vw 0 0 0;
-                  gap: 2.246vw;
-                  input {
-                    font-size: 1.563vw;
-                    line-height: 1.855vw;
-                    border-radius: 0;
-                    border-bottom: 0.098vw solid #fff;
-                    &::placeholder {
-                      transform: translateY(-0.488vw);
-                    }
-                  }
-                  button {
-                    width: 4.297vw;
-                    height: 4.297vw;
-                    img {
-                      width: 1.563vw;
-                    }
+                  border-radius: 0;
+                  border-bottom: 0.098vw solid #fff;
+                  &::placeholder {
+                    transform: translateY(-0.488vw);
                   }
                 }
-              }    
+                button {
+                  width: 4.297vw;
+                  height: 4.297vw;
+                  img {
+                    width: 1.563vw;
+                  }
+                }
+              }
             }
           }
         }
       }
       .main {
-       height: 72.559vw;
+        height: 72.559vw;
         padding: 19.043vw 2.93vw 0 2.93vw;
         .main-info {
           .main-info__text {
@@ -336,12 +344,14 @@
                 height: 9.948vw;
                 left: -3.333vw;
                 top: -3.135vw;
+                animation: main-button-1-1024 4s linear infinite;
               }
               &::after {
                 width: 7.24vw;
                 height: 7.24vw;
                 top: 1.563vw;
                 left: -0.885vw;
+                animation: main-button-2-1024 4s linear infinite;
               }
               span {
                 font-size: 1.074vw;
@@ -594,7 +604,6 @@
               font-size: 1.465vw;
               line-height: 1.855vw;
             }
-
           }
         }
         .features-customization {
@@ -604,7 +613,6 @@
         .features-control {
           top: 54.101vw;
           left: 6.348vw;
-
         }
         .features-utility {
           left: 6.348vw;
@@ -617,7 +625,6 @@
         .features-redeem {
           left: 68.652vw;
           top: 17.969vw;
-          
         }
         .features-service {
           top: 17.969vw;
@@ -860,9 +867,8 @@
                     height: 24.902vw;
                   }
                   &:nth-child(5) {
-                   
                     height: 18.555vw;
-                    span{
+                    span {
                       transform: translateY(-2.637vw);
                     }
                     strong {
@@ -914,25 +920,25 @@
                   width: 100%;
                   padding: 0 0 0 13.379vw;
                   &:nth-child(1) {
-                    top: 9.766vw;
+                    top: 10.059vw;
                   }
                   &:nth-child(2) {
-                    top: 31.445vw;
+                    top: 31.055vw;
                   }
                   &:nth-child(3) {
-                    top: 52.734vw;
+                    top: 52.246vw;
                   }
                   &:nth-child(4) {
-                    top: 76.758vw;
+                    top: 76.563vw;
                   }
                   &:nth-child(5) {
-                    top: 99.121vw;
+                    top: 99.023vw;
                   }
                   &:nth-child(6) {
-                    top: 120.605vw;
+                    top: 120.117vw;
                   }
                   &:nth-child(7) {
-                    top: 148.5vw;
+                    top: 147.949vw;
                   }
                   h4 {
                     display: none;
@@ -1117,6 +1123,23 @@
               border-left: dashed 0.098vw white;
               transform: translateY(0.391vw);
             }
+         
+          }
+
+          &::before {
+            content: "swipe ...";
+            font-family: "Akzidenz-Grotesk Pro";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.172vw;
+            line-height: 1.465vw;
+            text-align: right;
+            text-transform: uppercase;
+            color: #4e5465;
+            position: absolute;
+            right: 2.93vw;
+            top: 0;
+            transform: translateY(-2.93vw);
           }
           .media-about-slider {
             height: 15.137vw;

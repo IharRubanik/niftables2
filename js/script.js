@@ -7,6 +7,9 @@ window.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.blue-triangle').classList.add('active');
       document.querySelector('.purple-triangle').classList.add('active');
       document.querySelector('.main-info__text b').classList.add('active');
+      document.querySelector('body').classList.remove('active');
+
+      
     }
     function removePreloader() {
       document.querySelector('.preloader').remove();
@@ -376,7 +379,7 @@ function scrollTo(element) {
   window.scroll({
     behavior: 'smooth',
     left: 0,
-    top: window.innerWidth <= 375 ? element.offsetTop : element.offsetTop - document.querySelector('.header-inner').clientHeight
+    top: window.innerWidth <= 375 ? element.offsetTop : element.offsetTop - document.querySelector('.header-logo').clientHeight
   });
 }
 

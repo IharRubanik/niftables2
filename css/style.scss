@@ -27,6 +27,24 @@
     left: -3.333vw;
   }
 }
+@keyframes main-button-1-1024 {
+  0% {
+    top: -4.003vw;
+    left: -6.249vw;
+  }
+  33% {
+    top: 3.516vw;
+    left: 3.516vw;
+  }
+  66% {
+    top: -3.808vw;
+    left: -7.813vw;
+  }
+  100% {
+    top: -4.003vw;
+    left: -6.249vw;
+  }
+}
 @keyframes main-button-2 {
   0% {
     top: 1.563vw;
@@ -43,6 +61,24 @@
   100% {
     top: 1.563vw;
     left: -0.885vw;
+  }
+}
+@keyframes main-button-2-1024 {
+  0% {
+    top: 2.931vw;
+    left: -1.659vw;
+  }
+  33% {
+    top: 1.074vw;
+    left: 6.641vw;
+  }
+  66% {
+    top: 5.957vw;
+    left: 3.321vw;
+  }
+  100% {
+    top: 2.931vw;
+    left: -1.659vw;
   }
 }
 
@@ -62,6 +98,24 @@
   100% {
     top: 20.052vw;
     left: 2.031vw;
+  }
+}
+@keyframes main__smoke-buttom3-1024 {
+  0% {
+    top: 37.597vw;
+    left: 3.808vw;
+  }
+  33% {
+    top: 35.644vw;
+    left: 20.117vw;
+  }
+  66% {
+    top: 20.801vw;
+    left: 3.808vw;
+  }
+  100% {
+    top: 37.597vw;
+    left: 3.808vw;
   }
 }
 @keyframes main__smoke-top2 {
@@ -525,6 +579,8 @@
   }
 }
 
+
+
 input {
   border-radius: 0;
 }
@@ -535,6 +591,20 @@ input {
 .container {
   width: 72.917vw;
   margin: 0 auto;
+}
+
+
+html{
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track{
+    background-color: #13131300;
+  } 
+  &::-webkit-scrollbar-thumb {
+    background-color: #CB24FF;
+    border-radius: 0%;
+  }
 }
 body {
   background-color: #0b0b0c;
@@ -547,14 +617,13 @@ body {
     overflow: clip;
     .preloader {
       position: fixed;
-      display: none;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       background-color: #0b0b0c;
       z-index: 120;
-      // display: flex;
+      display: flex;
       align-items: center;
       justify-content: center;
       transition: .5s opacity;
@@ -906,10 +975,12 @@ body {
           transform: translate(0);
         }
         .header-content__inner {
+          // position: relative;
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
           gap: 3.646vw;
+          // height: 100%;
           .header-content__nav {
             margin: 1.875vw 0 0 0;
             display: flex;
@@ -1014,95 +1085,96 @@ body {
               }
             }
           }
-          .header-subscribe {
-            position: absolute;
-            right: 13.542vw;
-            bottom: 0;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            gap: 3.542vw;
-            .header-subscribe__plane {
-              width: 23.229vw;
-            }
-            .header-subscribe__block {
-              width: 29.271vw;
-              padding: 2.083vw 2.083vw 2.344vw 2.083vw;
-              color: #fff;
 
+        }
+        .header-subscribe {
+          position: absolute;
+          right: 13.542vw;
+          bottom: 0;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          gap: 3.542vw;
+          .header-subscribe__plane {
+            width: 23.229vw;
+          }
+          .header-subscribe__block {
+            width: 29.271vw;
+            padding: 2.083vw 2.083vw 2.344vw 2.083vw;
+            color: #fff;
+
+            display: flex;
+            flex-direction: column;
+            background: radial-gradient(
+                90.75% 78.93% at 40.93% 85.95%,
+                rgba(3, 66, 231, 0.9) 0%,
+                rgba(3, 66, 231, 0) 100%
+              ),
+              radial-gradient(
+                86.4% 76.86% at 0% 7.02%,
+                rgba(22, 169, 254, 0.95) 0%,
+                rgba(22, 169, 254, 0) 100%
+              ),
+              #cb24ff;
+            strong {
+              font-family: "Akzidenz-Grotesk Pro", sans-serif;
+              font-weight: 700;
+              font-size: 1.458vw;
+              line-height: 1.28;
+              text-transform: uppercase;
+            }
+            span {
+              margin: 0.26vw 0 0 0;
+              font-family: "Akzidenz-Grotesk Pro", sans-serif;
+              font-weight: 500;
+              font-size: 1.042vw;
+              line-height: 1.275;
+              text-transform: uppercase;
+            }
+            p {
+              font-family: "Barlow";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 0.938vw;
+              line-height: 1.146vw;
+              text-align: right;
+              color: #ffffff;
+              opacity: 0.5;
+              transform: translateY(-3.229vw);
+            }
+            .form__container {
+              margin: 2.083vw 0 0 0;
               display: flex;
-              flex-direction: column;
-              background: radial-gradient(
-                  90.75% 78.93% at 40.93% 85.95%,
-                  rgba(3, 66, 231, 0.9) 0%,
-                  rgba(3, 66, 231, 0) 100%
-                ),
-                radial-gradient(
-                  86.4% 76.86% at 0% 7.02%,
-                  rgba(22, 169, 254, 0.95) 0%,
-                  rgba(22, 169, 254, 0) 100%
-                ),
-                #cb24ff;
-              strong {
-                font-family: "Akzidenz-Grotesk Pro", sans-serif;
-                font-weight: 700;
-                font-size: 1.458vw;
-                line-height: 1.28;
-                text-transform: uppercase;
-              }
-              span {
-                margin: 0.26vw 0 0 0;
-                font-family: "Akzidenz-Grotesk Pro", sans-serif;
+              justify-content: space-between;
+              gap: 1.042vw;
+              input {
+                font-size: 0.938vw;
+                line-height: 1.2;
+                font-family: "Barlow", sans-serif;
                 font-weight: 500;
-                font-size: 1.042vw;
-                line-height: 1.275;
-                text-transform: uppercase;
-              }
-              p {
-                font-family: "Barlow";
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 22px;
-                text-align: right;
-                color: #ffffff;
-                opacity: 0.5;
-                transform: translateY(-62px);
-              }
-              .form__container {
-                margin: 2.083vw 0 0 0;
-                display: flex;
-                justify-content: space-between;
-                gap: 1.042vw;
-                input {
-                  font-size: 0.938vw;
-                  line-height: 1.2;
-                  font-family: "Barlow", sans-serif;
-                  font-weight: 500;
-                  color: #fff;
-                  background: none;
-                  border: 0;
-                  border-bottom: 0.052vw solid #fff;
-                  width: 100%;
-                  &::placeholder {
-                    color: rgba(255, 255, 255, 0.4);
-                  }
+                color: #fff;
+                background: none;
+                border: 0;
+                border-bottom: 0.052vw solid #fff;
+                width: 100%;
+                &::placeholder {
+                  color: rgba(255, 255, 255, 0.4);
                 }
-                button {
-                  flex-shrink: 0;
-                  border: none;
-                  width: 2.604vw;
-                  height: 2.604vw;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  transition: transform 0.15s linear;
-                  img {
-                    width: 1.042vw;
-                  }
-                  &:hover {
-                    transform: scale(1.05);
-                  }
+              }
+              button {
+                flex-shrink: 0;
+                border: none;
+                width: 2.604vw;
+                height: 2.604vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: transform 0.15s linear;
+                img {
+                  width: 1.042vw;
+                }
+                &:hover {
+                  transform: scale(1.05);
                 }
               }
             }
@@ -1381,6 +1453,7 @@ body {
       }
     }
     .process {
+      padding: 0 0 6.771vw 0;
       .process-container {
         .process-parent {
           height: 364.583vw;
@@ -1811,7 +1884,7 @@ body {
       }
     }
     .features {
-      padding: 8.646vw 0 0 0;
+      padding: 1.875vw 0 0 0;
       position: relative;
       height: 58.854vw;
       .features__title {
@@ -1827,7 +1900,7 @@ body {
       }
       .features__background-title {
         position: absolute;
-        top: 5.729vw;
+        top: -1.094vw;
         left: -0.521vw;
         font-family: "Akzidenz-Grotesk Pro";
         font-style: normal;
@@ -1945,41 +2018,41 @@ body {
         }
       }
       .features-customization {
-        top: 15.99vw;
+        top: 9.219vw;
         left: 1.354vw;
       }
       .features-control {
         left: 23.49vw;
-        top: 14.063vw;
+        top: 7.292vw;
       }
       .features-utility {
         left: 41.771vw;
-        top: 17.865vw;
+        top: 11.094vw;
       }
       .features-creativity {
         left: 61.354vw;
-        top: 11.302vw;
+        top: 4.531vw;
       }
       .features-redeem {
-        top: 24.948vw;
+        top: 18.177vw;
         left: 11.302vw;
       }
       .features-service {
-        top: 34.792vw;
+        top: 28.021vw;
         left: 0.156vw;
       }
       .features-royalties {
-        top: 34.792vw;
+        top: 28.021vw;
         left: 21.094vw;
       }
       .features-streams {
-        top: 44.635vw;
+        top: 37.864vw;
         left: 11.354vw;
       }
       .features__slider {
         position: absolute;
         right: 0;
-        top: 27.344vw;
+        top: 20.573vw;
         width: 35.417vw;
         height: 31.406vw;
         display: flex;
@@ -2210,7 +2283,7 @@ body {
     .vision {
       width: 100%;
       height: 781.25vw;
-      padding: 6.771vw 0 0 0;
+      padding: 0;
       .vision-line-tablet {
         display: none;
       }
@@ -3045,12 +3118,12 @@ body {
             font-family: "Barlow";
             font-style: normal;
             font-weight: 400;
-            font-size: 18px;
-            line-height: 22px;
+            font-size: 0.938vw;
+            line-height: 1.146vw;
             text-align: right;
             color: #ffffff;
             opacity: 0.5;
-            transform: translateY(-62px);
+            transform: translateY(-3.229vw);
           }
           .form__container {
             margin: 2.083vw 0 0 0;
@@ -3108,3 +3181,4 @@ canvas#c3 {
   width: 100%;
   height: 100%;
 }
+
