@@ -324,6 +324,7 @@ function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
         return;
     }
+    disableScrolling()
 
     var xUp = evt.changedTouches[0].clientX;                                    
     var yUp = evt.changedTouches[0].clientY;
