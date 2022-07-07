@@ -288,15 +288,27 @@ const canvas1 = document.getElementById("c1"),
       canvas3 = document.getElementById("c3");
 
 // Вешаем на прикосновение функцию handleTouchStart
-canvas1.addEventListener('touchstart', handleTouchStart, false);  
-canvas2.addEventListener('touchstart', handleTouchStart, false);  
-canvas3.addEventListener('touchstart', handleTouchStart, false);  
+canvas1.addEventListener('touchstart', sliderTouch, false);  
+canvas2.addEventListener('touchstart', sliderTouch, false);  
+canvas3.addEventListener('touchstart', sliderTouch, false);  
+canvas1.addEventListener('touchend', sliderTouch, false);  
+canvas2.addEventListener('touchend', sliderTouch, false);  
+canvas3.addEventListener('touchend', sliderTouch, false);  
 // А на движение пальцем по экрану - handleTouchMove      
-canvas1.addEventListener('touchmove', handleTouchMove, false);
-canvas2.addEventListener('touchmove', handleTouchMove, false);
-canvas3.addEventListener('touchmove', handleTouchMove, false);
+// canvas1.addEventListener('touchmove', handleTouchMove, false);
+// canvas2.addEventListener('touchmove', handleTouchMove, false);
+// canvas3.addEventListener('touchmove', handleTouchMove, false);
 
 let processProgress = 0;
+
+
+function sliderTouch(event) {
+
+  console.log(event.path[0])
+
+
+}
+
 
 var xDown = null;                                                        
 var yDown = null;                                                    
@@ -366,8 +378,6 @@ function handleTouchMove(evt) {
     xDown = null;
     // yDown = null;                                             
 };
-
-alert(console.log.getStorage().join('\n'));
 
 // собираем элементы слайдера
 function toogleSlider(slider) {
