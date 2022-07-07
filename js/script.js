@@ -301,55 +301,6 @@ canvas1.addEventListener('touchmove', handleTouchMove, false);
 canvas2.addEventListener('touchmove', handleTouchMove, false);
 canvas3.addEventListener('touchend', handleTouchMove, false);
 
-// function handleTouchStart1() {
-
-//   if (startSwipe > endSwipe) {
-
-//     if (this.id === 'c1') {
-//       document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
-//     }
-//     if (this.id === 'c2') {
-//       document.querySelector('.tokenomics__slider__button .button.next').click();
-//     }
-//     if (this.id === 'c3') {
-//       if (processProgress <= 4) {
-//         processProgress++;
-//         initProcess(processProgress);
-//       }
-//     }
-
-//   } else {
-
-//     if (this.id === 'c1') {
-//       document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
-//     }
-//     if (this.id === 'c2') {
-//       document.querySelector('.tokenomics__slider__button .button.prev').click();
-//     }
-//     if (this.id === 'c3') {
-//       if (processProgress != 0) {
-//         processProgress--;
-//         initProcess(processProgress);
-//       }
-//     }
-
-//   }
-// }
-
-// function processProgressPlus() {
-//   if (processProgress <= 4) {
-//     processProgress = processProgress + 1;
-//     initProcess(processProgress);
-//   }
-// }
-
-// function processProgressMinus() {
-//   if (processProgress !== 0) {
-//     processProgress = processProgress - 1;
-//     initProcess(processProgress);
-//   }
-// }
-
 window.addEventListener('touchstart', function(e) {
   startSwipeY = e.changedTouches[0].clientY;
 })
@@ -398,8 +349,8 @@ function handleTouchMove(evt) {
           }
           if (this.id === 'c3') {
             if (processProgress <= 4) {
-              processProgress++;
-              initProcess(processProgress);
+              processProgress = processProgress + 1;
+              
             }
           }
         } else {
@@ -412,11 +363,12 @@ function handleTouchMove(evt) {
           }
           if (this.id === 'c3') {
             if (processProgress != 0) {
-              processProgress--;
-              initProcess(processProgress);
+              processProgress = processProgress - 1;
             }
           }
-        }                       
+        }         
+        
+        initProcess(processProgress);
     } 
     /* reset values */
     xDown = null;
