@@ -304,7 +304,7 @@ let processProgress = 0;
 
 function sliderTouch(event) {
 
-  console.log(event.path[0])
+  alert(event.path[0])
 
 
 }
