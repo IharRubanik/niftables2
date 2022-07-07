@@ -329,11 +329,9 @@ function handleTouchMove(evt) {
     }
 
     if (Math.abs(startSwipeY - endSwipeY) >= 100) {
-      // this.classList.remove('touch');
-      enableScrolling()
+      this.classList.remove('touch');
     } else {
-      // this.classList.add('touch');
-      disableScrolling()
+      this.classList.add('touch');
     }
 
     var xUp = evt.changedTouches[0].clientX;                                    
