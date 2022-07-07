@@ -300,14 +300,14 @@ let processProgress = 0;
 
 function processProgressPlus() {
   if (processProgress <= 4) {
-    processProgress++;
+    processProgress = processProgress + 1;
     initProcess(processProgress);
   }
 }
 
 function processProgressMinus() {
   if (processProgress !== 0) {
-    processProgress--;
+    processProgress = processProgress - 1;
     initProcess(processProgress);
   }
 }
@@ -347,7 +347,7 @@ function handleTouchMove(evt) {
           }
           if (this.id === 'c3') {
             if (processProgress <= 4) {
-              setTimeout(processProgressPlus, 100)
+              setTimeout(processProgressPlus, 500)
             }
           }
         } else {
@@ -360,7 +360,7 @@ function handleTouchMove(evt) {
           }
           if (this.id === 'c3') {
             if (processProgress != 0) {
-              setTimeout(processProgressMinus, 100)
+              setTimeout(processProgressMinus, 500)
             }
           }
         }                       
