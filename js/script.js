@@ -287,30 +287,78 @@ const canvas1 = document.getElementById("c1"),
       canvas2 = document.getElementById("c2"),
       canvas3 = document.getElementById("c3");
 
+let startSwipe = 0,
+    endSwipe = 0,
+    processProgress = 0;
+  
+  window.addEventListener('touchstart', function(e) {
+    startSwipe = e.changedTouches[0].clientX
+  })
+  window.addEventListener('touchend', function(e) {
+    endSwipe = e.changedTouches[0].clientX
+  })
+
 // Вешаем на прикосновение функцию handleTouchStart
-canvas1.addEventListener('touchstart', handleTouchStart, false);  
-canvas2.addEventListener('touchstart', handleTouchStart, false);  
-canvas3.addEventListener('touchstart', handleTouchStart, false);  
+canvas1.addEventListener('touchend', handleTouchStart1, false);  
+canvas2.addEventListener('touchend', handleTouchStart1, false);  
+canvas3.addEventListener('touchend', handleTouchStart1, false);  
 // А на движение пальцем по экрану - handleTouchMove      
-canvas1.addEventListener('touchmove', handleTouchMove, false);
-canvas2.addEventListener('touchmove', handleTouchMove, false);
-canvas3.addEventListener('touchmove', handleTouchMove, false);
+// canvas1.addEventListener('touchmove', handleTouchMove, false);
+// canvas2.addEventListener('touchmove', handleTouchMove, false);
+// canvas3.addEventListener('touchmove', handleTouchMove, false);
 
-let processProgress = 0;
+function handleTouchStart1() {
 
-function processProgressPlus() {
-  if (processProgress <= 4) {
-    processProgress = processProgress + 1;
-    initProcess(processProgress);
+  if (startSwipe < endSwipe) {
+
+    if (this.id === 'c1') {
+      document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
+    }
+    if (this.id === 'c2') {
+      document.querySelector('.tokenomics__slider__button .button.next').click();
+    }
+    if (this.id === 'c3') {
+      if (processProgress <= 4) {
+        processProgress++;
+        initProcess(processProgress);
+      }
+    }
+
+  } else {
+
+    if (this.id === 'c1') {
+      document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
+    }
+    if (this.id === 'c2') {
+      document.querySelector('.tokenomics__slider__button .button.prev').click();
+    }
+    if (this.id === 'c3') {
+      if (processProgress != 0) {
+        processProgress--;
+        initProcess(processProgress);
+      }
+    }
+
   }
 }
 
-function processProgressMinus() {
-  if (processProgress !== 0) {
-    processProgress = processProgress - 1;
-    initProcess(processProgress);
-  }
-}
+console.log(startSwipe, endSwipe)
+
+
+
+// function processProgressPlus() {
+//   if (processProgress <= 4) {
+//     processProgress = processProgress + 1;
+//     initProcess(processProgress);
+//   }
+// }
+
+// function processProgressMinus() {
+//   if (processProgress !== 0) {
+//     processProgress = processProgress - 1;
+//     initProcess(processProgress);
+//   }
+// }
 
 var xDown = null;                                                        
 var yDown = null;                                                    
