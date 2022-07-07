@@ -302,19 +302,17 @@ var yDown = null;
 function handleTouchStart(evt) {                                         
     xDown = evt.changedTouches[0].clientX;                                      
     yDown = evt.changedTouches[0].clientY; 
+    this.classList.add('touch');
 };          
 
 function handleTouchEnd() {                                         
-  document.body.style.overflow = 'auto';
+  this.classList.remove('touch');
 };         
 
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
         return;
     }
-
-
-    document.body.style.overflow = 'hidden';
 
     var xUp = evt.changedTouches[0].clientX;                                    
     var yUp = evt.changedTouches[0].clientY;

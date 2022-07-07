@@ -1332,7 +1332,7 @@
   }
 
   canvas.touch {
-    touch-action: none;
+    touch-action: none!important;
   }
 
   canvas#c3 {
