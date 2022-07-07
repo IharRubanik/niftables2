@@ -609,8 +609,6 @@ html{
   }
 }
 body {
-  overflow-x: hidden;
-
   background-color: #0b0b0c;
   &.active {
     overflow: hidden;
@@ -619,7 +617,6 @@ body {
     width: 100%;
     position: relative;
     overflow-x: clip;
-    
     .preloader {
       position: fixed;
       top: 0;
@@ -800,6 +797,8 @@ body {
       }
     }
     .header {
+      width: 100%;
+      overflow: hidden;
       .header-name {
         display: flex;
         justify-content: space-between;
