@@ -595,6 +595,7 @@ input {
 
 
 html{
+  overflow-x: hidden;
   &::-webkit-scrollbar {
     width: 8px;
   }
