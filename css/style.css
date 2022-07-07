@@ -1945,31 +1945,34 @@ body .wrapper .background .main__man {
 }
 
 body .wrapper .background .purple-triangle {
-  top: 9.812vw;
-  left: 61.75vw;
-  width: 19.219vw;
+  top: 216.998px;
+  left: 62.031vw;
+  width: 18.281vw;
+  height: auto;
   position: absolute;
   z-index: 1;
   opacity: 0;
 }
 
 body .wrapper .background .purple-triangle.active {
-  -webkit-animation: 1s triangle-purple 1.5s linear forwards, 12s triangle-purple-active 3.5s linear infinite;
-          animation: 1s triangle-purple 1.5s linear forwards, 12s triangle-purple-active 3.5s linear infinite;
+  -webkit-animation: 1s triangle-purple 1.5s linear forwards;
+          animation: 1s triangle-purple 1.5s linear forwards;
 }
 
 body .wrapper .background .blue-triangle {
   width: 30.625vw;
+  height: auto;
   position: absolute;
-  top: 6.198vw;
+  top: 6.302vw;
   left: 55.833vw;
   z-index: 1;
   opacity: 0;
 }
 
 body .wrapper .background .blue-triangle.active {
-  -webkit-animation: 1s triangle-blue 2.5s linear forwards, 12s triangle-blue-active 3.5s linear infinite;
-          animation: 1s triangle-blue 2.5s linear forwards, 12s triangle-blue-active 3.5s linear infinite;
+  -webkit-transform: scale(0.65);
+          transform: scale(0.65);
+  opacity: 1;
 }
 
 body .wrapper .background .city {
@@ -1986,6 +1989,7 @@ body .wrapper .background .city {
 body .wrapper .header {
   width: 100%;
   overflow: hidden;
+  z-index: 99;
 }
 
 body .wrapper .header .header-name {
