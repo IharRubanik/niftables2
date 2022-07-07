@@ -289,15 +289,6 @@ let startSwipeY = 0,
     endSwipeY = 0,
     processProgress = 0;
 
-// Вешаем на прикосновение функцию handleTouchStart
-canvas1.addEventListener('touchstart', handleTouchStart, false);  
-canvas2.addEventListener('touchstart', handleTouchStart, false);  
-canvas3.addEventListener('touchstart', handleTouchStart, false);
-// А на движение пальцем по экрану - handleTouchMove      
-canvas1.addEventListener('touchmove', handleTouchMove, false);
-canvas2.addEventListener('touchmove', handleTouchMove, false);
-canvas3.addEventListener('touchend', handleTouchMove, false);
-
 window.addEventListener('touchstart', function(e) {
   startSwipeY = e.changedTouches[0].clientY;
 })
@@ -305,14 +296,21 @@ window.addEventListener('touchend', function(e) {
   endSwipeY = e.changedTouches[0].clientY;
 })
 
+// Вешаем на прикосновение функцию handleTouchStart
+canvas1.addEventListener('touchstart', handleTouchStart, false);  
+canvas2.addEventListener('touchstart', handleTouchStart, false);  
+canvas3.addEventListener('touchstart', handleTouchStart, false);
+// А на движение пальцем по экрану - handleTouchMove      
+canvas1.addEventListener('touchmove', handleTouchMove, false);
+canvas2.addEventListener('touchmove', handleTouchMove, false);
+canvas3.addEventListener('touchmove', handleTouchMove, false);
+
 var xDown = null;                                                        
 var yDown = null;                                                    
 
 function handleTouchStart(evt) {                                         
     xDown = evt.changedTouches[0].clientX;                                      
     yDown = evt.changedTouches[0].clientY; 
-    
-    
 };          
 
 function handleTouchMove(evt) {
