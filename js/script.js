@@ -298,6 +298,18 @@ canvas3.addEventListener('touchmove', handleTouchMove, false);
 
 let processProgress = 0;
 
+function processProgressPlus() {
+  processProgress++;
+  initProcess(processProgress);
+  console.log('plus')
+}
+
+function processProgressMinus() {
+  processProgress++;
+  initProcess(processProgress);
+  console.log('minus')
+}
+
 
 
 var xDown = null;                                                        
@@ -333,8 +345,7 @@ function handleTouchMove(evt) {
           }
           if (this.id === 'c3') {
             if (processProgress <= 4) {
-              processProgress++;
-              initProcess(processProgress);
+              setTimeout(processProgressPlus, 100)
             }
           }
         } else {
@@ -347,8 +358,7 @@ function handleTouchMove(evt) {
           }
           if (this.id === 'c3') {
             if (processProgress != 0) {
-              processProgress--;
-              initProcess(processProgress);
+              setTimeout(processProgressMinus, 100)
             }
           }
         }                       
