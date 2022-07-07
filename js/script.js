@@ -401,11 +401,14 @@ function scrollTo(element) {
 
 document.querySelector('.header-subscribe input').addEventListener('focus', function() {
   document.querySelector('.header-content').style.paddingBottom = `40vw`;
-   scrollTo(document.querySelector('.header-subscribe'))
+  document.querySelector('.header-content').scroll({
+    behavior: 'smooth',
+    left: 0,
+    top: document.querySelector('.header-subscribe').offsetTop
+  });
 })
 document.querySelector('.header-subscribe input').addEventListener('blur', function() {
   document.querySelector('.header-content').style.paddingBottom = 0;
-   scrollTo(document.querySelector('.header-subscribe'))
 })
 
 // Scroll script
