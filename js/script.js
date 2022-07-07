@@ -298,6 +298,22 @@ canvas3.addEventListener('touchmove', handleTouchMove, false);
 
 let processProgress = 0;
 
+function processProgressPlus() {
+  if (processProgress <= 4) {
+    processProgress = processProgress + 1;
+    initProcess(processProgress);
+  }
+}
+
+function processProgressMinus() {
+  if (processProgress !== 0) {
+    processProgress = processProgress - 1;
+    initProcess(processProgress);
+  }
+}
+
+
+
 var xDown = null;                                                        
 var yDown = null;                                                    
 
@@ -319,35 +335,32 @@ function handleTouchMove(evt) {
     var yDiff = yDown - yUp;
     // немного поясню здесь. Тут берутся модули движения по оси абсцисс и ординат (почему модули? потому что если движение сделано влево или вниз, то его показатель будет отрицательным) и сравнивается, чего было больше: движения по абсциссам или ординатам. Нужно это для того, чтобы, если пользователь провел вправо, но немного наискосок вниз, сработал именно коллбэк для движения вправо, а ни как-то иначе.
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+
         if ( xDiff > 0 ) {
           /* left swipe */ 
-          alert(evt.path[0].id);
-          if (evt.path[0].id === 'c1') {
+
+          if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
           }
-          if (evt.path[0].id === 'c2') {
+          if (this.id === 'c2') {
             document.querySelector('.tokenomics__slider__button .button.next').click();
           }
-          if (evt.path[0].id === 'c3') {
-            alert('process slider swipe')
+          if (this.id === 'c3') {
             if (processProgress <= 4) {
-              processProgress++;
-              initProcess(processProgress);
+              setTimeout(processProgressPlus, 500)
             }
           }
         } else {
           /* right swipe */
-          alert(evt);
-          if (evt.path[0].id === 'c1') {
+          if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
           }
-          if (evt.path[0].id === 'c2') {
+          if (this.id === 'c2') {
             document.querySelector('.tokenomics__slider__button .button.prev').click();
           }
-          if (evt.path[0].id === 'c3') {
+          if (this.id === 'c3') {
             if (processProgress != 0) {
-              processProgress--;
-              initProcess(processProgress);
+              setTimeout(processProgressMinus, 500)
             }
           }
         }                       

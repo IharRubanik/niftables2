@@ -1,9 +1,8 @@
 @media (max-width: 600px) {
 
-  .contacts.container,
-  .media-about,
-  .partners.container {
-    display: none!important;
+  body {
+    overflow-x: hidden;
+    width: 100%;
   }
 
   @keyframes nft-gradient-text {
