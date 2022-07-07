@@ -197,13 +197,22 @@
     width: 32px;
   }
   body .wrapper .background {
-    background: url("/img/main/background-blur.png");
-    background-size: 100% 19.733vw;
-    background-repeat: no-repeat;
-    background-position: top center;
     height: 207.288vw;
     top: 0;
     left: 0;
+  }
+  body .wrapper .background::after {
+    content: '';
+    background: url("/img/main/background-blur.png");
+    background-size: 100% 20vw;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    width: 100vw;
+    height: 19.733vw;
+    left: 0;
+    top: 0;
+    z-index: 10;
   }
   body .wrapper .background .main__smoke-buttom3 {
     width: 69.333vw;
@@ -211,17 +220,17 @@
     top: 28vw;
     -webkit-transform: translate(-10.667vw, 36.267vw);
             transform: translate(-10.667vw, 36.267vw);
-    -webkit-animation-duration: 15s;
-            animation-duration: 15s;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
   }
   body .wrapper .background .main__smoke-top2 {
     top: -4.833vw;
     left: 56.667vw;
-    width: 61.333vw;
-    -webkit-transform: translate(-22.133vw, 18.933vw);
-            transform: translate(-22.133vw, 18.933vw);
-    -webkit-animation-duration: 15s;
-            animation-duration: 15s;
+    width: 82.333vw;
+    -webkit-transform: translate(-42.133vw, -6.067vw);
+            transform: translate(-42.133vw, -6.067vw);
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
   }
   body .wrapper .background .main__smoke-buttom2 {
     top: 0;
@@ -229,8 +238,8 @@
     width: 110vw;
     -webkit-transform: translate(-40.8vw, 25.6vw);
             transform: translate(-40.8vw, 25.6vw);
-    -webkit-animation-duration: 15s;
-            animation-duration: 15s;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
   }
   body .wrapper .background .main__smoke-buttom {
     top: -14.167vw;
@@ -238,17 +247,17 @@
     width: 115vw;
     -webkit-transform: translate(-40.8vw, 17.067vw);
             transform: translate(-40.8vw, 17.067vw);
-    -webkit-animation-duration: 15s;
-            animation-duration: 15s;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
   }
   body .wrapper .background .main__smoke-top {
     left: 26vw;
     top: -2.5vw;
-    width: 70.5vw;
+    width: 140.5vw;
     -webkit-transform: translate(-40.8vw, 25.6vw);
             transform: translate(-40.8vw, 25.6vw);
-    -webkit-animation-duration: 15s;
-            animation-duration: 15s;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
   }
   body .wrapper .background .main__man {
     width: 245.333vw;
@@ -256,19 +265,19 @@
     left: -69.973vw;
   }
   body .wrapper .background .purple-triangle {
-    width: 38.333vw;
-    top: 26.205vw;
-    left: 27.2vw;
+    width: 92.2vw;
+    top: -28.995vw;
+    left: -0.267vw;
   }
   body .wrapper .background .blue-triangle {
-    width: 57.8vw;
-    top: 19.333vw;
-    left: 17.333vw;
+    width: 62.867vw;
+    top: 17.466vw;
+    left: 14.4vw;
   }
   body .wrapper .background .city {
-    width: 85.333vw;
-    top: 13.333vw;
-    left: 12.8vw;
+    width: 88.266vw;
+    top: 8.533vw;
+    left: 8.267vw;
   }
   body .wrapper .header {
     height: 19.733vw;
