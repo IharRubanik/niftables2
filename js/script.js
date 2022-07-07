@@ -372,14 +372,10 @@ function handleTouchMove(evt) {
         return;
     }
 
-    console.log(Math.abs(startSwipeY - endSwipeY))
-
-    if (Math.abs(startSwipeY - endSwipeY) >= 40) {
+    if (Math.abs(startSwipeY - endSwipeY) >= 20) {
       this.classList.remove('touch');
-      console.log('move')
     } else {
       this.classList.add('touch');
-      console.log('stuck')
     }
 
 
