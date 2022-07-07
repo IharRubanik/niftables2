@@ -346,9 +346,7 @@ function handleTouchMove(evt) {
             document.querySelector('.tokenomics__slider__button .button.next').click();
           }
           if (this.id === 'c3') {
-            if (processProgress <= 4) {
-              setTimeout(processProgressPlus, 500)
-            }
+            setTimeout(processProgressPlus, 100)
           }
         } else {
           /* right swipe */
@@ -359,9 +357,7 @@ function handleTouchMove(evt) {
             document.querySelector('.tokenomics__slider__button .button.prev').click();
           }
           if (this.id === 'c3') {
-            if (processProgress != 0) {
-              setTimeout(processProgressMinus, 500)
-            }
+            setTimeout(processProgressMinus, 100)
           }
         }                       
     } 
