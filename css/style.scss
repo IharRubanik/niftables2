@@ -607,6 +607,7 @@ html{
   }
 }
 body {
+  overflow-x: hidden;
   background-color: #0b0b0c;
   &.active {
     overflow: hidden;
