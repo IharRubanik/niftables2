@@ -1432,7 +1432,7 @@ body.active {
 body .wrapper {
   width: 100%;
   position: relative;
-  overflow: clip;
+  overflow-x: clip;
 }
 
 body .wrapper .preloader {

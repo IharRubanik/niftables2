@@ -615,7 +615,8 @@ body {
   .wrapper {
     width: 100%;
     position: relative;
-    overflow: clip;
+    overflow-x: clip;
+    
     .preloader {
       position: fixed;
       top: 0;
