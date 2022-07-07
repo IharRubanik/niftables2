@@ -289,15 +289,6 @@ let startSwipeY = 0,
     endSwipeY = 0,
     processProgress = 0;
 
-// Вешаем на прикосновение функцию handleTouchStart
-canvas1.addEventListener('touchstart', handleTouchStart, false);  
-canvas2.addEventListener('touchstart', handleTouchStart, false);  
-canvas3.addEventListener('touchstart', handleTouchStart, false);
-// А на движение пальцем по экрану - handleTouchMove      
-canvas1.addEventListener('touchmove', handleTouchMove, false);
-canvas2.addEventListener('touchmove', handleTouchMove, false);
-canvas3.addEventListener('touchend', handleTouchMove, false);
-
 window.addEventListener('touchstart', function(e) {
   startSwipeY = e.changedTouches[0].clientY;
 })
@@ -305,27 +296,42 @@ window.addEventListener('touchend', function(e) {
   endSwipeY = e.changedTouches[0].clientY;
 })
 
+// Вешаем на прикосновение функцию handleTouchStart
+canvas1.addEventListener('touchstart', handleTouchStart, false);  
+canvas2.addEventListener('touchstart', handleTouchStart, false);  
+canvas3.addEventListener('touchstart', handleTouchStart, false);
+// А на движение пальцем по экрану - handleTouchMove      
+canvas1.addEventListener('touchmove', handleTouchMove, false);
+canvas2.addEventListener('touchmove', handleTouchMove, false);
+canvas3.addEventListener('touchmove', handleTouchMove, false);
+// Вешаем на прикосновение функцию handleTouchEnd
+canvas1.addEventListener('touchend', handleTouchEnd, false);  
+canvas2.addEventListener('touchend', handleTouchEnd, false);  
+canvas3.addEventListener('touchend', handleTouchEnd, false);
+
 var xDown = null;                                                        
 var yDown = null;                                                    
 
 function handleTouchStart(evt) {                                         
     xDown = evt.changedTouches[0].clientX;                                      
     yDown = evt.changedTouches[0].clientY; 
-    
-    
 };          
+
+function handleTouchEnd() {                                         
+  this.classList.remove('touch');
+};          
+
 
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
         return;
     }
 
-    if (Math.abs(startSwipeY - endSwipeY) >= 40) {
+    if (Math.abs(startSwipeY - endSwipeY) >= 100) {
       this.classList.remove('touch');
     } else {
       this.classList.add('touch');
     }
-
 
     var xUp = evt.changedTouches[0].clientX;                                    
     var yUp = evt.changedTouches[0].clientY;
@@ -347,6 +353,7 @@ function handleTouchMove(evt) {
           if (this.id === 'c3') {
             if (processProgress <= 4) {
               processProgress++;
+              initProcess(processProgress);
             }
           }
         } else {
@@ -360,10 +367,10 @@ function handleTouchMove(evt) {
           if (this.id === 'c3') {
             if (processProgress != 0) {
               processProgress--;
+              initProcess(processProgress);
             }
           }
         }         
-        setTimeout(initProcess(processProgress), 1)
         // initProcess(processProgress);
     } 
     /* reset values */

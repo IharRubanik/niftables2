@@ -1436,8 +1436,8 @@
     width: 4.267vw;
   }
   canvas.touch {
-    -ms-touch-action: none;
-        touch-action: none;
+    -ms-touch-action: none !important;
+        touch-action: none !important;
   }
   canvas#c3 {
     height: calc(100% + 50vw);
