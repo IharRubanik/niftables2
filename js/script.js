@@ -186,15 +186,17 @@ window.addEventListener("scroll", function () {
 })
 
 window.addEventListener('resize', function() {
-  checkProcessSize()
-  initProcess(0);
-  alert('123')
+  checkProcessSize();
+  if (window.innerWidth > 600) {
+    initProcess(0);
+  }
 })
 
 window.addEventListener('orientationchange', function() {
   checkProcessSize()
-  initProcess(0);
-  alert('123')
+  if (window.innerWidth > 600) {
+    initProcess(0);
+  }
 })
 
 const slider1 = document.querySelector('.slider1');
