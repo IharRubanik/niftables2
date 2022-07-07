@@ -376,7 +376,7 @@ function scrollTo(element) {
   window.scroll({
     behavior: 'smooth',
     left: 0,
-    top: window.innerWidth <= 375 ? element.offsetTop : element.offsetTop - document.querySelector('.header-inner').clientHeight
+    top: window.innerWidth <= 375 ? element.offsetTop : element.offsetTop - document.querySelector('.header-logo').clientHeight
   });
 }
 
