@@ -288,26 +288,16 @@ const canvas1 = document.getElementById("c1"),
       canvas3 = document.getElementById("c3");
 
 // Вешаем на прикосновение функцию handleTouchStart
-canvas1.addEventListener('touchstart', sliderTouch, false);  
-canvas2.addEventListener('touchstart', sliderTouch, false);  
-canvas3.addEventListener('touchstart', sliderTouch, false);  
-canvas1.addEventListener('touchend', sliderTouch, false);  
-canvas2.addEventListener('touchend', sliderTouch, false);  
-canvas3.addEventListener('touchend', sliderTouch, false);  
+canvas1.addEventListener('touchstart', handleTouchStart, false);  
+canvas2.addEventListener('touchstart', handleTouchStart, false);  
+canvas3.addEventListener('touchstart', handleTouchStart, false);  
 // А на движение пальцем по экрану - handleTouchMove      
-// canvas1.addEventListener('touchmove', handleTouchMove, false);
-// canvas2.addEventListener('touchmove', handleTouchMove, false);
-// canvas3.addEventListener('touchmove', handleTouchMove, false);
+canvas1.addEventListener('touchmove', handleTouchMove, false);
+canvas2.addEventListener('touchmove', handleTouchMove, false);
+canvas3.addEventListener('touchmove', handleTouchMove, false);
 
 let processProgress = 0;
 
-
-function sliderTouch(event) {
-
-  alert(event.path[0])
-
-
-}
 
 
 var xDown = null;                                                        
@@ -334,19 +324,14 @@ function handleTouchMove(evt) {
 
         if ( xDiff > 0 ) {
           /* left swipe */ 
-          if (processProgress <= 4) {
-            processProgress++;
-            initProcess(processProgress);
-          }
 
-          // alert('left swipe', evt.path[0])
-          if (evt.path[0].id === 'c1') {
+          if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
           }
-          if (evt.path[0].id === 'c2') {
+          if (this.id === 'c2') {
             document.querySelector('.tokenomics__slider__button .button.next').click();
           }
-          if (evt.path[0].id === 'c3') {
+          if (this.id === 'c3') {
             if (processProgress <= 4) {
               processProgress++;
               initProcess(processProgress);
@@ -354,19 +339,13 @@ function handleTouchMove(evt) {
           }
         } else {
           /* right swipe */
-          // alert('right swipe'. evt.path[0].id)
-          if (processProgress != 0) {
-            processProgress--;
-            initProcess(processProgress);
-          }
-
-          if (evt.path[0].id === 'c1') {
+          if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
           }
-          if (evt.path[0].id === 'c2') {
+          if (this.id === 'c2') {
             document.querySelector('.tokenomics__slider__button .button.prev').click();
           }
-          if (evt.path[0].id === 'c3') {
+          if (this.id === 'c3') {
             if (processProgress != 0) {
               processProgress--;
               initProcess(processProgress);
