@@ -628,12 +628,10 @@ body {
       transform: translate(0);
     }
     .header-content__inner {
-      // position: relative;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       gap: 3.646vw;
-      // height: 100%;
       .header-content__nav {
         margin: 1.875vw 0 0 0;
         display: flex;
@@ -881,7 +879,6 @@ body {
 
         .preloader__title {
           overflow: hidden;
-          // width: 100%;
           width: 73%;
           h2 {
             display: block;
@@ -926,7 +923,7 @@ body {
       position: fixed;
       left: 0;
       top: 0;
-      background-image: url(../img/background.png);
+      background-image: url(../img/background.webp);
       background-size: 100%;
       background-repeat: no-repeat;
       z-index: -1;
@@ -990,8 +987,6 @@ body {
         z-index: 1;
         opacity: 0;
         &.active {
-          // transform: scale(0.65);
-          // opacity: 1;
           animation: 1s triangle-purple 1.5s linear forwards,
             12s triangle-purple-active 3.5s linear infinite;
         }
@@ -1006,9 +1001,6 @@ body {
         z-index: 1;
         opacity: 0;
         &.active {
-          // transform: scale(0.65);
-          // opacity: 1;
-
           animation: 1s triangle-blue 2.5s linear forwards,
             12s triangle-blue-active 3.5s linear infinite;
         }
@@ -1017,8 +1009,6 @@ body {
         position: absolute;
         width: 44.323vw;
         top: 0;
-        // top: 45.005px;
-        // left: 1020px;
         top: 0.625vw;
         left: 51.458vw;
         opacity: 0;
@@ -1647,7 +1637,6 @@ body {
                   background-color: #ffffff;
                 }
                 .process__arrow-item {
-                  // cursor: pointer;
                   flex-shrink: 0;
                   position: relative;
                   display: flex;
@@ -1998,7 +1987,6 @@ body {
                 #0342e7 23.25%,
                 #cb24ff 65.07%
               );
-            // z-index: 1;
           }
           .features-arrow {
             margin: 0 1.823vw 0 0;

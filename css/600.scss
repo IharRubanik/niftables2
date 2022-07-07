@@ -1,5 +1,4 @@
 @media (max-width: 600px) {
-
   body {
     overflow-x: hidden;
     width: 100%;
@@ -142,6 +141,7 @@
       }
     }
     .wrapper {
+      
       .preloader {
         .preloader__container {
           gap: 14.65px;
@@ -164,10 +164,20 @@
         }
       }
       .background {
-        background: url("/img/main/background-blur.png");
-        background-size: 100% 19.733vw;
-        background-repeat: no-repeat;
-        background-position: top center;
+         &::after{
+          content: '';
+          background: url("/img/main/background-blur.png");
+          background-size: 100% 20vw;
+          background-repeat: no-repeat;
+          background-position: top center;
+          position: absolute;
+          width: 100vw;
+          height: 19.733vw ;
+          left: 0;
+          top: 0;
+          z-index: 10;
+         }
+        
         height: 207.288vw;
         top: 0;
         left: 0;
@@ -176,36 +186,36 @@
           left: -55.167vw;
           top: 28vw;
           transform: translate(-10.667vw, 36.267vw);
-          animation-duration: 15s;
+          animation-duration: 20s;
         }
         .main__smoke-top2 {
           top: -4.833vw;
           left: 56.667vw;
-          width: 61.333vw;
-          transform: translate(-22.133vw, 18.933vw);
-          animation-duration: 15s;
+          width: 82.333vw;
+          transform: translate(-42.133vw, -6.067vw);
+          animation-duration: 20s;
         }
         .main__smoke-buttom2 {
           top: 0;
           left: -10.667vw;
           width: 110vw;
-         
+
           transform: translate(-40.8vw, 25.6vw);
-          animation-duration: 15s;
+          animation-duration: 20s;
         }
         .main__smoke-buttom {
           top: -14.167vw;
           left: 125vw;
           width: 115vw;
           transform: translate(-40.8vw, 17.067vw);
-          animation-duration: 15s;
+          animation-duration: 20s;
         }
         .main__smoke-top {
           left: 26vw;
           top: -2.5vw;
-          width: 70.5vw;
+         width: 140.5vw;
           transform: translate(-40.8vw, 25.6vw);
-          animation-duration: 15s;
+          animation-duration: 20s;
         }
         .main__man {
           width: 245.333vw;
@@ -213,19 +223,19 @@
           left: -69.973vw;
         }
         .purple-triangle {
-          width: 38.333vw;
-          top: 26.205vw;
-          left: 27.2vw;
+          width: 92.2vw;
+          top: -28.995vw;
+          left: -0.267vw;
         }
         .blue-triangle {
-          width: 57.8vw;
-          top: 19.333vw;
-          left: 17.333vw;
+          width: 62.867vw;
+          top: 17.466vw;
+          left: 14.4vw;
         }
         .city {
-          width: 85.333vw;
-          top: 13.333vw;
-          left: 12.8vw;
+          width: 88.266vw;
+          top: 8.533vw;
+          left: 8.267vw;
         }
       }
       .header {
@@ -356,9 +366,9 @@
             width: 9.956vw;
           }
         }
-
       }
       .main {
+      
         height: 212.2vw;
         padding: 89.333vw 4vw 0 4vw;
         .main-info {
@@ -1178,7 +1188,7 @@
           }
           &::before {
             font-size: 3.2vw;
-    line-height: 4vw;
+            line-height: 4vw;
             right: 4vw;
             transform: translateY(-8vw);
           }
@@ -1324,6 +1334,4 @@
   canvas#c3 {
     height: calc(100% + 50vw);
   }
-
 }
-
