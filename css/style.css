@@ -1633,10 +1633,10 @@ body .wrapper .background .main__man {
 }
 
 body .wrapper .background .purple-triangle {
+  top: 9.812vw;
+  left: 61.75vw;
+  width: 369px;
   position: absolute;
-  top: -12.188vw;
-  left: 48.75vw;
-  width: 44.74vw;
   z-index: 1;
   opacity: 0;
 }
