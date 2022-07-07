@@ -400,13 +400,10 @@ function scrollTo(element) {
 }
 
 document.querySelector('.header-subscribe input').addEventListener('focus', function() {
-  console.log('focus')
-  alert(document.querySelector('body').clientHeight - window.pageYOffset)
-  
+  document.querySelector('.header-content').style.paddingBottom = `${document.querySelector('body').clientHeight - window.pageYOffset}px`
 })
 document.querySelector('.header-subscribe input').addEventListener('blur', function() {
-  console.log('blur')
-  alert(document.querySelector('body').clientHeight - window.pageYOffset)
+  document.querySelector('.header-content').style.paddingBottom = 0;
 })
 
 // Scroll script
