@@ -368,19 +368,19 @@ function handleTouchStart(evt) {
     xDown = evt.changedTouches[0].clientX;                                      
     yDown = evt.changedTouches[0].clientY;  
     
-    this.classList.add('touch')
+    // this.classList.add('touch')
+    document.documentElement.style.overflow = 'hidden';
                                   
 };          
 function handleTouchEnd() {                                         
-  
-  document.querySelectorAll('canvas').forEach(canv => canv.classList.remove('touch'))
+  document.documentElement.style.overflow = 'auto';
+  // document.querySelectorAll('canvas').forEach(canv => canv.classList.remove('touch'))
                                 
 };                                      
 
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
-      alert('ЭВРИКА!')
-        // return;
+      return;
     }
 
     var xUp = evt.changedTouches[0].clientX;                                    
