@@ -1410,6 +1410,7 @@ input {
 html {
   overflow-y: hidden;
   overflow-x: hidden;
+  width: 100%;
 }
 
 html::-webkit-scrollbar {
@@ -1426,6 +1427,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
+  width: 100%;
   background-color: #0b0b0c;
 }
 
@@ -1440,6 +1442,7 @@ body .wrapper {
 }
 
 body .wrapper .preloader {
+  overflow-x: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -2228,6 +2231,7 @@ body .wrapper .header .header-content .header-subscribe .header-subscribe__block
 }
 
 body .wrapper .main {
+  overflow-x: hidden;
   height: 58.385vw;
   padding: 12.135vw 0 0 0;
 }
@@ -2434,6 +2438,7 @@ body .wrapper .main .main-info .main-info__bottom button img {
 }
 
 body .wrapper .about {
+  overflow: hidden;
   padding: 1.563vw 0 10.417vw 0;
 }
 
@@ -3578,6 +3583,7 @@ body .wrapper .features .features__slider .slider__plagination span.active {
 }
 
 body .wrapper .vision {
+  position: relative;
   width: 100%;
   height: 781.25vw;
   padding: 0;
