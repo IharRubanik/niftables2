@@ -296,19 +296,6 @@ window.addEventListener('touchend', function(e) {
   endSwipeY = e.changedTouches[0].clientY;
 })
 
-// Вешаем на прикосновение функцию handleTouchStart
-canvas1.addEventListener('touchstart', handleTouchStart, false);  
-canvas2.addEventListener('touchstart', handleTouchStart, false);  
-canvas3.addEventListener('touchstart', handleTouchStart, false);
-// А на движение пальцем по экрану - handleTouchMove      
-canvas1.addEventListener('touchmove', handleTouchMove, false);
-canvas2.addEventListener('touchmove', handleTouchMove, false);
-canvas3.addEventListener('touchmove', handleTouchMove, false);
-// Вешаем на прикосновение функцию handleTouchStart
-canvas1.addEventListener('touchend', handleTouchEnd, false);  
-canvas2.addEventListener('touchend', handleTouchEnd, false);  
-canvas3.addEventListener('touchend', handleTouchEnd, false);
-
 var xDown = null;                                                        
 var yDown = null;                                                    
 
@@ -318,7 +305,7 @@ function handleTouchStart(evt) {
 };          
 
 function handleTouchEnd() {                                         
-  this.classList.remove('touch');
+  document.body.style.overflow = 'auto';
 };         
 
 function handleTouchMove(evt) {
@@ -326,7 +313,8 @@ function handleTouchMove(evt) {
         return;
     }
 
-    this.classList.add('touch');
+
+    document.body.style.overflow = 'hidden';
 
     var xUp = evt.changedTouches[0].clientX;                                    
     var yUp = evt.changedTouches[0].clientY;
@@ -372,6 +360,21 @@ function handleTouchMove(evt) {
     xDown = null;
     // yDown = null;                                             
 };
+
+// Вешаем на прикосновение функцию handleTouchStart
+canvas1.addEventListener('touchstart', handleTouchStart, false);  
+canvas2.addEventListener('touchstart', handleTouchStart, false);  
+canvas3.addEventListener('touchstart', handleTouchStart, false);
+// А на движение пальцем по экрану - handleTouchMove      
+canvas1.addEventListener('touchmove', handleTouchMove, false);
+canvas2.addEventListener('touchmove', handleTouchMove, false);
+canvas3.addEventListener('touchmove', handleTouchMove, false);
+// Вешаем на прикосновение функцию handleTouchStart
+canvas1.addEventListener('touchend', handleTouchEnd, false);  
+canvas2.addEventListener('touchend', handleTouchEnd, false);  
+canvas3.addEventListener('touchend', handleTouchEnd, false);
+
+
 
 // собираем элементы слайдера
 function toogleSlider(slider) {
