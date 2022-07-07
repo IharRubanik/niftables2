@@ -1321,6 +1321,10 @@
     }
   }
 
+  canvas {
+    touch-action: none!important;
+  }
+
   canvas#c3 {
     height: calc(100% + 50vw);
   }

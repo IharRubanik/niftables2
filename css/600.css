@@ -1424,6 +1424,10 @@
   body .wrapper .contacts .foorer__container .header-subscribe__block .form__container button img {
     width: 4.267vw;
   }
+  canvas {
+    -ms-touch-action: none !important;
+        touch-action: none !important;
+  }
   canvas#c3 {
     height: calc(100% + 50vw);
   }
