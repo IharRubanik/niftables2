@@ -299,15 +299,17 @@ canvas3.addEventListener('touchmove', handleTouchMove, false);
 let processProgress = 0;
 
 function processProgressPlus() {
-  processProgress++;
-  initProcess(processProgress);
-  console.log('plus')
+  if (processProgress <= 4) {
+    processProgress++;
+    initProcess(processProgress);
+  }
 }
 
 function processProgressMinus() {
-  processProgress++;
-  initProcess(processProgress);
-  console.log('minus')
+  if (processProgress !== 0) {
+    processProgress--;
+    initProcess(processProgress);
+  }
 }
 
 
