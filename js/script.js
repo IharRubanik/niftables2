@@ -310,7 +310,7 @@ canvas3.addEventListener('touchend', handleTouchStart1, false);
 
 function handleTouchStart1() {
 
-  if (startSwipe < endSwipe) {
+  if (startSwipe > endSwipe) {
 
     if (this.id === 'c1') {
       document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
