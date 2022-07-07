@@ -321,7 +321,7 @@ function handleTouchMove(evt) {
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
           /* left swipe */ 
-          alert('left swipe');
+          alert(evt.path[0].id);
           if (evt.path[0].id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
           }
@@ -329,6 +329,7 @@ function handleTouchMove(evt) {
             document.querySelector('.tokenomics__slider__button .button.next').click();
           }
           if (evt.path[0].id === 'c3') {
+            alert('process slider swipe')
             if (processProgress <= 4) {
               processProgress++;
               initProcess(processProgress);
@@ -336,7 +337,7 @@ function handleTouchMove(evt) {
           }
         } else {
           /* right swipe */
-          alert('right swipe');
+          alert(evt);
           if (evt.path[0].id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
           }
