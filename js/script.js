@@ -288,18 +288,14 @@ const canvas1 = document.getElementById("c1"),
       canvas2 = document.getElementById("c2"),
       canvas3 = document.getElementById("c3");
 
-let startSwipe = 0,
-    endSwipe = 0,
+let startSwipeY = 0,
+    endSwipeY = 0,
     processProgress = 0;
 
 // Вешаем на прикосновение функцию handleTouchStart
 canvas1.addEventListener('touchstart', handleTouchStart, false);  
 canvas2.addEventListener('touchstart', handleTouchStart, false);  
-canvas3.addEventListener('touchstart', handleTouchStart, false);  
-// Вешаем на прикосновение функцию handleTouchEnd
-canvas1.addEventListener('touchend', handleTouchEnd, false);  
-canvas2.addEventListener('touchend', handleTouchEnd, false);  
-canvas3.addEventListener('touchend', handleTouchEnd, false);  
+canvas3.addEventListener('touchstart', handleTouchStart, false);
 // А на движение пальцем по экрану - handleTouchMove      
 canvas1.addEventListener('touchmove', handleTouchMove, false);
 canvas2.addEventListener('touchmove', handleTouchMove, false);
@@ -354,29 +350,38 @@ canvas3.addEventListener('touchend', handleTouchMove, false);
 //   }
 // }
 
+window.addEventListener('touchstart', function(e) {
+  startSwipeY = e.changedTouches[0].clientY;
+})
+window.addEventListener('touchend', function(e) {
+  endSwipeY = e.changedTouches[0].clientY;
+})
+
 var xDown = null;                                                        
 var yDown = null;                                                    
 
 function handleTouchStart(evt) {                                         
     xDown = evt.changedTouches[0].clientX;                                      
     yDown = evt.changedTouches[0].clientY; 
-
-    this.classList.add('touch');
+    
     
 };          
-function handleTouchEnd(evt) {   
-  this.classList.remove('touch')
-};          
-              
-                                 
 
 function handleTouchMove(evt) {
-  this.classList.remove('touch')
-
-  console.log('move')
     if ( ! xDown || ! yDown ) {
         return;
     }
+
+    console.log(Math.abs(startSwipeY - endSwipeY))
+
+    if (Math.abs(startSwipeY - endSwipeY) >= 40) {
+      this.classList.remove('touch');
+      console.log('move')
+    } else {
+      this.classList.add('touch');
+      console.log('stuck')
+    }
+
 
     var xUp = evt.changedTouches[0].clientX;                                    
     var yUp = evt.changedTouches[0].clientY;
