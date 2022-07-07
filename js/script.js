@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.purple-triangle').classList.add('active');
       document.querySelector('.main-info__text b').classList.add('active');
       document.querySelector('body').classList.remove('active');
+      document.querySelector('html').style.overflowY = 'auto';
 
       
     }

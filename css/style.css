@@ -1408,6 +1408,7 @@ input {
 }
 
 html {
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -1425,7 +1426,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: clip;
   background-color: #0b0b0c;
 }
 
