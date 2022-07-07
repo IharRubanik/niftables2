@@ -324,11 +324,14 @@ function handleTouchMove(evt) {
           alert('left swipe');
           if (evt.path[0].id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
+            console.log('left swipe c1')
           }
           if (evt.path[0].id === 'c2') {
             document.querySelector('.tokenomics__slider__button .button.next').click();
+            console.log('left swipe c2')
           }
           if (evt.path[0].id === 'c3') {
+            console.log('left swipe c3')
             alert('process slider swipe')
             if (processProgress <= 4) {
               processProgress++;
