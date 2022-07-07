@@ -300,52 +300,48 @@ let startSwipe = 0,
   })
 
 // Вешаем на прикосновение функцию handleTouchStart
-canvas1.addEventListener('touchend', handleTouchStart1, false);  
-canvas2.addEventListener('touchend', handleTouchStart1, false);  
-canvas3.addEventListener('touchend', handleTouchStart1, false);  
+canvas1.addEventListener('touchstart', handleTouchStart, false);  
+canvas2.addEventListener('touchstart', handleTouchStart, false);  
+canvas3.addEventListener('touchstart', handleTouchStart, false);  
 // А на движение пальцем по экрану - handleTouchMove      
-// canvas1.addEventListener('touchmove', handleTouchMove, false);
-// canvas2.addEventListener('touchmove', handleTouchMove, false);
-// canvas3.addEventListener('touchmove', handleTouchMove, false);
+canvas1.addEventListener('touchmove', handleTouchMove, false);
+canvas2.addEventListener('touchmove', handleTouchMove, false);
+canvas3.addEventListener('touchend', handleTouchMove, false);
 
-function handleTouchStart1() {
+// function handleTouchStart1() {
 
-  if (startSwipe > endSwipe) {
+//   if (startSwipe > endSwipe) {
 
-    if (this.id === 'c1') {
-      document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
-    }
-    if (this.id === 'c2') {
-      document.querySelector('.tokenomics__slider__button .button.next').click();
-    }
-    if (this.id === 'c3') {
-      if (processProgress <= 4) {
-        processProgress++;
-        initProcess(processProgress);
-      }
-    }
+//     if (this.id === 'c1') {
+//       document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
+//     }
+//     if (this.id === 'c2') {
+//       document.querySelector('.tokenomics__slider__button .button.next').click();
+//     }
+//     if (this.id === 'c3') {
+//       if (processProgress <= 4) {
+//         processProgress++;
+//         initProcess(processProgress);
+//       }
+//     }
 
-  } else {
+//   } else {
 
-    if (this.id === 'c1') {
-      document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
-    }
-    if (this.id === 'c2') {
-      document.querySelector('.tokenomics__slider__button .button.prev').click();
-    }
-    if (this.id === 'c3') {
-      if (processProgress != 0) {
-        processProgress--;
-        initProcess(processProgress);
-      }
-    }
+//     if (this.id === 'c1') {
+//       document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
+//     }
+//     if (this.id === 'c2') {
+//       document.querySelector('.tokenomics__slider__button .button.prev').click();
+//     }
+//     if (this.id === 'c3') {
+//       if (processProgress != 0) {
+//         processProgress--;
+//         initProcess(processProgress);
+//       }
+//     }
 
-  }
-}
-
-console.log(startSwipe, endSwipe)
-
-
+//   }
+// }
 
 // function processProgressPlus() {
 //   if (processProgress <= 4) {
@@ -394,7 +390,8 @@ function handleTouchMove(evt) {
           }
           if (this.id === 'c3') {
             if (processProgress <= 4) {
-              processProgressPlus()
+              processProgress++;
+              initProcess(processProgress);
             }
           }
         } else {
@@ -407,7 +404,8 @@ function handleTouchMove(evt) {
           }
           if (this.id === 'c3') {
             if (processProgress != 0) {
-              processProgressMinus()
+              processProgress--;
+              initProcess(processProgress);
             }
           }
         }                       
