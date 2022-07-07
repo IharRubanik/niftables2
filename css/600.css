@@ -1,6 +1,5 @@
 @media (max-width: 600px) {
-  .main.container,
-  header {
+  .contacts.container {
     display: none;
   }
   @-webkit-keyframes nft-gradient-text {
