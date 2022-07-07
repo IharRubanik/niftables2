@@ -166,18 +166,18 @@
     left: 0;
   }
   body .wrapper .background .main__smoke-buttom3 {
-    width: 78.125vw;
+    width: 111.027vw;
     left: -25.26vw;
     top: 34.766vw;
-    -webkit-transform: translate(-23.177vw, 1.302vw);
-            transform: translate(-23.177vw, 1.302vw);
+    -webkit-transform: translate(-30.667vw, 25.267vw);
+            transform: translate(-30.667vw, 25.267vw);
     -webkit-animation: main__smoke-buttom3 20s linear infinite;
             animation: main__smoke-buttom3 20s linear infinite;
   }
   body .wrapper .background .main__smoke-top2 {
     top: -2.344vw;
     right: -0.781vw;
-    width: 65.625vw;
+    width: 93.264vw;
     -webkit-transform: translate(-23.177vw, 1.302vw);
             transform: translate(-23.177vw, 1.302vw);
     -webkit-animation: main__smoke-top2 20s linear infinite;
@@ -186,25 +186,25 @@
   body .wrapper .background .main__smoke-buttom2 {
     top: 2.995vw;
     left: 25vw;
-    width: 114.844vw;
-    -webkit-transform: translate(-23.177vw, 1.302vw);
-            transform: translate(-23.177vw, 1.302vw);
+    width: 152vw;
+    -webkit-transform: translate(-47.8vw, 10.6vw);
+            transform: translate(-47.8vw, 10.6vw);
     -webkit-animation: main__smoke-buttom2 20s linear infinite;
             animation: main__smoke-buttom2 20s linear infinite;
   }
   body .wrapper .background .main__smoke-buttom {
     top: -13.021vw;
     left: 41.276vw;
-    width: 111.458vw;
-    -webkit-transform: translate(-23.177vw, 1.302vw);
-            transform: translate(-23.177vw, 1.302vw);
+    width: 594px;
+    -webkit-transform: translate(-40.8vw, 5.067vw);
+            transform: translate(-40.8vw, 5.067vw);
     -webkit-animation: main__smoke-buttom 20s linear infinite;
             animation: main__smoke-buttom 20s linear infinite;
   }
   body .wrapper .background .main__smoke-top {
     left: 66.146vw;
     top: 0.26vw;
-    width: 65.885vw;
+    width: 93.618vw;
     -webkit-animation: main__smoke-top 20s linear infinite;
             animation: main__smoke-top 20s linear infinite;
   }
@@ -214,19 +214,19 @@
     left: -8.646vw;
   }
   body .wrapper .background .purple-triangle {
-    width: 23vw;
-    top: 17vw;
-    left: 62vw;
+    width: 51.125vw;
+    top: -12.833vw;
+    left: 49.109vw;
   }
   body .wrapper .background .blue-triangle {
-    width: 36.211vw;
+    width: 35.299vw;
     top: 12.636vw;
-    left: 55.339vw;
+    left: 57.032vw;
   }
   body .wrapper .background .city {
-    width: 59.097vw;
-    top: 5.729vw;
-    left: 51.302vw;
+    width: 51.154vw;
+    top: 7.552vw;
+    left: 53.255vw;
   }
   body .wrapper .header .header-name {
     position: fixed;

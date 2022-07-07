@@ -197,6 +197,10 @@
     width: 32px;
   }
   body .wrapper .background {
+    background: url("/img/main/background-blur.png");
+    background-size: 100% 19.733vw;
+    background-repeat: no-repeat;
+    background-position: top center;
     height: 207.288vw;
     top: 0;
     left: 0;
@@ -268,10 +272,6 @@
   }
   body .wrapper .header {
     height: 19.733vw;
-    background: url("/img/header/background-blur.svg");
-    background-size: 100vw 19.733vw;
-    background-repeat: no-repeat;
-    background-position: top center;
     position: absolute;
     width: 100%;
   }
@@ -995,7 +995,7 @@
     height: 288.667vw;
   }
   body .wrapper .tokenomics::after {
-    background-image: url(../img/tokenomics/slider-bg-mobile.svg);
+    background-image: url(../img/tokenomics/slider-bg-mobile.png);
     background-size: 105.6vw auto;
     left: -3.2vw;
     top: 79.2vw;
