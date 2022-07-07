@@ -345,7 +345,7 @@ function handleTouchMove(evt) {
           }
           if (this.id === 'c3') {
             if (processProgress <= 4) {
-              setTimeout(processProgressPlus, 500)
+              processProgressPlus()
             }
           }
         } else {
@@ -358,7 +358,7 @@ function handleTouchMove(evt) {
           }
           if (this.id === 'c3') {
             if (processProgress != 0) {
-              setTimeout(processProgressMinus, 500)
+              processProgressMinus()
             }
           }
         }                       
@@ -400,10 +400,12 @@ function scrollTo(element) {
 }
 
 document.querySelector('.header-subscribe input').addEventListener('focus', function() {
-  document.querySelector('.header-content').style.paddingBottom = `${document.querySelector('body').clientHeight - window.pageYOffset}px`
+  document.querySelector('.header-content').style.paddingBottom = `40vw`;
+   scrollTo(document.querySelector('.header-subscribe'))
 })
 document.querySelector('.header-subscribe input').addEventListener('blur', function() {
   document.querySelector('.header-content').style.paddingBottom = 0;
+   scrollTo(document.querySelector('.header-subscribe'))
 })
 
 // Scroll script
