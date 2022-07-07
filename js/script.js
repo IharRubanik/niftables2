@@ -320,7 +320,7 @@ function handleTouchMove(evt) {
         return;
     }
 
-    if (Math.abs(startSwipeY - endSwipeY) >= 20) {
+    if (Math.abs(startSwipeY - endSwipeY) >= 40) {
       this.classList.remove('touch');
     } else {
       this.classList.add('touch');
