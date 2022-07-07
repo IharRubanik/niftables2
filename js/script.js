@@ -328,7 +328,7 @@ function handleTouchMove(evt) {
         return;
     }
 
-    if (Math.abs(startSwipeY - endSwipeY) >= 40) {
+    if (Math.abs(startSwipeY - endSwipeY) >= 100) {
       // this.classList.remove('touch');
       enableScrolling()
     } else {
