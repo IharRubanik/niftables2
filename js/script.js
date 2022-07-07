@@ -322,6 +322,7 @@ function handleTouchMove(evt) {
         if ( xDiff > 0 ) {
           /* left swipe */ 
           alert('left swipe');
+          document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
           if (evt.path[0].id === 'c1') {
             alert('left swipe c1')
             document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
@@ -332,6 +333,8 @@ function handleTouchMove(evt) {
             document.querySelector('.tokenomics__slider__button .button.next').click();
             
           }
+          processProgress++;
+              initProcess(processProgress);
           if (evt.path[0].id === 'c3') {
             alert('left swipe c3')
             if (processProgress <= 4) {
@@ -343,12 +346,15 @@ function handleTouchMove(evt) {
           /* right swipe */
           alert('right swipe');
           if (evt.path[0].id === 'c1') {
+            alert('right swipe c1')
             document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
           }
           if (evt.path[0].id === 'c2') {
+            alert('right swipe c2')
             document.querySelector('.tokenomics__slider__button .button.prev').click();
           }
           if (evt.path[0].id === 'c3') {
+            alert('right swipe c3')
             if (processProgress != 0) {
               processProgress--;
               initProcess(processProgress);
