@@ -229,7 +229,7 @@
         }
         .blue-triangle {
           width: 62.867vw;
-          top: 17.466vw;
+          top: 16.466vw;
           left: 14.4vw;
         }
         .city {
@@ -354,8 +354,10 @@
             z-index: 1;
             .header-list__item {
               img {
-                max-width: 5.333vw;
-                max-height: 4.533vw;
+                width: 5.333vw;
+                height: auto ;
+                max-width: none;
+                max-height: none;
                 &:nth-child(1) {
                   width: 5.333vw;
                 }
