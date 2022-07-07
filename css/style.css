@@ -1945,7 +1945,7 @@ body .wrapper .background .main__man {
 }
 
 body .wrapper .background .purple-triangle {
-  top: 216.998px;
+  top: 10.156vw;
   left: 62.031vw;
   width: 18.281vw;
   height: auto;
@@ -1955,8 +1955,8 @@ body .wrapper .background .purple-triangle {
 }
 
 body .wrapper .background .purple-triangle.active {
-  -webkit-animation: 1s triangle-purple 1.5s linear forwards;
-          animation: 1s triangle-purple 1.5s linear forwards;
+  -webkit-animation: 1s triangle-purple 1.5s linear forwards, 12s triangle-purple-active 3.5s linear infinite;
+          animation: 1s triangle-purple 1.5s linear forwards, 12s triangle-purple-active 3.5s linear infinite;
 }
 
 body .wrapper .background .blue-triangle {
@@ -1970,9 +1970,8 @@ body .wrapper .background .blue-triangle {
 }
 
 body .wrapper .background .blue-triangle.active {
-  -webkit-transform: scale(0.65);
-          transform: scale(0.65);
-  opacity: 1;
+  -webkit-animation: 1s triangle-blue 2.5s linear forwards, 12s triangle-blue-active 3.5s linear infinite;
+          animation: 1s triangle-blue 2.5s linear forwards, 12s triangle-blue-active 3.5s linear infinite;
 }
 
 body .wrapper .background .city {

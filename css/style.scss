@@ -987,7 +987,7 @@ body {
         left: 14.219vw;
       }
       .purple-triangle {
-        top: 216.998px;
+        top: 10.156vw;
         left: 62.031vw;
         width: 18.281vw;
         height: auto;
@@ -995,9 +995,9 @@ body {
         z-index: 1;
         opacity: 0;
         &.active {
-          animation: 1s triangle-purple 1.5s linear forwards;
-          // animation: 1s triangle-purple 1.5s linear forwards,
-          // 12s triangle-purple-active 3.5s linear infinite;
+          // animation: 1s triangle-purple 1.5s linear forwards;
+          animation: 1s triangle-purple 1.5s linear forwards,
+          12s triangle-purple-active 3.5s linear infinite;
         }
       }
       .blue-triangle {
@@ -1009,11 +1009,11 @@ body {
         z-index: 1;
         opacity: 0;
         &.active {
-          transform: scale(0.65);
-          opacity: 1;
+          // transform: scale(0.65);
+          // opacity: 1;
 
-          // animation: 1s triangle-blue 2.5s linear forwards,
-          // 12s triangle-blue-active 3.5s linear infinite;
+          animation: 1s triangle-blue 2.5s linear forwards,
+          12s triangle-blue-active 3.5s linear infinite;
         }
       }
       .city {
