@@ -322,7 +322,7 @@ function handleTouchMove(evt) {
 
         if ( xDiff > 0 ) {
           /* left swipe */ 
-          alert(evt.path[0])
+          alert('left swipe', evt.path[0])
           if (evt.path[0].id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
           }
@@ -337,7 +337,7 @@ function handleTouchMove(evt) {
           }
         } else {
           /* right swipe */
-          alert(evt.path)
+          alert('right swipe'. evt.path[0].id)
           if (evt.path[0].id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
           }
