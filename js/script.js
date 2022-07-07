@@ -7,6 +7,10 @@ window.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.blue-triangle').classList.add('active');
       document.querySelector('.purple-triangle').classList.add('active');
       document.querySelector('.main-info__text b').classList.add('active');
+      document.querySelector('body').classList.remove('active');
+      document.querySelector('html').style.overflowY = 'auto';
+
+      
     }
     function removePreloader() {
       document.querySelector('.preloader').remove();
@@ -298,8 +302,9 @@ var xDown = null;
 var yDown = null;                                                    
 
 function handleTouchStart(evt) {                                         
-    xDown = evt.touches[0].clientX;                                      
-    yDown = evt.touches[0].clientY;                                      
+    xDown = evt.changedTouches[0].clientX;                                      
+    yDown = evt.changedTouches[0].clientY;        
+                                  
 };                                                
 
 function handleTouchMove(evt) {
@@ -307,8 +312,8 @@ function handleTouchMove(evt) {
         return;
     }
 
-    var xUp = evt.touches[0].clientX;                                    
-    var yUp = evt.touches[0].clientY;
+    var xUp = evt.changedTouches[0].clientX;                                    
+    var yUp = evt.changedTouches[0].clientY;
 
     var xDiff = xDown - xUp;
     var yDiff = yDown - yUp;
@@ -316,6 +321,7 @@ function handleTouchMove(evt) {
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
           /* left swipe */ 
+          alert('left swipe');
           if (evt.path[0].id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
           }
@@ -330,6 +336,7 @@ function handleTouchMove(evt) {
           }
         } else {
           /* right swipe */
+          alert('right swipe');
           if (evt.path[0].id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
           }

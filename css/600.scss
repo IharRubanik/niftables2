@@ -47,26 +47,37 @@
           width: 69.333vw;
           left: -55.167vw;
           top: 28vw;
+          transform: translate(-10.667vw, 36.267vw);
+          animation-duration: 15s;
         }
         .main__smoke-top2 {
           top: -4.833vw;
           left: 56.667vw;
-          width: 58.333vw;
+          width: 61.333vw;
+          transform: translate(-22.133vw, 18.933vw);
+          animation-duration: 15s;
         }
         .main__smoke-buttom2 {
           top: 0;
           left: -10.667vw;
-          width: 95vw;
+          width: 110vw;
+         
+          transform: translate(-40.8vw, 25.6vw);
+          animation-duration: 15s;
         }
         .main__smoke-buttom {
           top: -14.167vw;
-          left: 3.833vw;
-          width: 99vw;
+          left: 125vw;
+          width: 115vw;
+          transform: translate(-40.8vw, 17.067vw);
+          animation-duration: 15s;
         }
         .main__smoke-top {
           left: 26vw;
           top: -2.5vw;
-          width: 58.5vw;
+          width: 70.5vw;
+          transform: translate(-40.8vw, 25.6vw);
+          animation-duration: 15s;
         }
         .main__man {
           width: 245.333vw;
@@ -75,7 +86,7 @@
         }
         .purple-triangle {
           width: 93.333vw;
-          top: -21.795vw;
+          top: -19.795vw;
           left: 0;
         }
         .blue-triangle {
@@ -222,6 +233,8 @@
           }
         }
         .header-content {
+          flex-direction: column;
+          gap: 12.8vw;
           left: 0;
           top: 0;
           justify-content: flex-start;
@@ -285,52 +298,52 @@
                 }
               }
             }
-            .header-subscribe {
-              position: static;
-              width: 100%;
-              gap: 9.672vw;
-              .header-subscribe__plane {
-                display: none;
+          }
+          .header-subscribe {
+            position: static;
+            width: 100%;
+            gap: 9.672vw;
+            .header-subscribe__plane {
+              display: none;
+            }
+            .header-subscribe__block {
+              margin: 0;
+              width: 92vw;
+              height: auto;
+              padding: 6.933vw 7.467vw 7.467vw 7.467vw;
+              strong {
+                font-size: 5.333vw;
+                line-height: 6.933vw;
               }
-              .header-subscribe__block {
-                margin: 0;
-                width: 92vw;
-                height: auto;
-                padding: 6.933vw 7.467vw 7.467vw 7.467vw;
-                strong {
-                  font-size: 5.333vw;
-                  line-height: 6.933vw;
-                }
-                span {
-                  margin: 1.333vw 0 0 0;
-                  font-size: 4vw;
+              span {
+                margin: 1.333vw 0 0 0;
+                font-size: 4vw;
+                line-height: 5.067vw;
+              }
+              p {
+                transform: translateY(0);
+                text-align: left;
+                font-size: 4.8vw;
+                line-height: 5.867vw;
+                margin: 3.2vw 0 0 0;
+              }
+              .form__container {
+                margin: 7.2vw 0 0 0;
+                gap: 7.2vw;
+                input {
+                  font-size: 4.267vw;
                   line-height: 5.067vw;
-                }
-                p {
-                  transform: translateY(0);
-                  text-align: left;
-                  font-size: 4.8vw;
-                  line-height: 5.867vw;
-                  margin: 3.2vw 0 0 0;
-                }
-                .form__container {
-                  margin: 7.2vw 0 0 0;
-                  gap: 7.2vw;
-                  input {
-                    font-size: 4.267vw;
-                    line-height: 5.067vw;
-                    border-radius: 0;
-                    border-bottom: 0.267vw solid #fff;
-                    &::placeholder {
-                      transform: translateY(-1.333vw);
-                    }
+                  border-radius: 0;
+                  border-bottom: 0.267vw solid #fff;
+                  &::placeholder {
+                    transform: translateY(-1.333vw);
                   }
-                  button {
-                    width: 11.733vw;
-                    height: 11.733vw;
-                    img {
-                      width: 4.267vw;
-                    }
+                }
+                button {
+                  width: 11.733vw;
+                  height: 11.733vw;
+                  img {
+                    width: 4.267vw;
                   }
                 }
               }
@@ -471,6 +484,7 @@
         }
       }
       .process {
+        padding: 10.24vw 0 24vw 0;
         .process-container {
           height: 182.667vw;
           .process-parent {
@@ -574,7 +588,7 @@
         }
       }
       .features {
-        padding: 30.667vw 0 0 0;
+        padding: 2.4vw 0 0 0;
         height: 462.667vw;
         .features__title {
           font-size: 8.533vw;
@@ -583,7 +597,7 @@
           top: 3.2vw;
         }
         .features__background-title {
-          top: 152vw;
+          top: 81vw;
           left: auto;
           right: -83.467vw;
           transform: rotate(-90deg);
@@ -631,39 +645,39 @@
           }
         }
         .features-customization {
-          top: 61.333vw;
+          top: 34.666vw;
           left: 4vw;
         }
         .features-control {
-          top: 93.333vw;
+          top: 66.666vw;
           left: 18.667vw;
         }
         .features-utility {
-          top: 125.333vw;
+          top: 98.666vw;
           left: 4vw;
         }
         .features-creativity {
-          top: 157.333vw;
+          top: 130.666vw;
           left: 18.667vw;
         }
         .features-redeem {
-          top: 221.333vw;
+          top: 194.666vw;
           left: 18.667vw;
         }
         .features-service {
-          top: 189.333vw;
+          top: 162.666vw;
           left: 4vw;
         }
         .features-royalties {
-          top: 253.333vw;
+          top: 226.666vw;
           left: 4vw;
         }
         .features-streams {
-          top: 285.333vw;
+          top: 258.666vw;
           left: 18.667vw;
         }
         .features__slider {
-          top: 320vw;
+          top: 293.333vw;
         }
         .features__slider {
           width: 96vw;
@@ -764,7 +778,7 @@
       }
       .vision {
         height: auto;
-        padding: 36.267vw 0 0 0;
+        padding: 13vw 0 21.333vw 0;
         .vision__sticky {
           .woman-head {
             width: 99.2vw;
@@ -885,7 +899,7 @@
                   width: 100%;
                   padding: 0 0 0 12.267vw;
                   &:nth-child(1) {
-                    top: 31.2vw;
+                    top: 29.067vw;
                   }
                   &:nth-child(2) {
                     top: 104vw;
@@ -894,16 +908,16 @@
                     top: 185.333vw;
                   }
                   &:nth-child(4) {
-                    top: 280vw;
+                    top: 281.067vw;
                   }
                   &:nth-child(5) {
-                    top: 372vw;
+                    top: 370.4vw;
                   }
                   &:nth-child(6) {
-                    top: 454.667vw;
+                    top: 456vw;
                   }
                   &:nth-child(7) {
-                    top: 569.867vw;
+                    top: 570.4vw;
                   }
                   p {
                     font-size: 4.533vw;
@@ -915,13 +929,13 @@
         }
       }
       .tokenomics {
-        padding: 40vw 4vw 0 4vw;
-        height: 298.667vw;
+        padding: 9.6vw 4vw 0 4vw;
+        height: 288.667vw;
         &::after {
           background-image: url(../img/tokenomics/slider-bg-mobile.svg);
           background-size: 105.6vw auto;
           left: -3.2vw;
-          top: 111.2vw;
+          top: 79.2vw;
           width: 100vw;
           height: 162.667vw;
         }
@@ -929,16 +943,16 @@
           #c2 {
             right: 0;
             left: auto;
-            top: 189.867vw;
+            top: 157.867vw;
             width: 64vw;
-            height: 85.333vw;
+            height: 100vw;
           }
           .tokenomics__title {
             font-size: 8.533vw;
             line-height: 10.933vw;
           }
           .tokenomics__slider {
-            top: 189.333vw;
+            top: 159vw;
             flex-direction: row;
             left: 8.8vw;
             align-items: center;
@@ -1012,7 +1026,7 @@
           }
         }
         .tokenomics__right-block {
-          top: 59.733vw;
+          top: 29.733vw;
           left: -10.4vw;
           gap: 5.6vw;
           .tokenomics__items-container {
@@ -1048,7 +1062,7 @@
         }
       }
       .partners {
-        padding: 0 4vw 30.667vw 4vw;
+        padding: 0 4vw 19.667vw 4vw;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(7, 18.667vw);
         grid-gap: 3.2vw;
@@ -1155,6 +1169,12 @@
               transform: translateY(1.067vw);
             }
           }
+          &::before {
+            font-size: 3.2vw;
+    line-height: 4vw;
+            right: 4vw;
+            transform: translateY(-8vw);
+          }
           .media-about-slider {
             height: 28.267vw;
             .media-about-wrapper {
@@ -1168,7 +1188,7 @@
         }
       }
       .contacts {
-        padding: 30.667vw 4.267vw 0 4vw;
+        padding: 22vw 4.267vw 0 4vw;
         .footer__background {
           width: 157.067vw;
           right: -45.333vw;
