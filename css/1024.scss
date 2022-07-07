@@ -18,6 +18,120 @@
     padding-right: 2.93vw;
   }
   body {
+    .header-content {
+      left: 0;
+      top: 0;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 9.473vw 2.93vw 0 2.93vw;
+      transform: translateX(0);
+      transform: translateY(-150%);
+      &.active {
+        transform: translateY(0);
+      }
+      .header-content__inner {
+        width: 100%;
+        gap: 3.646vw;
+        justify-content: flex-start;
+        .header-content__nav {
+          margin: 1.875vw 19.043vw 0 0;
+          gap: 2.441vw;
+          flex-grow: 0;
+          a {
+            font-size: 2.93vw;
+            padding-left: 2.93vw;
+            &::before {
+              padding-top: 0.521vw;
+              padding-bottom: 0.208vw;
+              width: 2.135vw;
+              font-size: 1.172vw;
+            }
+          }
+        }
+        .header-contact {
+          flex-direction: column;
+          gap: 2.93vw;
+          .header-contact__item {
+            padding: 2.539vw 0 0 2.832vw;
+            width: 34.18vw;
+            &::before {
+              width: 1.823vw;
+              height: 1.823vw;
+              border-top: 0.052vw solid #0b0b0c;
+              border-left: 0.052vw solid #0b0b0c;
+            }
+            strong {
+              font-size: 1.953vw;
+            }
+            p {
+              font-size: 1.758vw;
+              margin: 0.977vw 0 0 0;
+            }
+            a {
+              padding: 0 0 0.365vw 3.32vw;
+              font-size: 1.953vw;
+              background-size: 2.051vw auto;
+              margin: 1.302vw 0 0 0;
+              span {
+                padding-bottom: 0.26vw;
+                border-bottom: 0.052vw solid rgba(203, 36, 255, 0.2);
+              }
+            }
+          }
+        }
+
+      }
+      .header-subscribe {
+        right: 12.402vw;
+        bottom: 0;
+        gap: 3.542vw;
+        .header-subscribe__plane {
+          width: 48.633vw;
+        }
+        .header-subscribe__block {
+          margin: 4.199vw 0 0 0;
+          width: 36.133vw;
+          height: 20.215vw;
+          padding: 2.539vw 2.734vw 2.734vw 2.734vw;
+          strong {
+            font-size: 1.953vw;
+            line-height: 2.539vw;
+          }
+          span {
+            margin: 0.488vw 0 0 0;
+            font-size: 1.465vw;
+            line-height: 1.855vw;
+          }
+          p {
+            transform: translateY(0);
+            text-align: left;
+            font-size: 1.758vw;
+            line-height: 2.148vw;
+            margin: 0.977vw 0 0 0;
+          }
+          .form__container {
+            margin: 2.637vw 0 0 0;
+            gap: 2.246vw;
+            input {
+              font-size: 1.563vw;
+              line-height: 1.855vw;
+              border-radius: 0;
+              border-bottom: 0.098vw solid #fff;
+              &::placeholder {
+                transform: translateY(-0.488vw);
+              }
+            }
+            button {
+              width: 4.297vw;
+              height: 4.297vw;
+              img {
+                width: 1.563vw;
+              }
+            }
+          }
+        }
+      }
+    }
     .wrapper {
       .background {
         height: 75.911vw;
@@ -180,120 +294,7 @@
             width: 3.646vw;
           }
         }
-        .header-content {
-          left: 0;
-          top: 0;
-          justify-content: flex-start;
-          align-items: flex-start;
-          padding: 9.473vw 2.93vw 0 2.93vw;
-          transform: translateX(0);
-          transform: translateY(-150%);
-          &.active {
-            transform: translateY(0);
-          }
-          .header-content__inner {
-            width: 100%;
-            gap: 3.646vw;
-            justify-content: flex-start;
-            .header-content__nav {
-              margin: 1.875vw 19.043vw 0 0;
-              gap: 2.441vw;
-              flex-grow: 0;
-              a {
-                font-size: 2.93vw;
-                padding-left: 2.93vw;
-                &::before {
-                  padding-top: 0.521vw;
-                  padding-bottom: 0.208vw;
-                  width: 2.135vw;
-                  font-size: 1.172vw;
-                }
-              }
-            }
-            .header-contact {
-              flex-direction: column;
-              gap: 2.93vw;
-              .header-contact__item {
-                padding: 2.539vw 0 0 2.832vw;
-                width: 34.18vw;
-                &::before {
-                  width: 1.823vw;
-                  height: 1.823vw;
-                  border-top: 0.052vw solid #0b0b0c;
-                  border-left: 0.052vw solid #0b0b0c;
-                }
-                strong {
-                  font-size: 1.953vw;
-                }
-                p {
-                  font-size: 1.758vw;
-                  margin: 0.977vw 0 0 0;
-                }
-                a {
-                  padding: 0 0 0.365vw 3.32vw;
-                  font-size: 1.953vw;
-                  background-size: 2.051vw auto;
-                  margin: 1.302vw 0 0 0;
-                  span {
-                    padding-bottom: 0.26vw;
-                    border-bottom: 0.052vw solid rgba(203, 36, 255, 0.2);
-                  }
-                }
-              }
-            }
-  
-          }
-          .header-subscribe {
-            right: 12.402vw;
-            bottom: 0;
-            gap: 3.542vw;
-            .header-subscribe__plane {
-              width: 48.633vw;
-            }
-            .header-subscribe__block {
-              margin: 4.199vw 0 0 0;
-              width: 36.133vw;
-              height: 20.215vw;
-              padding: 2.539vw 2.734vw 2.734vw 2.734vw;
-              strong {
-                font-size: 1.953vw;
-                line-height: 2.539vw;
-              }
-              span {
-                margin: 0.488vw 0 0 0;
-                font-size: 1.465vw;
-                line-height: 1.855vw;
-              }
-              p {
-                transform: translateY(0);
-                text-align: left;
-                font-size: 1.758vw;
-                line-height: 2.148vw;
-                margin: 0.977vw 0 0 0;
-              }
-              .form__container {
-                margin: 2.637vw 0 0 0;
-                gap: 2.246vw;
-                input {
-                  font-size: 1.563vw;
-                  line-height: 1.855vw;
-                  border-radius: 0;
-                  border-bottom: 0.098vw solid #fff;
-                  &::placeholder {
-                    transform: translateY(-0.488vw);
-                  }
-                }
-                button {
-                  width: 4.297vw;
-                  height: 4.297vw;
-                  img {
-                    width: 1.563vw;
-                  }
-                }
-              }
-            }
-          }
-        }
+
       }
       .main {
         height: 72.559vw;

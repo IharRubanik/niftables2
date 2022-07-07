@@ -13,6 +13,119 @@
   }
 
   body {
+    .header-content {
+      left: 0;
+      top: 0;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 17.057vw 3.906vw 0 3.906vw;
+      .header-content__inner {
+        width: 100%;
+        gap: 19.531vw;
+        justify-content: flex-start;
+        flex-direction: column;
+        .header-content__nav {
+          flex-wrap: wrap;
+          width: 82.682vw;
+          height: 28.646vw;
+          margin: 0;
+          gap: 3.255vw;
+          flex-grow: 0;
+          a {
+            font-size: 3.906vw;
+            padding-left: 3.906vw;
+            &::before {
+              padding-top: 0.695vw;
+              padding-bottom: 0.277vw;
+              width: 2.847vw;
+              font-size: 1.563vw;
+            }
+          }
+        }
+        .header-contact {
+          flex-direction: row;
+          gap: 2.604vw;
+          .header-contact__item {
+            padding: 3.385vw 0 0 3.776vw;
+            width: 45.573vw;
+            &::before {
+              width: 2.431vw;
+              height: 2.431vw;
+              border-top: 0.069vw solid #0b0b0c;
+              border-left: 0.069vw solid #0b0b0c;
+            }
+            strong {
+              font-size: 2.604vw;
+            }
+            p {
+              font-size: 2.344vw;
+              margin: 1.302vw 0 0 0;
+            }
+            a {
+              padding: 0 0 0.487vw 4.427vw;
+              font-size: 2.604vw;
+              background-size: 2.734vw auto;
+              margin: 1.736vw 0 0 0;
+              span {
+                padding-bottom: 0.347vw;
+                border-bottom: 0.069vw solid rgba(203, 36, 255, 0.2);
+              }
+            }
+          }
+        }
+
+      }
+      .header-subscribe {
+        width: 100%;
+        right: 3.906vw;
+        bottom: 0;
+        gap: 4.723vw;
+        .header-subscribe__plane {
+          width: 47.917vw;
+        }
+        .header-subscribe__block {
+          width: 44.141vw;
+          height: 26.953vw;
+          padding: 3.385vw 3.646vw 3.646vw 3.646vw;
+          strong {
+            font-size: 2.604vw;
+            line-height: 3.385vw;
+          }
+          span {
+            margin: 0.651vw 0 0 0;
+            font-size: 1.953vw;
+            line-height: 2.474vw;
+          }
+          p {
+            transform: translateY(0);
+            text-align: left;
+            font-size: 2.344vw;
+            line-height: 2.865vw;
+            margin: 1.302vw 0 0 0;
+          }
+          .form__container {
+            margin: 3.516vw 0 0 0;
+            gap: 2.995vw;
+            input {
+              font-size: 2.083vw;
+              line-height: 2.474vw;
+              border-radius: 0;
+              border-bottom: 0.13vw solid #fff;
+              &::placeholder {
+                transform: translateY(-0.651vw);
+              }
+            }
+            button {
+              width: 5.729vw;
+              height: 5.729vw;
+              img {
+                width: 2.083vw;
+              }
+            }
+          }
+        }   
+      }
+    }
     .wrapper {
       .background {
         height: 101.215vw;
@@ -171,119 +284,7 @@
             width: 4.861vw;
           }
         }
-        .header-content {
-          left: 0;
-          top: 0;
-          justify-content: flex-start;
-          align-items: flex-start;
-          padding: 17.057vw 3.906vw 0 3.906vw;
-          .header-content__inner {
-            width: 100%;
-            gap: 19.531vw;
-            justify-content: flex-start;
-            flex-direction: column;
-            .header-content__nav {
-              flex-wrap: wrap;
-              width: 82.682vw;
-              height: 28.646vw;
-              margin: 0;
-              gap: 3.255vw;
-              flex-grow: 0;
-              a {
-                font-size: 3.906vw;
-                padding-left: 3.906vw;
-                &::before {
-                  padding-top: 0.695vw;
-                  padding-bottom: 0.277vw;
-                  width: 2.847vw;
-                  font-size: 1.563vw;
-                }
-              }
-            }
-            .header-contact {
-              flex-direction: row;
-              gap: 2.604vw;
-              .header-contact__item {
-                padding: 3.385vw 0 0 3.776vw;
-                width: 45.573vw;
-                &::before {
-                  width: 2.431vw;
-                  height: 2.431vw;
-                  border-top: 0.069vw solid #0b0b0c;
-                  border-left: 0.069vw solid #0b0b0c;
-                }
-                strong {
-                  font-size: 2.604vw;
-                }
-                p {
-                  font-size: 2.344vw;
-                  margin: 1.302vw 0 0 0;
-                }
-                a {
-                  padding: 0 0 0.487vw 4.427vw;
-                  font-size: 2.604vw;
-                  background-size: 2.734vw auto;
-                  margin: 1.736vw 0 0 0;
-                  span {
-                    padding-bottom: 0.347vw;
-                    border-bottom: 0.069vw solid rgba(203, 36, 255, 0.2);
-                  }
-                }
-              }
-            }
 
-          }
-          .header-subscribe {
-            width: 100%;
-            right: 3.906vw;
-            bottom: 0;
-            gap: 4.723vw;
-            .header-subscribe__plane {
-              width: 47.917vw;
-            }
-            .header-subscribe__block {
-              width: 44.141vw;
-              height: 26.953vw;
-              padding: 3.385vw 3.646vw 3.646vw 3.646vw;
-              strong {
-                font-size: 2.604vw;
-                line-height: 3.385vw;
-              }
-              span {
-                margin: 0.651vw 0 0 0;
-                font-size: 1.953vw;
-                line-height: 2.474vw;
-              }
-              p {
-                transform: translateY(0);
-                text-align: left;
-                font-size: 2.344vw;
-                line-height: 2.865vw;
-                margin: 1.302vw 0 0 0;
-              }
-              .form__container {
-                margin: 3.516vw 0 0 0;
-                gap: 2.995vw;
-                input {
-                  font-size: 2.083vw;
-                  line-height: 2.474vw;
-                  border-radius: 0;
-                  border-bottom: 0.13vw solid #fff;
-                  &::placeholder {
-                    transform: translateY(-0.651vw);
-                  }
-                }
-                button {
-                  width: 5.729vw;
-                  height: 5.729vw;
-                  img {
-                    width: 2.083vw;
-                  }
-                }
-              }
-            }   
-          }
-        }
       }
       .main {
         height: 92.9vw;

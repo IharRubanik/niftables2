@@ -399,13 +399,13 @@ function scrollTo(element) {
   });
 }
 
-document.querySelector('.header-subscribe input').addEventListener('focus', function() {
-  document.querySelector('.header-content').style.paddingBottom = `40vw`;
-  document.querySelector('.header-content').scroll({top:1000})
-})
-document.querySelector('.header-subscribe input').addEventListener('blur', function() {
-  document.querySelector('.header-content').style.paddingBottom = 0;
-})
+// document.querySelector('.header-subscribe input').addEventListener('focus', function() {
+//   document.querySelector('.header-content').style.paddingBottom = `40vw`;
+//   document.querySelector('.header-content').scroll({top:1000})
+// })
+// document.querySelector('.header-subscribe input').addEventListener('blur', function() {
+//   document.querySelector('.header-content').style.paddingBottom = 0;
+// })
 
 // Scroll script
 document.querySelectorAll('.scroll-link').forEach(el => el.addEventListener('click', function(e) {
