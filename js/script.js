@@ -176,7 +176,6 @@ const scroll = window.pageYOffset - sticky.offsetTop,
         scroll < 5 * (height / 6) - 600 ?
         (zi = 4) :
         (zi = 5);
-        alert('danger!')
         initProcess(zi)
     }
   }
@@ -343,8 +342,7 @@ function handleTouchMove(evt) {
           }
           if (this.id === 'c3') {
             if (processProgress <= 4) {
-              processProgress = processProgress + 1;
-              
+              processProgress++;
             }
           }
         } else {
@@ -357,12 +355,12 @@ function handleTouchMove(evt) {
           }
           if (this.id === 'c3') {
             if (processProgress != 0) {
-              processProgress = processProgress - 1;
+              processProgress--;
             }
           }
         }         
-        
-        initProcess(processProgress);
+        setTimeout(initProcess(processProgress), 1)
+        // initProcess(processProgress);
     } 
     /* reset values */
     xDown = null;
