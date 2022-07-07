@@ -291,13 +291,6 @@ const canvas1 = document.getElementById("c1"),
 let startSwipe = 0,
     endSwipe = 0,
     processProgress = 0;
-  
-  window.addEventListener('touchstart', function(e) {
-    startSwipe = e.changedTouches[0].clientX
-  })
-  window.addEventListener('touchend', function(e) {
-    endSwipe = e.changedTouches[0].clientX
-  })
 
 // Вешаем на прикосновение функцию handleTouchStart
 canvas1.addEventListener('touchstart', handleTouchStart, false);  
@@ -366,21 +359,23 @@ var yDown = null;
 
 function handleTouchStart(evt) {                                         
     xDown = evt.changedTouches[0].clientX;                                      
-    yDown = evt.changedTouches[0].clientY;  
+    yDown = evt.changedTouches[0].clientY; 
+
+    this.classList.add('touch');
     
-    // this.classList.add('touch')
-    document.documentElement.style.overflow = 'hidden';
-                                  
 };          
-function handleTouchEnd() {                                         
-  document.documentElement.style.overflow = 'auto';
-  // document.querySelectorAll('canvas').forEach(canv => canv.classList.remove('touch'))
-                                
-};                                      
+function handleTouchEnd(evt) {   
+  this.classList.remove('touch')
+};          
+              
+                                 
 
 function handleTouchMove(evt) {
+  this.classList.remove('touch')
+
+  console.log('move')
     if ( ! xDown || ! yDown ) {
-      return;
+        return;
     }
 
     var xUp = evt.changedTouches[0].clientX;                                    
