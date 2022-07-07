@@ -196,13 +196,6 @@ window.addEventListener('orientationchange', function() {
   initProcess(0);
 })
 
-window.addEventListener('resize', function() {
-  checkProcessSize()
-})
-window.addEventListener('orientationchange', function() {
-  checkProcessSize()
-})
-
 const slider1 = document.querySelector('.slider1');
 const slider2 = document.querySelector('.slider2');
 
