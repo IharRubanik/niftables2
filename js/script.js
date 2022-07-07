@@ -379,7 +379,8 @@ function handleTouchEnd() {
 
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
-        return;
+      alert('ЭВРИКА!')
+        // return;
     }
 
     var xUp = evt.changedTouches[0].clientX;                                    
