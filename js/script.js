@@ -188,11 +188,13 @@ window.addEventListener("scroll", function () {
 window.addEventListener('resize', function() {
   checkProcessSize()
   initProcess(0);
+  alert('123')
 })
 
 window.addEventListener('orientationchange', function() {
   checkProcessSize()
   initProcess(0);
+  alert('123')
 })
 
 const slider1 = document.querySelector('.slider1');
