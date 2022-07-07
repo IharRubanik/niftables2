@@ -322,7 +322,12 @@ function handleTouchMove(evt) {
 
         if ( xDiff > 0 ) {
           /* left swipe */ 
-          alert('left swipe', evt.path[0])
+          if (processProgress <= 4) {
+            processProgress++;
+            initProcess(processProgress);
+          }
+
+          // alert('left swipe', evt.path[0])
           if (evt.path[0].id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
           }
@@ -337,7 +342,12 @@ function handleTouchMove(evt) {
           }
         } else {
           /* right swipe */
-          alert('right swipe'. evt.path[0].id)
+          // alert('right swipe'. evt.path[0].id)
+          if (processProgress != 0) {
+            processProgress--;
+            initProcess(processProgress);
+          }
+
           if (evt.path[0].id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
           }
