@@ -3,10 +3,6 @@
     overflow-x: hidden;
     width: 100%;
   }
-  #features,
-  #vision {
-    display: none !important;
-  }
   @-webkit-keyframes nft-gradient-text {
     0% {
       background-position: -90.05vw;
