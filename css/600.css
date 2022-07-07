@@ -1,11 +1,7 @@
 @media (max-width: 600px) {
   .main.container,
-  #whatwedo,
-  #process,
-  #features,
-  #vision,
-  #tokenomics {
-    overflow: hidden;
+  header {
+    display: none;
   }
   @-webkit-keyframes nft-gradient-text {
     0% {
