@@ -1,4 +1,4 @@
-@media (max-width: 1280px) {
+@media only screen and (max-width: 1200px) {
   @-webkit-keyframes nft-gradient-text {
     0% {
       background-position: -42.499vw;
@@ -730,8 +730,8 @@
             animation: 1s features-slide-img-prev-mobile;
   }
   body .wrapper .features .features__container .features__slider .features__slider-container .slider-item.active-reverse img {
-    -webkit-animation: 1s features-slide-img-active-reverse-mobile forwards;
-            animation: 1s features-slide-img-active-reverse-mobile forwards;
+    -webkit-animation: 1s features-slide-img-active-reverse-mobile forwards;
+            animation: 1s features-slide-img-active-reverse-mobile forwards;
   }
   body .wrapper .features .features__container .features__slider .slider__button {
     top: 2.637vw;
@@ -1116,8 +1116,8 @@
     line-height: 2.539vw;
   }
   body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item.active h3 {
-    -webkit-animation: 1s tokenomics-slide-title-active-mobile forwards;
-            animation: 1s tokenomics-slide-title-active-mobile forwards;
+    -webkit-animation: 1s tokenomics-slide-title-active-mobile forwards;
+            animation: 1s tokenomics-slide-title-active-mobile forwards;
   }
   body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item.prev h3 {
     -webkit-animation: 1s tokenomics-slide-title-prev-mobile forwards;

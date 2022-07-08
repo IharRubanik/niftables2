@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   @-webkit-keyframes nft-gradient-text {
     0% {
       background-position: -56.665vw;
@@ -720,8 +720,8 @@
             animation: 1s features-slide-img-prev-mobile768;
   }
   body .wrapper .features .features__container .features__slider .features__slider-container .slider-item.active-reverse img {
-    -webkit-animation: 1s features-slide-img-active-reverse-mobile768 forwards;
-            animation: 1s features-slide-img-active-reverse-mobile768 forwards;
+    -webkit-animation: 1s features-slide-img-active-reverse-mobile768 forwards;
+            animation: 1s features-slide-img-active-reverse-mobile768 forwards;
   }
   body .wrapper .features .features__container .features__slider .features__slider-container .slider-item.next .slide-text {
     -webkit-animation: 1s features-slide-text-next768 forwards;

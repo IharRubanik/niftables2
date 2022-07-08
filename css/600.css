@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   body {
     overflow-x: hidden;
     width: 100%;
@@ -808,8 +808,8 @@
             animation: 1s features-slide-img-prev-mobile;
   }
   body .wrapper .features .features__container .features__slider .features__slider-container.active-reverse img {
-    -webkit-animation: 1s features-slide-img-active-reverse-mobile forwards;
-            animation: 1s features-slide-img-active-reverse-mobile forwards;
+    -webkit-animation: 1s features-slide-img-active-reverse-mobile forwards;
+            animation: 1s features-slide-img-active-reverse-mobile forwards;
   }
   body .wrapper .features .features__container .features__slider .features__slider-container.next .slide-text {
     -webkit-animation: 1s features-slide-text-next forwards;
