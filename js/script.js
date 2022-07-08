@@ -321,7 +321,7 @@ function govnocode() {
   document.querySelectorAll('canvas').forEach(el => el.classList.remove('touch'))
 }
 
-this.setInterval(govnocode, 100)
+this.setInterval(govnocode, 500)
 
      
 function handleTouchMove(evt) {
