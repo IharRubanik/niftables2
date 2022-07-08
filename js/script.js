@@ -188,14 +188,14 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener('resize', function() {
   checkProcessSize();
-  if (window.innerWidth > 600) {
+  if (window.innerWidth > 1200) {
     initProcess(0);
   }
 })
 
 window.addEventListener('orientationchange', function() {
   checkProcessSize()
-  if (window.innerWidth > 600) {
+  if (window.innerWidth > 1200) {
     initProcess(0);
   }
 })
