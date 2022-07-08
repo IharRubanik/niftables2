@@ -304,7 +304,7 @@ canvas3.addEventListener('touchstart', handleTouchStart, false);
 // А на движение пальцем по экрану - handleTouchMove      
 canvas1.addEventListener('touchmove', handleTouchMove, false);
 canvas2.addEventListener('touchmove', handleTouchMove, false);
-canvas3.addEventListener('touchmove', handleTouchMove, false);
+canvas3.addEventListener('touchend', handleTouchMove, false);
 // Вешаем на прикосновение функцию handleTouchEnd
 canvas1.addEventListener('touchend', handleTouchEnd, false);  
 canvas2.addEventListener('touchend', handleTouchEnd, false);  
