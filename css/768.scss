@@ -16,9 +16,10 @@
     .header-content {
       left: 0;
       top: 0;
-      justify-content: flex-start;
-      align-items: flex-start;
-      padding: 17.057vw 3.906vw 0 3.906vw;
+      .header-content__wrapper{
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 17.057vw 3.906vw 0 3.906vw;
       .header-content__inner {
         width: 100%;
         gap: 19.531vw;
@@ -126,6 +127,7 @@
         }   
       }
     }
+    }
     .wrapper {
       .background {
         height: 101.215vw;
@@ -156,9 +158,8 @@
         .main__smoke-buttom {
           top: -13.021vw;
           left: 41.276vw;
-          width: 594px;
+          width: 77.344vw;
           transform: translate(-40.8vw, 5.067vw);
-          // background-color: #fff;
           animation: main__smoke-buttom 20s linear infinite;
         }
         .main__smoke-top {
@@ -1262,6 +1263,17 @@
             }
           }   
         }
+      }
+    }
+  }
+}
+@media (min-aspect-ratio: 768/1024) and (min-width: 601px) and (max-width: 768px)  {
+  body {
+    .header-content {
+      height: 100vh;
+      overflow: auto;
+      .header-content__wrapper {
+        height: 133.333vw; 
       }
     }
   }

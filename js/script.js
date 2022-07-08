@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.purple-triangle').classList.add('active');
       document.querySelector('.city').classList.add('active');
       document.querySelector('.main-info__text b').classList.add('active');
-      document.querySelector('body').classList.remove('active');
+      document.querySelector('html').classList.remove('active');
       document.querySelector('html').style.overflowY = 'auto';
 
       
@@ -25,8 +25,9 @@ let body = document.querySelector(".body");
 let process = document.querySelector(".process");
 
 let arrActive = ([] = document.querySelectorAll(
-  ".header-button, .header, .header-content, .header-name, body"
+  ".header-button, .header, .header-content, .header-name, body, html"
 ));
+console.log(arrActive)
 
 document.querySelector(".header-button").onclick = function () {
   for (i = 0; i < arrActive.length; i++) {
