@@ -316,13 +316,18 @@ function handleTouchStart(evt) {
     yDown = evt.changedTouches[0].clientY; 
     this.classList.add('touch');
 };          
+
+function govnocode() {
+  document.querySelectorAll('canvas').forEach(el => el.classList.remove('touch'))
+}
+
+this.setInterval(govnocode, 100)
+
      
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
         return;
     }
-
-    this.classList.remove('touch');
 
     var xUp = evt.changedTouches[0].clientX;                                    
     var yUp = evt.changedTouches[0].clientY;
