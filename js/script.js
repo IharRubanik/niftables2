@@ -59,7 +59,7 @@ const line10 = document.querySelector(".line-10");
 let zi = 0;
 
 function initProcess(zi) {
-  if (window.innerWidth <= 1024) {
+  if (window.innerWidth <= 1200) {
   document.querySelector('#first-number').innerHTML = `0${zi+1}`;
 }
   for (let j = 0; j < gridItems.length; j++) {
@@ -455,7 +455,7 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
       // console.log(percentScrolled);
       // console.log(percentTabletScrolled );
 
-      if (window.innerWidth > 1024) {
+      if (window.innerWidth > 1200) {
         // VISION CONTENT MOTION
         block.style.transform = `translateX(${wrapper.getBoundingClientRect().y + block.getBoundingClientRect().y}px)`
         // SVG PROGRESS
@@ -678,7 +678,7 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
      })
 
     window.addEventListener('resize', function() {
-      if (window.innerWidth <= 1024) {
+      if (window.innerWidth <= 1200) {
         block.style.transform = `translateX(0px)`
       }
     })
