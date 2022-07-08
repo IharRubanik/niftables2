@@ -307,7 +307,7 @@ function govnocode() {
   document.querySelectorAll('canvas').forEach(el => el.classList.remove('touch'));
 }
 
-var timeoutHandle = window.setTimeout(govnocode, 300);
+// var timeoutHandle = window.setTimeout(govnocode, 300);
 
      
 function handleTouchMove(evt) {
@@ -320,14 +320,15 @@ function handleTouchMove(evt) {
 
     var xDiff = xDown - xUp;
     var yDiff = yDown - yUp;
+
     // немного поясню здесь. Тут берутся модули движения по оси абсцисс и ординат (почему модули? потому что если движение сделано влево или вниз, то его показатель будет отрицательным) и сравнивается, чего было больше: движения по абсциссам или ординатам. Нужно это для того, чтобы, если пользователь провел вправо, но немного наискосок вниз, сработал именно коллбэк для движения вправо, а ни как-то иначе.
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-
+    
         if ( xDiff > 0 ) {
           /* left swipe */ 
           this.classList.add('touch');
-          window.clearTimeout(timeoutHandle);
-          timeoutHandle = window.setTimeout(govnocode, 300);
+          // window.clearTimeout(timeoutHandle);
+          // timeoutHandle = window.setTimeout(govnocode, 300);
 
           if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
@@ -344,8 +345,8 @@ function handleTouchMove(evt) {
         } else {
           /* right swipe */
           this.classList.add('touch');
-          window.clearTimeout(timeoutHandle);
-          timeoutHandle = window.setTimeout(govnocode, 300);
+          // window.clearTimeout(timeoutHandle);
+          // timeoutHandle = window.setTimeout(govnocode, 300);
 
           if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
@@ -360,7 +361,10 @@ function handleTouchMove(evt) {
             }
           }
         }      
-    } 
+    } else {
+      // alert('123')
+      this.classList.remove('touch');
+    }
     /* reset values */
     xDown = null;
     yDown = null;                                             
