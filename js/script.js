@@ -307,7 +307,10 @@ canvas3.addEventListener('touchstart', handleTouchStart, false);
 canvas1.addEventListener('touchmove', handleTouchMove, false);
 canvas2.addEventListener('touchmove', handleTouchMove, false);
 canvas3.addEventListener('touchend', handleTouchMove, false);
-
+// А на движение пальцем по экрану - handleTouchMove      
+canvas1.addEventListener('touchend', handleTouchEnd, false);
+canvas2.addEventListener('touchend', handleTouchEnd, false);
+canvas3.addEventListener('touchend', handleTouchEnd, false);
 
 var xDown = null;                                                        
 var yDown = null;                                                    
@@ -316,6 +319,8 @@ function handleTouchStart(evt) {
     xDown = evt.changedTouches[0].clientX;                                      
     yDown = evt.changedTouches[0].clientY; 
 };          
+
+
 
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
@@ -335,8 +340,6 @@ function handleTouchMove(evt) {
 
     if (Math.abs(startSwipeY - endSwipeY) >= 100) {
       this.classList.remove('touch');
-    } else {
-      this.classList.add('touch');
     }
 
     var xUp = evt.changedTouches[0].clientX;                                    
