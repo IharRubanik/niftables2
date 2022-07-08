@@ -323,8 +323,8 @@ function handleTouchEnd() {
 };  
 
 window.addEventListener("orientationchange", event => {
-  this.alert('height: '+ window.screen.width+'px')
-  this.alert('width: '+ window.screen.height+'px')
+  this.alert('height: '+ window.screen.height+'px')
+  this.alert('width: '+ window.screen.width+'px')
 });
 
 
