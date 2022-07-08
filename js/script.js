@@ -327,7 +327,7 @@ function handleTouchMove(evt) {
         return;
     }
 
-    if (Math.abs(startSwipeY - endSwipeY) >= 0) {
+    if (Math.abs(startSwipeY - endSwipeY) >= 500) {
       this.classList.remove('touch');
     } else {
       this.classList.add('touch');
