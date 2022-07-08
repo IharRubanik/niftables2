@@ -284,20 +284,8 @@ const canvas1 = document.getElementById("c1"),
       canvas2 = document.getElementById("c2"),
       canvas3 = document.getElementById("c3");
 
-let startSwipeY = 0,
-    startSwipeX = 0,
-    endSwipeY = 0,
-    endSwipeX = 0,
+let 
     processProgress = 0;
-
-window.addEventListener('touchstart', function(e) {
-  startSwipeX = e.changedTouches[0].clientX;
-  startSwipeY = e.changedTouches[0].clientY;
-})
-window.addEventListener('touchend', function(e) {
-  endSwipeX = e.changedTouches[0].clientX;
-  endSwipeY = e.changedTouches[0].clientY;
-})
 
 // Вешаем на прикосновение функцию handleTouchStart
 canvas1.addEventListener('touchstart', handleTouchStart, false);  
@@ -314,11 +302,9 @@ var yDown = null;
 function handleTouchStart(evt) {                                         
     xDown = evt.changedTouches[0].clientX;                                      
     yDown = evt.changedTouches[0].clientY; 
-    this.classList.add('touch');
 };        
 
 function govnocode() {
-  console.log('13')
   document.querySelectorAll('canvas').forEach(el => el.classList.remove('touch'))
 }
 
@@ -340,7 +326,6 @@ function handleTouchMove(evt) {
         if ( xDiff > 0 ) {
           /* left swipe */ 
           this.classList.add('touch');
-          
           window.clearTimeout(timeoutHandle);
           timeoutHandle = window.setTimeout(govnocode, 400);
 
