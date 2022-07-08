@@ -1300,6 +1300,12 @@
       }
     }
   }
+
+  canvas.touch {
+    touch-action: none !important;
+  }
+
+  
 }
 
 @media (min-aspect-ratio: 1024/768) and (min-width: 769px) and (max-width: 1280px) {

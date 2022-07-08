@@ -1377,6 +1377,10 @@
   body .wrapper .contacts .contacts__container .foorer__container .header-subscribe__block .form__container button img {
     width: 1.563vw;
   }
+  canvas.touch {
+    -ms-touch-action: none !important;
+        touch-action: none !important;
+  }
 }
 
 @media (min-aspect-ratio: 1024 / 768) and (min-width: 769px) and (max-width: 1280px) {
