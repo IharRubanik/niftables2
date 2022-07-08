@@ -351,7 +351,7 @@ function handleTouchMove(evt) {
             document.querySelector('.tokenomics__slider__button .button.next').click();
           }
           if (this.id === 'c3') {
-            if (Math.abs(startSwipeY - endSwipeY) >= 100) {
+            if (Math.abs(startSwipeY - endSwipeY) >= 40) {
               processProgress++;
               initProcess(processProgress);
             }
