@@ -307,11 +307,11 @@ function handleTouchStart(evt) {
     yDown = evt.changedTouches[0].clientY; 
 };   
 
-var timeoutHandle = window.setTimeout(govnocode, 300);
+var timeoutHandle = window.setTimeout(govnocode, 400);
 
 function handleTouchEnd() {
   window.clearTimeout(timeoutHandle);
-  timeoutHandle = window.setTimeout(govnocode, 300);
+  timeoutHandle = window.setTimeout(govnocode, 400);
 }
 
 function govnocode() {
