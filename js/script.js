@@ -307,17 +307,18 @@ function handleTouchStart(evt) {
     yDown = evt.changedTouches[0].clientY; 
 };   
 
-function handleTouchEnd(evt) {
-  this.classList.remove('touch');
+var timeoutHandle = window.setTimeout(govnocode, 300);
+
+function handleTouchEnd() {
+  window.clearTimeout(timeoutHandle);
+  timeoutHandle = window.setTimeout(govnocode, 300);
 }
 
 function govnocode() {
+  console.log('21')
   document.querySelectorAll('canvas').forEach(el => el.classList.remove('touch'));
 }
 
-// var timeoutHandle = window.setTimeout(govnocode, 300);
-
-     
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
         return;
@@ -335,8 +336,6 @@ function handleTouchMove(evt) {
         if ( xDiff > 0 ) {
           /* left swipe */ 
           this.classList.add('touch');
-          // window.clearTimeout(timeoutHandle);
-          // timeoutHandle = window.setTimeout(govnocode, 300);
 
           if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
@@ -353,8 +352,6 @@ function handleTouchMove(evt) {
         } else {
           /* right swipe */
           this.classList.add('touch');
-          // window.clearTimeout(timeoutHandle);
-          // timeoutHandle = window.setTimeout(govnocode, 300);
 
           if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
