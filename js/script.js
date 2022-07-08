@@ -8,13 +8,14 @@ window.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.purple-triangle').classList.add('active');
       document.querySelector('.city').classList.add('active');
       document.querySelector('.main-info__text b').classList.add('active');
-      document.querySelector('html').classList.remove('active');
-      document.querySelector('html').style.overflowY = 'auto';
+      document.querySelector('body').classList.remove('active');
+      document.querySelector('html').style.overflowY = 'none';
 
       
     }
     function removePreloader() {
       document.querySelector('.preloader').remove();
+      document.querySelector('html').style.overflowY = 'auto';
     }
 
     setTimeout(ifPreloaderLoad, 3000);
@@ -25,9 +26,8 @@ let body = document.querySelector(".body");
 let process = document.querySelector(".process");
 
 let arrActive = ([] = document.querySelectorAll(
-  ".header-button, .header, .header-content, .header-name, body, html"
+  ".header-button, .header, .header-content, .header-name, body"
 ));
-console.log(arrActive)
 
 document.querySelector(".header-button").onclick = function () {
   for (i = 0; i < arrActive.length; i++) {
@@ -305,9 +305,9 @@ canvas3.addEventListener('touchstart', handleTouchStart, false);
 canvas1.addEventListener('touchmove', handleTouchMove, false);
 canvas2.addEventListener('touchmove', handleTouchMove, false);
 canvas3.addEventListener('touchmove', handleTouchMove, false);
-// Вешаем на прикосновение функцию handleTouchEnd
-canvas1.addEventListener('touchend', handleTouchEnd, false);  
-canvas2.addEventListener('touchend', handleTouchEnd, false);  
+// А на движение пальцем по экрану - handleTouchMove      
+canvas1.addEventListener('touchend', handleTouchEnd, false);
+canvas2.addEventListener('touchend', handleTouchEnd, false);
 canvas3.addEventListener('touchend', handleTouchEnd, false);
 
 var xDown = null;                                                        
@@ -316,8 +316,8 @@ var yDown = null;
 function handleTouchStart(evt) {                                         
     xDown = evt.changedTouches[0].clientX;                                      
     yDown = evt.changedTouches[0].clientY; 
+    this.classList.add('touch');
 };          
-
 function handleTouchEnd() {                                         
   this.classList.remove('touch');
 };          
@@ -328,11 +328,7 @@ function handleTouchMove(evt) {
         return;
     }
 
-    if (Math.abs(startSwipeY - endSwipeY) >= 40) {
-      this.classList.remove('touch');
-    } else {
-      this.classList.add('touch');
-    }
+    this.classList.add('touch');
 
     var xUp = evt.changedTouches[0].clientX;                                    
     var yUp = evt.changedTouches[0].clientY;

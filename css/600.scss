@@ -446,57 +446,59 @@
         }
       }
       .about {
-        position: relative;
-        padding: 8vw 4vw 30.667vw 4vw;
-        .about-text {
-          font-size: 8vw;
-          line-height: 9.6vw;
-          max-width: 67.2vw;
-          text-indent: 0vw;
-          margin-left: auto;
-        }
-        .about__flex {
-          flex-direction: column;
-          margin: 0;
-          .about-blocktext {
-            margin: 14.133vw 0 0 0;
-            padding: 0;
-            width: 81.867vw;
-            max-width: 81.867vw;
-            font-size: 4.8vw;
-            line-height: 6.933vw;
-            &::before {
-              border: 0.267vw solid #fff;
-              border-left: 0;
-              border-bottom: 0;
-              top: 0;
-              right: 0;
-              width: 4.667vw;
-              height: 4.933vw;
-            }
-            &::after {
-              border: 0.267vw solid #fff;
-              width: 4.667vw;
-              height: 4.933vw;
-              border-right: 0;
-              border-top: 0;
-              left: 0vw;
-              bottom: 0;
-            }
+        .about__container {
+          position: relative;
+          padding: 8vw 4vw 30.667vw 4vw;
+          .about-text {
+            font-size: 8vw;
+            line-height: 9.6vw;
+            max-width: 67.2vw;
+            text-indent: 0vw;
+            margin-left: auto;
           }
-          .about-circle {
-            position: absolute;
+          .about__flex {
+            flex-direction: column;
             margin: 0;
-            top: 13.333vw;
-            left: 8.8vw;
-            img {
-              width: 10.019vw;
+            .about-blocktext {
+              margin: 14.133vw 0 0 0;
+              padding: 0;
+              width: 81.867vw;
+              max-width: 81.867vw;
+              font-size: 4.8vw;
+              line-height: 6.933vw;
+              &::before {
+                border: 0.267vw solid #fff;
+                border-left: 0;
+                border-bottom: 0;
+                top: 0;
+                right: 0;
+                width: 4.667vw;
+                height: 4.933vw;
+              }
+              &::after {
+                border: 0.267vw solid #fff;
+                width: 4.667vw;
+                height: 4.933vw;
+                border-right: 0;
+                border-top: 0;
+                left: 0vw;
+                bottom: 0;
+              }
             }
-            &::before {
-              width: 19.347vw;
-            }
-            &::after {
-              display: none;
+            .about-circle {
+              position: absolute;
+              margin: 0;
+              top: 13.333vw;
+              left: 8.8vw;
+              img {
+                width: 10.019vw;
+              }
+              &::before {
+                width: 19.347vw;
+              }
+              &::after {
+                display: none;
+              }
             }
           }
         }

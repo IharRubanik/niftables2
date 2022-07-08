@@ -511,25 +511,25 @@
     width: 4vw;
     bottom: 8vw;
   }
-  body .wrapper .about {
+  body .wrapper .about .about__container {
     position: relative;
     padding: 8vw 4vw 30.667vw 4vw;
   }
-  body .wrapper .about .about-text {
+  body .wrapper .about .about__container .about-text {
     font-size: 8vw;
     line-height: 9.6vw;
     max-width: 67.2vw;
     text-indent: 0vw;
     margin-left: auto;
   }
-  body .wrapper .about .about__flex {
+  body .wrapper .about .about__container .about__flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
   }
-  body .wrapper .about .about__flex .about-blocktext {
+  body .wrapper .about .about__container .about__flex .about-blocktext {
     margin: 14.133vw 0 0 0;
     padding: 0;
     width: 81.867vw;
@@ -537,7 +537,7 @@
     font-size: 4.8vw;
     line-height: 6.933vw;
   }
-  body .wrapper .about .about__flex .about-blocktext::before {
+  body .wrapper .about .about__container .about__flex .about-blocktext::before {
     border: 0.267vw solid #fff;
     border-left: 0;
     border-bottom: 0;
@@ -546,7 +546,7 @@
     width: 4.667vw;
     height: 4.933vw;
   }
-  body .wrapper .about .about__flex .about-blocktext::after {
+  body .wrapper .about .about__container .about__flex .about-blocktext::after {
     border: 0.267vw solid #fff;
     width: 4.667vw;
     height: 4.933vw;
@@ -555,19 +555,19 @@
     left: 0vw;
     bottom: 0;
   }
-  body .wrapper .about .about__flex .about-circle {
+  body .wrapper .about .about__container .about__flex .about-circle {
     position: absolute;
     margin: 0;
     top: 13.333vw;
     left: 8.8vw;
   }
-  body .wrapper .about .about__flex .about-circle img {
+  body .wrapper .about .about__container .about__flex .about-circle img {
     width: 10.019vw;
   }
-  body .wrapper .about .about__flex .about-circle::before {
+  body .wrapper .about .about__container .about__flex .about-circle::before {
     width: 19.347vw;
   }
-  body .wrapper .about .about__flex .about-circle::after {
+  body .wrapper .about .about__container .about__flex .about-circle::after {
     display: none;
   }
   body .wrapper .process {

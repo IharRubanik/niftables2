@@ -333,16 +333,12 @@
               width: 18.229vw;
               height: 18.229vw;
               &::before {
-                width: 21.597vw;
-                height: 13.264vw;
-                left: -4.444vw;
-                top: -4.18vw;
+                width: 350px;
+                height: 270px;
               }
               &::after {
-                width: 9.653vw;
-                height: 9.653vw;
-                top: 2.084vw;
-                left: -1.18vw;
+                width: 180px;
+                height: 180px;
               }
               span {
                 font-size: 1.432vw;
@@ -356,6 +352,7 @@
         }
       }
       .about {
+        .about__container{
         padding: 3.906vw 3.906vw 19.531vw 3.906vw;
         .about-text {
           font-size: 4.427vw;
@@ -407,6 +404,7 @@
             }
           }
         }
+      }
       }
       .process {
         padding: 5vw 0 9.345vw 0;

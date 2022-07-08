@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   @-webkit-keyframes nft-gradient-text {
     0% {
       background-position: -42.499vw;
@@ -396,20 +396,12 @@
     height: 13.672vw;
   }
   body .wrapper .main .main-info .main-info__bottom button::before {
-    width: 16.198vw;
-    height: 9.948vw;
-    left: -3.333vw;
-    top: -3.135vw;
-    -webkit-animation: main-button-1-1024 4s linear infinite;
-            animation: main-button-1-1024 4s linear infinite;
+    width: 350px;
+    height: 270px;
   }
   body .wrapper .main .main-info .main-info__bottom button::after {
-    width: 7.24vw;
-    height: 7.24vw;
-    top: 1.563vw;
-    left: -0.885vw;
-    -webkit-animation: main-button-2-1024 4s linear infinite;
-            animation: main-button-2-1024 4s linear infinite;
+    width: 180px;
+    height: 180px;
   }
   body .wrapper .main .main-info .main-info__bottom button span {
     font-size: 1.074vw;
@@ -418,25 +410,25 @@
     width: 1.465vw;
     bottom: 2.93vw;
   }
-  body .wrapper .about {
+  body .wrapper .about .about__container {
     padding: 4.395vw 2.93vw 14.531vw 2.93vw;
   }
-  body .wrapper .about .about-text {
+  body .wrapper .about .about__container .about-text {
     font-size: 3.516vw;
     line-height: 4.199vw;
     max-width: 68.359vw;
     text-indent: 13.623vw;
   }
-  body .wrapper .about .about__flex {
+  body .wrapper .about .about__container .about__flex {
     margin: 8.594vw 0 0 16.895vw;
   }
-  body .wrapper .about .about__flex .about-blocktext {
+  body .wrapper .about .about__container .about__flex .about-blocktext {
     padding: 0.977vw;
     font-size: 1.953vw;
     line-height: 2.734vw;
     max-width: 28.516vw;
   }
-  body .wrapper .about .about__flex .about-blocktext::before {
+  body .wrapper .about .about__container .about__flex .about-blocktext::before {
     border: 0.098vw solid #fff;
     width: 2.197vw;
     height: 2.295vw;
@@ -447,7 +439,7 @@
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
   }
-  body .wrapper .about .about__flex .about-blocktext::after {
+  body .wrapper .about .about__container .about__flex .about-blocktext::after {
     border: 0.098vw solid #fff;
     width: 2.197vw;
     height: 2.295vw;
@@ -459,17 +451,17 @@
     -webkit-transform: translate(-100%, 100%);
             transform: translate(-100%, 100%);
   }
-  body .wrapper .about .about__flex .about-circle {
+  body .wrapper .about .about__container .about__flex .about-circle {
     margin: 0 8.789vw 0 0;
   }
-  body .wrapper .about .about__flex .about-circle img {
+  body .wrapper .about .about__container .about__flex .about-circle img {
     width: 13.867vw;
   }
-  body .wrapper .about .about__flex .about-circle::before {
+  body .wrapper .about .about__container .about__flex .about-circle::before {
     width: 26.822vw;
     height: 26.822vw;
   }
-  body .wrapper .about .about__flex .about-circle::after {
+  body .wrapper .about .about__container .about__flex .about-circle::after {
     width: 33.691vw;
     height: 33.691vw;
   }
@@ -1379,7 +1371,7 @@
   }
 }
 
-@media (min-aspect-ratio: 1024 / 768) and (min-width: 769px) and (max-width: 1024px) {
+@media (min-aspect-ratio: 1024 / 768) and (min-width: 769px) and (max-width: 1280px) {
   body .header-content {
     height: 100vh;
     overflow: auto;
