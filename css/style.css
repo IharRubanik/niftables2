@@ -1461,10 +1461,13 @@ html {
   width: 100%;
 }
 
+<<<<<<< HEAD
 html.active {
   overflow: hidden !important;
 }
 
+=======
+>>>>>>> 12de07d160ec0ac1f61ff4b11b52dfb5b7d7bdaa
 html::-webkit-scrollbar {
   width: 8px;
 }

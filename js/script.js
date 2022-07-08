@@ -9,10 +9,8 @@ window.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.city').classList.add('active');
       document.querySelector('.main-info__text b').classList.add('active');
       document.querySelector('body').classList.remove('active');
-      document.querySelector('html').style.overflowY = 'none';
-
-      
     }
+
     function removePreloader() {
       document.querySelector('.preloader').remove();
       document.querySelector('html').style.overflowY = 'auto';
@@ -59,7 +57,7 @@ const line10 = document.querySelector(".line-10");
 let zi = 0;
 
 function initProcess(zi) {
-  if (window.innerWidth <= 1024) {
+  if (window.innerWidth <= 1200) {
   document.querySelector('#first-number').innerHTML = `0${zi+1}`;
 }
   for (let j = 0; j < gridItems.length; j++) {
@@ -163,7 +161,7 @@ function initProcess(zi) {
 
 
 function checkProcessSize() {
-  if (window.innerWidth > 1024) {
+  if (window.innerWidth > 1200) {
 const scroll = window.pageYOffset - sticky.offsetTop,
       height = sticky.scrollHeight; 
       scroll < 1 * (height / 6) - 600 ?
@@ -286,16 +284,7 @@ const canvas1 = document.getElementById("c1"),
       canvas2 = document.getElementById("c2"),
       canvas3 = document.getElementById("c3");
 
-let startSwipeY = 0,
-    endSwipeY = 0,
-    processProgress = 0;
-
-window.addEventListener('touchstart', function(e) {
-  startSwipeY = e.changedTouches[0].clientY;
-})
-window.addEventListener('touchend', function(e) {
-  endSwipeY = e.changedTouches[0].clientY;
-})
+let processProgress = 0;
 
 // Вешаем на прикосновение функцию handleTouchStart
 canvas1.addEventListener('touchstart', handleTouchStart, false);  
@@ -305,7 +294,7 @@ canvas3.addEventListener('touchstart', handleTouchStart, false);
 canvas1.addEventListener('touchmove', handleTouchMove, false);
 canvas2.addEventListener('touchmove', handleTouchMove, false);
 canvas3.addEventListener('touchmove', handleTouchMove, false);
-// А на движение пальцем по экрану - handleTouchMove      
+
 canvas1.addEventListener('touchend', handleTouchEnd, false);
 canvas2.addEventListener('touchend', handleTouchEnd, false);
 canvas3.addEventListener('touchend', handleTouchEnd, false);
@@ -316,30 +305,36 @@ var yDown = null;
 function handleTouchStart(evt) {                                         
     xDown = evt.changedTouches[0].clientX;                                      
     yDown = evt.changedTouches[0].clientY; 
-    this.classList.add('touch');
-};          
-function handleTouchEnd() {                                         
-  this.classList.remove('touch');
-};          
+};   
 
+var timeoutHandle = window.setTimeout(swipeDelay, 400);
+
+function handleTouchEnd() {
+  window.clearTimeout(timeoutHandle);
+  timeoutHandle = window.setTimeout(swipeDelay, 400);
+}
+
+function swipeDelay() {
+  document.querySelectorAll('canvas').forEach(el => el.classList.remove('touch'));
+}
 
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
         return;
     }
 
-    this.classList.add('touch');
-
     var xUp = evt.changedTouches[0].clientX;                                    
     var yUp = evt.changedTouches[0].clientY;
 
     var xDiff = xDown - xUp;
     var yDiff = yDown - yUp;
+
     // немного поясню здесь. Тут берутся модули движения по оси абсцисс и ординат (почему модули? потому что если движение сделано влево или вниз, то его показатель будет отрицательным) и сравнивается, чего было больше: движения по абсциссам или ординатам. Нужно это для того, чтобы, если пользователь провел вправо, но немного наискосок вниз, сработал именно коллбэк для движения вправо, а ни как-то иначе.
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-
+    
         if ( xDiff > 0 ) {
           /* left swipe */ 
+          this.classList.add('touch');
 
           if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
@@ -355,6 +350,8 @@ function handleTouchMove(evt) {
           }
         } else {
           /* right swipe */
+          this.classList.add('touch');
+
           if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
           }
@@ -367,12 +364,13 @@ function handleTouchMove(evt) {
               initProcess(processProgress);
             }
           }
-        }         
-        // initProcess(processProgress);
-    } 
+        }      
+    } else {
+      this.classList.remove('touch');
+    }
     /* reset values */
     xDown = null;
-    // yDown = null;                                             
+    yDown = null;                                             
 };
 
 // собираем элементы слайдера
@@ -444,7 +442,7 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
       // console.log(percentScrolled);
       // console.log(percentTabletScrolled );
 
-      if (window.innerWidth > 1024) {
+      if (window.innerWidth > 1200) {
         // VISION CONTENT MOTION
         block.style.transform = `translateX(${wrapper.getBoundingClientRect().y + block.getBoundingClientRect().y}px)`
         // SVG PROGRESS
@@ -520,7 +518,7 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
           document.querySelector('#triangle7-7').style.opacity = 0;
         }
 
-      } else if (window.innerWidth <= 1024 && window.innerWidth > 768) {
+      } else if (window.innerWidth <= 1200 && window.innerWidth > 768) {
         
         visionLineTablet.style.height = `${percentTabletScrolled+20}%`;
 
@@ -667,7 +665,7 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
      })
 
     window.addEventListener('resize', function() {
-      if (window.innerWidth <= 1024) {
+      if (window.innerWidth <= 1200) {
         block.style.transform = `translateX(0px)`
       }
     })
