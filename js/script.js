@@ -291,9 +291,9 @@ canvas1.addEventListener('touchstart', handleTouchStart, false);
 canvas2.addEventListener('touchstart', handleTouchStart, false);  
 canvas3.addEventListener('touchstart', handleTouchStart, false);
 // А на движение пальцем по экрану - handleTouchMove      
-canvas1.addEventListener('touchend', handleTouchMove, false);
-canvas2.addEventListener('touchend', handleTouchMove, false);
-canvas3.addEventListener('touchend', handleTouchMove, false);
+canvas1.addEventListener('touchmove', handleTouchMove, false);
+canvas2.addEventListener('touchmove', handleTouchMove, false);
+canvas3.addEventListener('touchmove', handleTouchMove, false);
 
 var xDown = null;                                                        
 var yDown = null;                                                    
