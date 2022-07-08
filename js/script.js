@@ -284,21 +284,16 @@ const canvas1 = document.getElementById("c1"),
       canvas2 = document.getElementById("c2"),
       canvas3 = document.getElementById("c3");
 
-let 
-    processProgress = 0;
+let processProgress = 0;
 
 // Вешаем на прикосновение функцию handleTouchStart
 canvas1.addEventListener('touchstart', handleTouchStart, false);  
 canvas2.addEventListener('touchstart', handleTouchStart, false);  
 canvas3.addEventListener('touchstart', handleTouchStart, false);
 // А на движение пальцем по экрану - handleTouchMove      
-canvas1.addEventListener('touchmove', handleTouchMove, false);
-canvas2.addEventListener('touchmove', handleTouchMove, false);
-canvas3.addEventListener('touchmove', handleTouchMove, false);
-   
-canvas1.addEventListener('touchend', handleTouchEnd, false);
-canvas2.addEventListener('touchend', handleTouchEnd, false);
-canvas3.addEventListener('touchend', handleTouchEnd, false);
+canvas1.addEventListener('touchend', handleTouchMove, false);
+canvas2.addEventListener('touchend', handleTouchMove, false);
+canvas3.addEventListener('touchend', handleTouchMove, false);
 
 var xDown = null;                                                        
 var yDown = null;                                                    
@@ -309,15 +304,11 @@ function handleTouchStart(evt) {
 };        
 
 function govnocode() {
-  document.querySelectorAll('canvas').forEach(el => el.classList.remove('touch'))
+  document.querySelectorAll('canvas').forEach(el => el.classList.remove('touch'));
 }
 
-var timeoutHandle = window.setTimeout(govnocode, 500);
+var timeoutHandle = window.setTimeout(govnocode, 200);
 
-function handleTouchEnd() {
-  window.clearTimeout(timeoutHandle);
-  timeoutHandle = window.setTimeout(govnocode, 500);
-}
      
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
@@ -335,6 +326,8 @@ function handleTouchMove(evt) {
         if ( xDiff > 0 ) {
           /* left swipe */ 
           this.classList.add('touch');
+          window.clearTimeout(timeoutHandle);
+          timeoutHandle = window.setTimeout(govnocode, 200);
 
           if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
@@ -351,6 +344,8 @@ function handleTouchMove(evt) {
         } else {
           /* right swipe */
           this.classList.add('touch');
+          window.clearTimeout(timeoutHandle);
+          timeoutHandle = window.setTimeout(govnocode, 200);
 
           if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
