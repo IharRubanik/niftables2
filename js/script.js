@@ -327,7 +327,7 @@ function handleTouchMove(evt) {
           /* left swipe */ 
           this.classList.add('touch');
           window.clearTimeout(timeoutHandle);
-          timeoutHandle = window.setTimeout(govnocode, 200);
+          timeoutHandle = window.setTimeout(govnocode, 500);
 
           if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
@@ -345,7 +345,7 @@ function handleTouchMove(evt) {
           /* right swipe */
           this.classList.add('touch');
           window.clearTimeout(timeoutHandle);
-          timeoutHandle = window.setTimeout(govnocode, 200);
+          timeoutHandle = window.setTimeout(govnocode, 500);
 
           if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
