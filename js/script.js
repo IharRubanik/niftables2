@@ -307,15 +307,14 @@ function handleTouchStart(evt) {
     yDown = evt.changedTouches[0].clientY; 
 };   
 
-var timeoutHandle = window.setTimeout(govnocode, 400);
+var timeoutHandle = window.setTimeout(swipeDelay, 400);
 
 function handleTouchEnd() {
   window.clearTimeout(timeoutHandle);
-  timeoutHandle = window.setTimeout(govnocode, 400);
+  timeoutHandle = window.setTimeout(swipeDelay, 400);
 }
 
-function govnocode() {
-  console.log('21')
+function swipeDelay() {
   document.querySelectorAll('canvas').forEach(el => el.classList.remove('touch'));
 }
 
