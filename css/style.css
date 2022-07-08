@@ -1684,7 +1684,7 @@ body .header-content .header-content__wrapper .header-subscribe .header-subscrib
 }
 
 body .header-content .header-content__wrapper .header-subscribe .header-subscribe__block p {
-  font-family: "Barlow";
+  font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.938vw;
@@ -1847,7 +1847,7 @@ body .wrapper .preloader .preloader__container .preloader__title {
 
 body .wrapper .preloader .preloader__container .preloader__title h2 {
   display: block;
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -1863,7 +1863,7 @@ body .wrapper .preloader .preloader__container .preloader__title h2 {
 
 body .wrapper .preloader .preloader__container .preloader__title span {
   display: block;
-  font-family: "Barlow";
+  font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1973,8 +1973,8 @@ body .wrapper .background .purple-triangle {
 }
 
 body .wrapper .background .purple-triangle.active {
-  -webkit-animation: 1s triangle-purple 1.5s linear forwards, 12s triangle-purple-active 3.5s linear infinite;
-          animation: 1s triangle-purple 1.5s linear forwards, 12s triangle-purple-active 3.5s linear infinite;
+  -webkit-animation: 1s triangle-purple 1.5s linear forwards, 12s triangle-purple-active 3.5s linear infinite;
+          animation: 1s triangle-purple 1.5s linear forwards, 12s triangle-purple-active 3.5s linear infinite;
 }
 
 body .wrapper .background .blue-triangle {
@@ -1988,8 +1988,8 @@ body .wrapper .background .blue-triangle {
 }
 
 body .wrapper .background .blue-triangle.active {
-  -webkit-animation: 1s triangle-blue 2.5s linear forwards, 12s triangle-blue-active 3.5s linear infinite;
-          animation: 1s triangle-blue 2.5s linear forwards, 12s triangle-blue-active 3.5s linear infinite;
+  -webkit-animation: 1s triangle-blue 2.5s linear forwards, 12s triangle-blue-active 3.5s linear infinite;
+          animation: 1s triangle-blue 2.5s linear forwards, 12s triangle-blue-active 3.5s linear infinite;
 }
 
 body .wrapper .background .city {
@@ -2503,7 +2503,7 @@ body .wrapper .about .about__flex .about-blocktext {
   padding: 0.521vw;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  font-family: "Barlow";
+  font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.25vw;
@@ -2629,7 +2629,7 @@ body .wrapper .process .process-container .process-parent .process-parent__stick
 body .wrapper .process .process-container .process-parent .process-parent__sticky .process-parent__sticky-container .section-title {
   position: absolute;
   top: 0;
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.708vw;
@@ -2674,7 +2674,7 @@ body .wrapper .process .process-container .process-parent .process-parent__stick
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   opacity: 0;
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.25vw;
@@ -2690,7 +2690,7 @@ body .wrapper .process .process-container .process-parent .process-parent__stick
           transform: translateX(100%);
   opacity: 0;
   margin: 1.042vw 0 0 0;
-  font-family: "Barlow";
+  font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 1.042vw;
@@ -2893,7 +2893,7 @@ body .wrapper .process .process-container .process-parent .process-parent__stick
 }
 
 body .wrapper .process .process-container .process-parent .process-parent__sticky .process-parent__sticky-container .process__arrow .process__arrow-item strong {
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 0.625vw;
@@ -2911,7 +2911,7 @@ body .wrapper .process .process-container .process-parent .process-parent__stick
   position: absolute;
   top: 0;
   left: 0;
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 0.729vw;
@@ -3129,7 +3129,7 @@ body .wrapper .features .features__container {
 }
 
 body .wrapper .features .features__container .features__title {
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.708vw;
@@ -3144,7 +3144,7 @@ body .wrapper .features .features__container .features__background-title {
   position: absolute;
   top: -1.094vw;
   left: -0.521vw;
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12.917vw;
@@ -3243,7 +3243,7 @@ body .wrapper .features .features__container .features__wrapper-circle .features
 }
 
 body .wrapper .features .features__container .features__wrapper-circle .features__container-circle h3 {
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 0.729vw;
@@ -3256,7 +3256,7 @@ body .wrapper .features .features__container .features__wrapper-circle .features
 }
 
 body .wrapper .features .features__container .features__wrapper-circle .features__container-circle p {
-  font-family: "Barlow";
+  font-family: "Barlow", sans-serif;
   font-style: normal;
   font-size: 0.052vw;
   line-height: 0.104vw;
@@ -3394,7 +3394,7 @@ body .wrapper .features .features__container .features__slider .features__slider
 }
 
 body .wrapper .features .features__container .features__slider .features__slider-container .slider-item .slide-text h3 {
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.25vw;
@@ -3405,7 +3405,7 @@ body .wrapper .features .features__container .features__slider .features__slider
 
 body .wrapper .features .features__container .features__slider .features__slider-container .slider-item .slide-text p {
   margin: 0.781vw 0 0 0;
-  font-family: "Barlow";
+  font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 1.042vw;
@@ -3677,7 +3677,7 @@ body .wrapper .vision .vision__sticky .vision__content {
 }
 
 body .wrapper .vision .vision__sticky .vision__content h3 {
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12.917vw;
@@ -3721,21 +3721,21 @@ body .wrapper .vision .vision__sticky .vision__content .container__stage .planet
   position: absolute;
   top: 0.885vw;
   left: -0.26vw;
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12.917vw;
   line-height: 16.51vw;
   text-transform: uppercase;
   opacity: 0.1;
-  text-shadow: white 0vw 0.052vw 0px, white 0vw -0.052vw 0px, white 0.052vw 0vw 0px, white -0.052vw 0vw 0px, white 0.052vw 0.052vw 0px, white 0.052vw -0.052vw 0px, white -0.052vw 0.052vw 0px, white -0.052vw -0.052vw 0px;
+  text-shadow: white 0vw 0.052vw 0px, white 0vw -0.052vw 0px, white 0.052vw 0vw 0px, white -0.052vw 0vw 0px, white 0.052vw 0.052vw 0px, white 0.052vw -0.052vw 0px, white -0.052vw 0.052vw 0px, white -0.052vw -0.052vw 0px;
 }
 
 body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet strong {
   position: absolute;
   top: 11vw;
   left: 0;
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.708vw;
@@ -3807,7 +3807,7 @@ body .wrapper .vision .vision__sticky .vision__content .container__stage .vision
 }
 
 body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container .descripcion-item h4 {
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.25vw;
@@ -3824,7 +3824,7 @@ body .wrapper .vision .vision__sticky .vision__content .container__stage .vision
 
 body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container .descripcion-item p {
   margin: 0.781vw 0 0 0;
-  font-family: "Barlow";
+  font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 1.042vw;
@@ -3866,7 +3866,7 @@ body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block {
 }
 
 body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__title {
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.708vw;
@@ -4033,7 +4033,7 @@ body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokeno
 }
 
 body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item h3 {
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.25vw;
@@ -4044,7 +4044,7 @@ body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokeno
 
 body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item p {
   margin: 1.563vw 0 0 0;
-  font-family: "Barlow";
+  font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 1.042vw;
@@ -4129,7 +4129,7 @@ body .wrapper .tokenomics .tokenomics__container .tokenomics__right-block .token
 }
 
 body .wrapper .tokenomics .tokenomics__container .tokenomics__right-block .tokenomics__items-container .tokenomics__items h4 {
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 0.729vw;
@@ -4140,7 +4140,7 @@ body .wrapper .tokenomics .tokenomics__container .tokenomics__right-block .token
 }
 
 body .wrapper .tokenomics .tokenomics__container .tokenomics__right-block .tokenomics__items-container .tokenomics__items span {
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 0.938vw;
@@ -4159,7 +4159,7 @@ body .wrapper .tokenomics .tokenomics__container .tokenomics__right-block .token
   position: absolute;
   bottom: 9.896vw;
   left: 4.688vw;
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 3.229vw;
@@ -4186,7 +4186,7 @@ body .wrapper .partners .partners__title {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.708vw;
@@ -4199,7 +4199,7 @@ body .wrapper .partners .partners__descripcion {
   -ms-grid-column: 5;
       grid-column-start: 5;
   grid-column-end: 8;
-  font-family: "Barlow";
+  font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.042vw;
@@ -4280,7 +4280,7 @@ body .wrapper .partners .partners__gris-item:nth-child(16) {
 }
 
 body .wrapper .partners span {
-  font-family: "Barlow";
+  font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.042vw;
@@ -4295,7 +4295,7 @@ body .wrapper .partners span {
 }
 
 body .wrapper .partners .partners__gris-item-strong {
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 0.938vw;
@@ -4521,7 +4521,7 @@ body .wrapper .contacts .contacts__container {
 }
 
 body .wrapper .contacts .contacts__container .contacts__title {
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.708vw;
@@ -4621,7 +4621,7 @@ body .wrapper .contacts .contacts__container .foorer__container .footer-subscrib
 }
 
 body .wrapper .contacts .contacts__container .foorer__container .footer-subscribe__linkblock span {
-  font-family: "Barlow";
+  font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.042vw;
@@ -4654,13 +4654,13 @@ body .wrapper .contacts .contacts__container .foorer__container .footer-subscrib
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  font-family: "Akzidenz-Grotesk Pro";
+  font-family: "Akzidenz-Grotesk Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 0.833vw;
   line-height: 1.042vw;
   position: relative;
-  transition: background 0.2s ease-in, transform 0.2s ease-in, border 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  transition: background 0.2s ease-in, transform 0.2s ease-in, border 0.2s ease-in, -webkit-transform 0.2s ease-in;
   text-decoration: none;
 }
 
@@ -4734,7 +4734,7 @@ body .wrapper .contacts .contacts__container .foorer__container .header-subscrib
 }
 
 body .wrapper .contacts .contacts__container .foorer__container .header-subscribe__block p {
-  font-family: "Barlow";
+  font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.938vw;
@@ -4832,7 +4832,7 @@ canvas#c3 {
   height: 100%;
 }
 
-@media (min-aspect-ratio: 1920 / 860) and (min-width: 1025px) {
+@media (min-aspect-ratio: 1920 / 860) and (min-width: 1281px) {
   body .header-content {
     height: 100vh;
     overflow: auto;
