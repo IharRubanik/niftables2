@@ -327,15 +327,12 @@ function handleTouchEnd() {
 //   this.alert('width: '+ window.screen.width+'px')
 // });
 
-
-
-
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
         return;
     }
 
-    if (Math.abs(startSwipeY - endSwipeY) >= 40) {
+    if (Math.abs(startSwipeY - endSwipeY) >= 100) {
       this.classList.remove('touch');
     } else {
       this.classList.add('touch');
