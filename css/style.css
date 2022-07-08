@@ -4870,12 +4870,6 @@ body .wrapper .contacts .contacts__container .foorer__container .header-subscrib
           transform: scale(1.05);
 }
 
-canvas#c1,
-canvas#c2,
-canvas#c3 {
-  overflow-x: scroll !important;
-}
-
 canvas#c2,
 canvas#c3 {
   position: absolute;

@@ -307,10 +307,6 @@ canvas3.addEventListener('touchstart', handleTouchStart, false);
 canvas1.addEventListener('touchmove', handleTouchMove, false);
 canvas2.addEventListener('touchmove', handleTouchMove, false);
 canvas3.addEventListener('touchend', handleTouchMove, false);
-// А на движение пальцем по экрану - handleTouchMove      
-canvas1.addEventListener('touchend', handleTouchEnd, false);
-canvas2.addEventListener('touchend', handleTouchEnd, false);
-canvas3.addEventListener('touchend', handleTouchEnd, false);
 
 var xDown = null;                                                        
 var yDown = null;                                                    
@@ -318,29 +314,15 @@ var yDown = null;
 function handleTouchStart(evt) {                                         
     xDown = evt.changedTouches[0].clientX;                                      
     yDown = evt.changedTouches[0].clientY; 
+    this.classList.add('touch');
 };          
-
-
-
+     
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
         return;
     }
 
-    // console.log('____________')
-    // console.log('startY: '+ startSwipeY)
-    // console.log('endY: '+ endSwipeY)
-    // console.log('summY: '+ (startSwipeY - endSwipeY))
-
-    // console.log('__')
-
-    // console.log('startX: '+ startSwipeX)
-    // console.log('endX: '+ endSwipeX)
-    // console.log('summX: '+ (startSwipeX - endSwipeX))
-
-    if (Math.abs(startSwipeY - endSwipeY) >= 100) {
-      this.classList.remove('touch');
-    }
+    // this.classList.remove('touch');
 
     var xUp = evt.changedTouches[0].clientX;                                    
     var yUp = evt.changedTouches[0].clientY;
@@ -352,6 +334,7 @@ function handleTouchMove(evt) {
 
         if ( xDiff > 0 ) {
           /* left swipe */ 
+          this.classList.add('touch');
 
           if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
@@ -367,6 +350,8 @@ function handleTouchMove(evt) {
           }
         } else {
           /* right swipe */
+          this.classList.add('touch');
+
           if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
           }
@@ -379,7 +364,10 @@ function handleTouchMove(evt) {
               initProcess(processProgress);
             }
           }
-        }         
+        }      
+        if ( xDiff > 0 ) {
+
+        }   
         // initProcess(processProgress);
     } 
     /* reset values */
