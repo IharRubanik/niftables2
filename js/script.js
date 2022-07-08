@@ -9,12 +9,13 @@ window.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.city').classList.add('active');
       document.querySelector('.main-info__text b').classList.add('active');
       document.querySelector('body').classList.remove('active');
-      document.querySelector('html').style.overflowY = 'auto';
+      document.querySelector('html').style.overflowY = 'none';
 
       
     }
     function removePreloader() {
       document.querySelector('.preloader').remove();
+      document.querySelector('html').style.overflowY = 'auto';
     }
 
     setTimeout(ifPreloaderLoad, 3000);

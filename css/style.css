@@ -1413,9 +1413,9 @@ html {
   width: 100%;
 }
 
-html.active {
+/* html.active {
   overflow: hidden !important;
-}
+} */
 
 html::-webkit-scrollbar {
   width: 8px;
