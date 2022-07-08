@@ -1461,9 +1461,9 @@ html {
   width: 100%;
 }
 
-/* html.active {
+html.active {
   overflow: hidden !important;
-} */
+}
 
 html::-webkit-scrollbar {
   width: 8px;
@@ -2021,8 +2021,8 @@ body .wrapper .background .purple-triangle {
 }
 
 body .wrapper .background .purple-triangle.active {
-  -webkit-animation: 1s triangle-purple 1.5s linear forwards, 12s triangle-purple-active 3.5s linear infinite;
-          animation: 1s triangle-purple 1.5s linear forwards, 12s triangle-purple-active 3.5s linear infinite;
+  -webkit-animation: 1s triangle-purple 1.5s linear forwards, 12s triangle-purple-active 3.5s linear infinite;
+          animation: 1s triangle-purple 1.5s linear forwards, 12s triangle-purple-active 3.5s linear infinite;
 }
 
 body .wrapper .background .blue-triangle {
@@ -2036,8 +2036,8 @@ body .wrapper .background .blue-triangle {
 }
 
 body .wrapper .background .blue-triangle.active {
-  -webkit-animation: 1s triangle-blue 2.5s linear forwards, 12s triangle-blue-active 3.5s linear infinite;
-          animation: 1s triangle-blue 2.5s linear forwards, 12s triangle-blue-active 3.5s linear infinite;
+  -webkit-animation: 1s triangle-blue 2.5s linear forwards, 12s triangle-blue-active 3.5s linear infinite;
+          animation: 1s triangle-blue 2.5s linear forwards, 12s triangle-blue-active 3.5s linear infinite;
 }
 
 body .wrapper .background .city {
@@ -3786,7 +3786,7 @@ body .wrapper .vision .vision__sticky .vision__content .container__stage .planet
   line-height: 16.51vw;
   text-transform: uppercase;
   opacity: 0.1;
-  text-shadow: white 0vw 0.052vw 0px, white 0vw -0.052vw 0px, white 0.052vw 0vw 0px, white -0.052vw 0vw 0px, white 0.052vw 0.052vw 0px, white 0.052vw -0.052vw 0px, white -0.052vw 0.052vw 0px, white -0.052vw -0.052vw 0px;
+  text-shadow: white 0vw 0.052vw 0px, white 0vw -0.052vw 0px, white 0.052vw 0vw 0px, white -0.052vw 0vw 0px, white 0.052vw 0.052vw 0px, white 0.052vw -0.052vw 0px, white -0.052vw 0.052vw 0px, white -0.052vw -0.052vw 0px;
 }
 
 body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet strong {
@@ -4718,7 +4718,7 @@ body .wrapper .contacts .contacts__container .foorer__container .footer-subscrib
   font-size: 0.833vw;
   line-height: 1.042vw;
   position: relative;
-  transition: background 0.2s ease-in, transform 0.2s ease-in, border 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  transition: background 0.2s ease-in, transform 0.2s ease-in, border 0.2s ease-in, -webkit-transform 0.2s ease-in;
   text-decoration: none;
 }
 

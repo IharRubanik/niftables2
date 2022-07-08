@@ -390,7 +390,7 @@
     height: 18.229vw;
   }
   body .wrapper .main .main-info .main-info__bottom button::before {
-    width: 330px;
+    width: 350px;
     height: 270px;
   }
   body .wrapper .main .main-info .main-info__bottom button::after {
@@ -720,8 +720,8 @@
             animation: 1s features-slide-img-prev-mobile768;
   }
   body .wrapper .features .features__container .features__slider .features__slider-container .slider-item.active-reverse img {
-    -webkit-animation: 1s features-slide-img-active-reverse-mobile768 forwards;
-            animation: 1s features-slide-img-active-reverse-mobile768 forwards;
+    -webkit-animation: 1s features-slide-img-active-reverse-mobile768 forwards;
+            animation: 1s features-slide-img-active-reverse-mobile768 forwards;
   }
   body .wrapper .features .features__container .features__slider .features__slider-container .slider-item.next .slide-text {
     -webkit-animation: 1s features-slide-text-next768 forwards;
