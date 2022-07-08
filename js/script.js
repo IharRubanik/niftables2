@@ -320,7 +320,14 @@ function handleTouchStart(evt) {
 
 function handleTouchEnd() {                                         
   this.classList.remove('touch');
-};          
+};  
+
+window.addEventListener("orientationchange", event => {
+  this.alert('height: '+ document.body.clientHeight)
+  this.alert('width: '+ document.body.clientWidth)
+});
+
+
 
 
 function handleTouchMove(evt) {
