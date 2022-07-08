@@ -204,7 +204,7 @@
     left: 0;
   }
   body .wrapper .background::after {
-    content: '';
+    content: "";
     background: url("/img/main/background-blur.png");
     background-size: 100% 20vw;
     background-repeat: no-repeat;
@@ -671,16 +671,20 @@
             transform: scale(1);
   }
   body .wrapper .features {
+    overflow: hidden;
+    width: 100%;
+  }
+  body .wrapper .features .features__container {
     padding: 2.4vw 0 0 0;
     height: 462.667vw;
   }
-  body .wrapper .features .features__title {
+  body .wrapper .features .features__container .features__title {
     font-size: 8.533vw;
     line-height: 10.933vw;
     left: 4vw;
     top: 3.2vw;
   }
-  body .wrapper .features .features__background-title {
+  body .wrapper .features .features__container .features__background-title {
     top: 81vw;
     left: auto;
     right: -83.467vw;
@@ -689,82 +693,82 @@
     font-size: 29.333vw;
     line-height: 50.133vw;
   }
-  body .wrapper .features .features__wrapper-circle .features__container-circle {
+  body .wrapper .features .features__container .features__wrapper-circle .features__container-circle {
     padding: 1.333vw 0 0 8vw;
     width: 58.133vw;
     gap: 1.6vw;
   }
-  body .wrapper .features .features__wrapper-circle .features__container-circle:hover {
+  body .wrapper .features .features__container .features__wrapper-circle .features__container-circle:hover {
     padding-right: 0;
     -webkit-transform: translateX(0);
             transform: translateX(0);
     width: 88.533vw;
   }
-  body .wrapper .features .features__wrapper-circle .features__container-circle:hover .features-circle {
+  body .wrapper .features .features__container .features__wrapper-circle .features__container-circle:hover .features-circle {
     width: 33.6vw;
     height: 33.6vw;
     left: -8.533vw;
     top: -13.333vw;
   }
-  body .wrapper .features .features__wrapper-circle .features__container-circle:hover h3 {
+  body .wrapper .features .features__container .features__wrapper-circle .features__container-circle:hover h3 {
     font-size: 4.8vw;
     line-height: 6.133vw;
   }
-  body .wrapper .features .features__wrapper-circle .features__container-circle:hover p {
+  body .wrapper .features .features__container .features__wrapper-circle .features__container-circle:hover p {
     font-size: 4.8vw;
     line-height: 6.933vw;
   }
-  body .wrapper .features .features__wrapper-circle .features__container-circle .features-circle {
+  body .wrapper .features .features__container .features__wrapper-circle .features__container-circle .features-circle {
     width: 11.733vw;
     height: 11.733vw;
     -webkit-transform: rotate(-70deg);
             transform: rotate(-70deg);
   }
-  body .wrapper .features .features__wrapper-circle .features__container-circle .features-arrow {
+  body .wrapper .features .features__container .features__wrapper-circle .features__container-circle .features-arrow {
     width: 1.333vw;
     margin: 0 0 0 4vw;
   }
-  body .wrapper .features .features__wrapper-circle .features__container-circle h3 {
+  body .wrapper .features .features__container .features__wrapper-circle .features__container-circle h3 {
     font-weight: 500;
     font-size: 4vw;
     line-height: 5.067vw;
   }
-  body .wrapper .features .features-customization {
+  body .wrapper .features .features__container .features-customization {
     top: 34.666vw;
     left: 4vw;
   }
-  body .wrapper .features .features-control {
+  body .wrapper .features .features__container .features-control {
     top: 66.666vw;
     left: 18.667vw;
   }
-  body .wrapper .features .features-utility {
+  body .wrapper .features .features__container .features-utility {
     top: 98.666vw;
     left: 4vw;
   }
-  body .wrapper .features .features-creativity {
+  body .wrapper .features .features__container .features-creativity {
     top: 130.666vw;
     left: 18.667vw;
   }
-  body .wrapper .features .features-redeem {
+  body .wrapper .features .features__container .features-redeem {
     top: 194.666vw;
     left: 18.667vw;
   }
-  body .wrapper .features .features-service {
+  body .wrapper .features .features__container .features-service {
     top: 162.666vw;
     left: 4vw;
   }
-  body .wrapper .features .features-royalties {
+  body .wrapper .features .features__container .features-royalties {
     top: 226.666vw;
     left: 4vw;
   }
-  body .wrapper .features .features-streams {
+  body .wrapper .features .features__container .features-streams {
     top: 258.666vw;
     left: 18.667vw;
   }
-  body .wrapper .features .features__slider {
+  body .wrapper .features .features__container .features__slider {
     top: 293.333vw;
   }
-  body .wrapper .features .features__slider {
+  body .wrapper .features .features__container .features__slider {
     width: 96vw;
     right: 0;
     left: auto;
@@ -772,88 +776,88 @@
             transform: translate(0);
     height: 140.267vw;
   }
-  body .wrapper .features .features__slider .features__slider-container {
+  body .wrapper .features .features__container .features__slider .features__slider-container {
     height: 82.4vw;
   }
-  body .wrapper .features .features__slider .features__slider-container::before {
+  body .wrapper .features .features__container .features__slider .features__slider-container::before {
     height: 88vw;
   }
-  body .wrapper .features .features__slider .features__slider-container .slider-item img {
+  body .wrapper .features .features__container .features__slider .features__slider-container .slider-item img {
     width: 65.333vw;
   }
-  body .wrapper .features .features__slider .features__slider-container .slider-item .slide-text {
+  body .wrapper .features .features__container .features__slider .features__slider-container .slider-item .slide-text {
     width: 96.533vw;
     top: 57.333vw;
     padding-left: 5.333vw;
     padding-right: 5.333vw;
   }
-  body .wrapper .features .features__slider .features__slider-container .slider-item .slide-text h3 {
+  body .wrapper .features .features__container .features__slider .features__slider-container .slider-item .slide-text h3 {
     font-size: 5.333vw;
     line-height: 8vw;
   }
-  body .wrapper .features .features__slider .features__slider-container .slider-item .slide-text p {
+  body .wrapper .features .features__container .features__slider .features__slider-container .slider-item .slide-text p {
     font-size: 4.533vw;
     line-height: 6.667vw;
   }
-  body .wrapper .features .features__slider .features__slider-container.active .slide-text {
+  body .wrapper .features .features__container .features__slider .features__slider-container.active .slide-text {
     -webkit-animation: 1s features-slide-text-active forwards;
             animation: 1s features-slide-text-active forwards;
   }
-  body .wrapper .features .features__slider .features__slider-container.prev img {
+  body .wrapper .features .features__container .features__slider .features__slider-container.prev img {
     -webkit-animation: 1s features-slide-img-prev-mobile;
             animation: 1s features-slide-img-prev-mobile;
   }
-  body .wrapper .features .features__slider .features__slider-container.active-reverse img {
-    -webkit-animation: 1s features-slide-img-active-reverse-mobile forwards;
-            animation: 1s features-slide-img-active-reverse-mobile forwards;
+  body .wrapper .features .features__container .features__slider .features__slider-container.active-reverse img {
+    -webkit-animation: 1s features-slide-img-active-reverse-mobile forwards;
+            animation: 1s features-slide-img-active-reverse-mobile forwards;
   }
-  body .wrapper .features .features__slider .features__slider-container.next .slide-text {
+  body .wrapper .features .features__container .features__slider .features__slider-container.next .slide-text {
     -webkit-animation: 1s features-slide-text-next forwards;
             animation: 1s features-slide-text-next forwards;
   }
-  body .wrapper .features .features__slider .slider__button {
+  body .wrapper .features .features__container .features__slider .slider__button {
     top: 5.333vw;
     left: 5.333vw;
     gap: 2.667vw;
   }
-  body .wrapper .features .features__slider .slider__button .prev {
+  body .wrapper .features .features__container .features__slider .slider__button .prev {
     width: 10.933vw;
     height: 10.933vw;
     border: 0.267vw solid #ffffff;
   }
-  body .wrapper .features .features__slider .slider__button .prev:hover {
+  body .wrapper .features .features__container .features__slider .slider__button .prev:hover {
     border: 0.267vw solid #0342e7;
   }
-  body .wrapper .features .features__slider .slider__button .prev img {
+  body .wrapper .features .features__container .features__slider .slider__button .prev img {
     width: 1.867vw;
     height: auto;
     -webkit-transform: rotate(180deg) translateX(0);
             transform: rotate(180deg) translateX(0);
   }
-  body .wrapper .features .features__slider .slider__button .next {
+  body .wrapper .features .features__container .features__slider .slider__button .next {
     width: 10.933vw;
     height: 10.933vw;
     border: 0.267vw solid #ffffff;
   }
-  body .wrapper .features .features__slider .slider__button .next:hover {
+  body .wrapper .features .features__container .features__slider .slider__button .next:hover {
     border: 0.267vw solid #0342e7;
   }
-  body .wrapper .features .features__slider .slider__button .next img {
+  body .wrapper .features .features__container .features__slider .slider__button .next img {
     width: 1.867vw;
     height: auto;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  body .wrapper .features .features__slider .slider__plagination {
+  body .wrapper .features .features__container .features__slider .slider__plagination {
     right: auto;
     left: 5.333vw;
     gap: 5.333vw;
   }
-  body .wrapper .features .features__slider .slider__plagination span {
+  body .wrapper .features .features__container .features__slider .slider__plagination span {
     width: 0.267vw;
     height: 3.733vw;
   }
-  body .wrapper .features .features__slider .slider__plagination span.active {
+  body .wrapper .features .features__container .features__slider .slider__plagination span.active {
     width: 0.267vw;
     height: 7.2vw;
   }
@@ -1004,10 +1008,13 @@
     font-size: 4.533vw;
   }
   body .wrapper .tokenomics {
+    overflow: hidden;
+  }
+  body .wrapper .tokenomics .tokenomics__container {
     padding: 9.6vw 4vw 0 4vw;
     height: 288.667vw;
   }
-  body .wrapper .tokenomics::after {
+  body .wrapper .tokenomics .tokenomics__container::after {
     background-image: url(../img/tokenomics/slider-bg-mobile.png);
     background-size: 105.6vw auto;
     left: -3.2vw;
@@ -1015,18 +1022,18 @@
     width: 100vw;
     height: 162.667vw;
   }
-  body .wrapper .tokenomics .tokenomics__left-block #c2 {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block #c2 {
     right: 0;
     left: auto;
     top: 157.867vw;
     width: 64vw;
     height: 100vw;
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__title {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__title {
     font-size: 8.533vw;
     line-height: 10.933vw;
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider {
     top: 159vw;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1038,101 +1045,101 @@
             align-items: center;
     gap: 5.6vw;
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button {
     -webkit-transform: translateY(26.667vw);
             transform: translateY(26.667vw);
     gap: 2.667vw;
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button .prev {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button .prev {
     width: 10.933vw;
     height: 10.933vw;
     border: 0.267vw solid #ffffff;
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button .prev:hover {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button .prev:hover {
     border: 0.267vw solid #0342e7;
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button .prev img {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button .prev img {
     width: 1.867vw;
     height: auto;
     -webkit-transform: rotate(180deg) translateX(0);
             transform: rotate(180deg) translateX(0);
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button .next {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button .next {
     width: 10.933vw;
     height: 10.933vw;
     border: 0.267vw solid #ffffff;
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button .next:hover {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button .next:hover {
     border: 0.267vw solid #0342e7;
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button .next img {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider__button .next img {
     width: 1.867vw;
     height: auto;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container {
     width: 56.533vw;
     height: 83.2vw;
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item {
     width: auto;
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item h3 {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item h3 {
     font-size: 5.333vw;
     line-height: 8vw;
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item p {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item p {
     margin: 6.4vw 0 0 0;
     font-size: 4.8vw;
     line-height: 6.933vw;
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item.active h3 {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item.active h3 {
     -webkit-animation: 1s tokenomics-slide-title-active forwards;
             animation: 1s tokenomics-slide-title-active forwards;
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item.prev h3 {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item.prev h3 {
     -webkit-animation: 1s tokenomics-slide-title-prev forwards;
             animation: 1s tokenomics-slide-title-prev forwards;
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item.active-reverse h3 {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item.active-reverse h3 {
     -webkit-animation: 1s tokenomics-slide-title-prev forwards;
             animation: 1s tokenomics-slide-title-prev forwards;
   }
-  body .wrapper .tokenomics .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item.next h3 {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__left-block .tokenomics__slider .tokenomics__slider-item-container .slider-item.next h3 {
     -webkit-animation: 1s tokenomics-slide-title-next forwards;
             animation: 1s tokenomics-slide-title-next forwards;
   }
-  body .wrapper .tokenomics .tokenomics__right-block {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__right-block {
     top: 29.733vw;
     left: -10.4vw;
     gap: 5.6vw;
   }
-  body .wrapper .tokenomics .tokenomics__right-block .tokenomics__items-container {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__right-block .tokenomics__items-container {
     gap: 5.6vw;
   }
-  body .wrapper .tokenomics .tokenomics__right-block .tokenomics__items-container .tokenomics__items {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__right-block .tokenomics__items-container .tokenomics__items {
     -webkit-transform: translateX(2.133vw);
             transform: translateX(2.133vw);
     gap: 3.2vw;
   }
-  body .wrapper .tokenomics .tokenomics__right-block .tokenomics__items-container .tokenomics__items h4 {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__right-block .tokenomics__items-container .tokenomics__items h4 {
     font-size: 3.2vw;
     line-height: 4vw;
     -webkit-transform: translateY(0.8vw);
             transform: translateY(0.8vw);
   }
-  body .wrapper .tokenomics .tokenomics__right-block .tokenomics__items-container .tokenomics__items span {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__right-block .tokenomics__items-container .tokenomics__items span {
     font-size: 4vw;
     line-height: 5.067vw;
   }
-  body .wrapper .tokenomics .tokenomics__right-block img {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__right-block img {
     position: absolute;
     left: 0;
     top: 0;
     width: 98.667vw;
   }
-  body .wrapper .tokenomics .tokenomics__right-block .tokenomics__background-title {
+  body .wrapper .tokenomics .tokenomics__container .tokenomics__right-block .tokenomics__background-title {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     top: -6.4vw;
@@ -1302,18 +1309,18 @@
     height: 13.867vw;
     margin-right: 2.667vw !important;
   }
-  body .wrapper .contacts {
-    padding: 22vw 4.267vw 0 4vw;
-  }
   body .wrapper .contacts .footer__background {
     width: 157.067vw;
     right: -45.333vw;
   }
-  body .wrapper .contacts .contacts__title {
+  body .wrapper .contacts .contacts__container {
+    padding: 22vw 4.267vw 0 4vw;
+  }
+  body .wrapper .contacts .contacts__container .contacts__title {
     font-size: 8.533vw;
     line-height: 10.933vw;
   }
-  body .wrapper .contacts .footer-contact {
+  body .wrapper .contacts .contacts__container .footer-contact {
     margin: 10.667vw 0 0 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1321,84 +1328,84 @@
             flex-direction: column;
     gap: 10.667vw;
   }
-  body .wrapper .contacts .footer-contact .footer-contact__item {
+  body .wrapper .contacts .contacts__container .footer-contact .footer-contact__item {
     padding: 7.467vw 0 0 7.467vw;
     width: 91.467vw;
   }
-  body .wrapper .contacts .footer-contact .footer-contact__item::before {
+  body .wrapper .contacts .contacts__container .footer-contact .footer-contact__item::before {
     width: 4.8vw;
     height: 4.8vw;
     border-top: 0.267vw solid #ffffff;
     border-left: 0.267vw solid #ffffff;
   }
-  body .wrapper .contacts .footer-contact .footer-contact__item strong {
+  body .wrapper .contacts .contacts__container .footer-contact .footer-contact__item strong {
     font-size: 5.333vw;
     line-height: 8vw;
   }
-  body .wrapper .contacts .footer-contact .footer-contact__item p {
+  body .wrapper .contacts .contacts__container .footer-contact .footer-contact__item p {
     font-size: 4.533vw;
     line-height: 6.933vw;
     margin: 2.133vw 0 0 0;
   }
-  body .wrapper .contacts .footer-contact .footer-contact__item a {
+  body .wrapper .contacts .contacts__container .footer-contact .footer-contact__item a {
     padding: 0 0 1.333vw 9.067vw;
     font-size: 5.333vw;
     line-height: 8vw;
     background-size: 5.6vw 3.733vw;
   }
-  body .wrapper .contacts .footer-contact .footer-contact__item a:hover span {
+  body .wrapper .contacts .contacts__container .footer-contact .footer-contact__item a:hover span {
     border-bottom: 0.267vw solid #cb24ff;
   }
-  body .wrapper .contacts .footer-contact .footer-contact__item a span {
+  body .wrapper .contacts .contacts__container .footer-contact .footer-contact__item a span {
     line-height: 8vw;
     padding-bottom: 1.333vw;
     border-bottom: 0.267vw solid rgba(203, 36, 255, 0.2);
   }
-  body .wrapper .contacts .foorer__container {
+  body .wrapper .contacts .contacts__container .foorer__container {
     margin: 16.533vw 0 0 0;
     padding: 0vw;
   }
-  body .wrapper .contacts .foorer__container .footer-subscribe__linkblock span {
+  body .wrapper .contacts .contacts__container .foorer__container .footer-subscribe__linkblock span {
     width: 18.667vw;
     font-size: 4.533vw;
     line-height: 6.4vw;
   }
-  body .wrapper .contacts .foorer__container .footer-subscribe__linkblock .footer-subscribe__link {
+  body .wrapper .contacts .contacts__container .foorer__container .footer-subscribe__linkblock .footer-subscribe__link {
     width: 34.133vw;
     height: 34.133vw;
     border: 0.267vw solid #fff;
     font-size: 3.2vw;
     line-height: 4vw;
   }
-  body .wrapper .contacts .foorer__container .footer-subscribe__linkblock .footer-subscribe__link::before {
+  body .wrapper .contacts .contacts__container .foorer__container .footer-subscribe__linkblock .footer-subscribe__link::before {
     top: 7.2vw;
     left: 2.133vw;
     width: 14.933vw;
     height: 3.467vw;
     background-size: 14.933vw;
   }
-  body .wrapper .contacts .foorer__container .footer-subscribe__linkblock .footer-subscribe__link svg {
+  body .wrapper .contacts .contacts__container .foorer__container .footer-subscribe__linkblock .footer-subscribe__link svg {
     width: 3.733vw;
     height: auto;
     padding: 1.6vw;
     bottom: 5.067vw;
   }
-  body .wrapper .contacts .foorer__container .header-subscribe__block {
+  body .wrapper .contacts .contacts__container .foorer__container .header-subscribe__block {
     margin: 21.867vw 0 0 0;
     width: 92vw;
     height: 55.2vw;
     padding: 6.933vw 7.467vw 7.467vw 7.467vw;
   }
-  body .wrapper .contacts .foorer__container .header-subscribe__block strong {
+  body .wrapper .contacts .contacts__container .foorer__container .header-subscribe__block strong {
     font-size: 5.333vw;
     line-height: 6.933vw;
   }
-  body .wrapper .contacts .foorer__container .header-subscribe__block span {
+  body .wrapper .contacts .contacts__container .foorer__container .header-subscribe__block span {
     margin: 1.333vw 0 0 0;
     font-size: 4vw;
     line-height: 5.067vw;
   }
-  body .wrapper .contacts .foorer__container .header-subscribe__block p {
+  body .wrapper .contacts .contacts__container .foorer__container .header-subscribe__block p {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     text-align: left;
@@ -1406,35 +1413,35 @@
     line-height: 5.867vw;
     margin: 3.2vw 0 0 0;
   }
-  body .wrapper .contacts .foorer__container .header-subscribe__block .form__container {
+  body .wrapper .contacts .contacts__container .foorer__container .header-subscribe__block .form__container {
     margin: 7.2vw 0 0 0;
     gap: 7.2vw;
   }
-  body .wrapper .contacts .foorer__container .header-subscribe__block .form__container input {
+  body .wrapper .contacts .contacts__container .foorer__container .header-subscribe__block .form__container input {
     font-size: 4.267vw;
     line-height: 5.067vw;
     border-radius: 0;
     border-bottom: 0.267vw solid #fff;
   }
-  body .wrapper .contacts .foorer__container .header-subscribe__block .form__container input::-webkit-input-placeholder {
+  body .wrapper .contacts .contacts__container .foorer__container .header-subscribe__block .form__container input::-webkit-input-placeholder {
     -webkit-transform: translateY(-1.333vw);
             transform: translateY(-1.333vw);
   }
-  body .wrapper .contacts .foorer__container .header-subscribe__block .form__container input:-ms-input-placeholder {
+  body .wrapper .contacts .contacts__container .foorer__container .header-subscribe__block .form__container input:-ms-input-placeholder {
     transform: translateY(-1.333vw);
   }
-  body .wrapper .contacts .foorer__container .header-subscribe__block .form__container input::-ms-input-placeholder {
+  body .wrapper .contacts .contacts__container .foorer__container .header-subscribe__block .form__container input::-ms-input-placeholder {
     transform: translateY(-1.333vw);
   }
-  body .wrapper .contacts .foorer__container .header-subscribe__block .form__container input::placeholder {
+  body .wrapper .contacts .contacts__container .foorer__container .header-subscribe__block .form__container input::placeholder {
     -webkit-transform: translateY(-1.333vw);
             transform: translateY(-1.333vw);
   }
-  body .wrapper .contacts .foorer__container .header-subscribe__block .form__container button {
+  body .wrapper .contacts .contacts__container .foorer__container .header-subscribe__block .form__container button {
     width: 11.733vw;
     height: 11.733vw;
   }
-  body .wrapper .contacts .foorer__container .header-subscribe__block .form__container button img {
+  body .wrapper .contacts .contacts__container .foorer__container .header-subscribe__block .form__container button img {
     width: 4.267vw;
   }
   canvas.touch {
