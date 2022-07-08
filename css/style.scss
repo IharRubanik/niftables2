@@ -1,3 +1,4 @@
+
 @keyframes nft-gradient-text {
   0% {
     background-position: -33.333vw;
@@ -591,7 +592,7 @@ input {
 
 html {
   overflow-y: hidden;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   width: 100%;
   &.active{
   overflow: hidden !important;
