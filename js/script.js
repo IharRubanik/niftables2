@@ -295,13 +295,21 @@ canvas1.addEventListener('touchmove', handleTouchMove, false);
 canvas2.addEventListener('touchmove', handleTouchMove, false);
 canvas3.addEventListener('touchmove', handleTouchMove, false);
 
+canvas1.addEventListener('touchend', handleTouchEnd, false);
+canvas2.addEventListener('touchend', handleTouchEnd, false);
+canvas3.addEventListener('touchend', handleTouchEnd, false);
+
 var xDown = null;                                                        
 var yDown = null;                                                    
 
 function handleTouchStart(evt) {                                         
     xDown = evt.changedTouches[0].clientX;                                      
     yDown = evt.changedTouches[0].clientY; 
-};        
+};   
+
+function handleTouchEnd(evt) {
+  this.classList.remove('touch');
+}
 
 function govnocode() {
   document.querySelectorAll('canvas').forEach(el => el.classList.remove('touch'));
@@ -362,7 +370,6 @@ function handleTouchMove(evt) {
           }
         }      
     } else {
-      // alert('123')
       this.classList.remove('touch');
     }
     /* reset values */
