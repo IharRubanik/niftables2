@@ -306,7 +306,7 @@ canvas3.addEventListener('touchstart', handleTouchStart, false);
 // А на движение пальцем по экрану - handleTouchMove      
 canvas1.addEventListener('touchmove', handleTouchMove, false);
 canvas2.addEventListener('touchmove', handleTouchMove, false);
-canvas3.addEventListener('touchend', handleTouchMove, false);
+canvas3.addEventListener('touchmove', handleTouchMove, false);
 
 var xDown = null;                                                        
 var yDown = null;                                                    
@@ -318,10 +318,11 @@ function handleTouchStart(evt) {
 };        
 
 function govnocode() {
+  console.log('13')
   document.querySelectorAll('canvas').forEach(el => el.classList.remove('touch'))
 }
 
-var timeoutHandle = window.setTimeout(govnocode, 0);
+var timeoutHandle = window.setTimeout(govnocode, 400);
      
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
@@ -341,7 +342,7 @@ function handleTouchMove(evt) {
           this.classList.add('touch');
           
           window.clearTimeout(timeoutHandle);
-          timeoutHandle = window.setTimeout(govnocode, 200);
+          timeoutHandle = window.setTimeout(govnocode, 400);
 
           if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.next').click();
@@ -359,7 +360,7 @@ function handleTouchMove(evt) {
           /* right swipe */
           this.classList.add('touch');
           window.clearTimeout(timeoutHandle);
-          timeoutHandle = window.setTimeout(govnocode, 200);
+          timeoutHandle = window.setTimeout(govnocode, 400);
 
           if (this.id === 'c1') {
             document.querySelector('.features__slider.slider1 .slider__button .button.prev').click();
