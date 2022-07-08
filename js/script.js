@@ -322,7 +322,7 @@ function handleTouchMove(evt) {
         return;
     }
 
-    // this.classList.remove('touch');
+    this.classList.remove('touch');
 
     var xUp = evt.changedTouches[0].clientX;                                    
     var yUp = evt.changedTouches[0].clientY;
