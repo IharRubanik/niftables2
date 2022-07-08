@@ -304,7 +304,7 @@ canvas3.addEventListener('touchstart', handleTouchStart, false);
 // А на движение пальцем по экрану - handleTouchMove      
 canvas1.addEventListener('touchmove', handleTouchMove, false);
 canvas2.addEventListener('touchmove', handleTouchMove, false);
-canvas3.addEventListener('touchend', handleTouchMove, false);
+canvas3.addEventListener('touchmove', handleTouchMove, false);
 // Вешаем на прикосновение функцию handleTouchEnd
 canvas1.addEventListener('touchend', handleTouchEnd, false);  
 canvas2.addEventListener('touchend', handleTouchEnd, false);  
@@ -322,17 +322,12 @@ function handleTouchEnd() {
   this.classList.remove('touch');
 };  
 
-// window.addEventListener("orientationchange", event => {
-//   this.alert('height: '+ window.screen.height+'px')
-//   this.alert('width: '+ window.screen.width+'px')
-// });
-
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
         return;
     }
 
-    if (Math.abs(startSwipeY - endSwipeY) >= 100) {
+    if (Math.abs(startSwipeY - endSwipeY) >= 40) {
       this.classList.remove('touch');
     } else {
       this.classList.add('touch');
