@@ -794,7 +794,7 @@ body {
             text-transform: uppercase;
           }
           p {
-            font-family: "Barlow";
+            font-family: "Barlow", sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 0.938vw;
@@ -896,7 +896,7 @@ body {
           width: 73%;
           h2 {
             display: block;
-            font-family: "Akzidenz-Grotesk Pro";
+            font-family: "Akzidenz-Grotesk Pro", sans-serif;
             font-style: normal;
             font-weight: 500;
             font-size: 32px;
@@ -909,7 +909,7 @@ body {
           }
           span {
             display: block;
-            font-family: "Barlow";
+            font-family: "Barlow", sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 18px;
@@ -1398,7 +1398,7 @@ body {
         .about-blocktext {
           padding: 0.521vw;
           box-sizing: content-box;
-          font-family: "Barlow";
+          font-family: "Barlow", sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 1.25vw;
@@ -1493,7 +1493,7 @@ body {
               .section-title {
                 position: absolute;
                 top: 0;
-                font-family: "Akzidenz-Grotesk Pro";
+                font-family: "Akzidenz-Grotesk Pro", sans-serif;
                 font-style: normal;
                 font-weight: 700;
                 font-size: 2.708vw;
@@ -1522,7 +1522,7 @@ body {
                       transition: 1s;
                       transform: translateX(100%);
                       opacity: 0;
-                      font-family: "Akzidenz-Grotesk Pro";
+                      font-family: "Akzidenz-Grotesk Pro", sans-serif;
                       font-style: normal;
                       font-weight: 700;
                       font-size: 1.25vw;
@@ -1535,7 +1535,7 @@ body {
                       transform: translateX(100%);
                       opacity: 0;
                       margin: 1.042vw 0 0 0;
-                      font-family: "Barlow";
+                      font-family: "Barlow", sans-serif;
                       font-style: normal;
                       font-weight: 300;
                       font-size: 1.042vw;
@@ -1698,7 +1698,7 @@ body {
                     }
                   }
                   strong {
-                    font-family: "Akzidenz-Grotesk Pro";
+                    font-family: "Akzidenz-Grotesk Pro", sans-serif;
                     font-style: normal;
                     font-weight: 500;
                     font-size: 0.625vw;
@@ -1713,7 +1713,7 @@ body {
                       position: absolute;
                       top: 0;
                       left: 0;
-                      font-family: "Akzidenz-Grotesk Pro";
+                      font-family: "Akzidenz-Grotesk Pro", sans-serif;
                       font-style: normal;
                       font-weight: 500;
                       font-size: 0.729vw;
@@ -1909,7 +1909,7 @@ body {
         height: 58.854vw;
         position: relative;
         .features__title {
-          font-family: "Akzidenz-Grotesk Pro";
+          font-family: "Akzidenz-Grotesk Pro", sans-serif;
           font-style: normal;
           font-weight: 700;
           font-size: 2.708vw;
@@ -1923,7 +1923,7 @@ body {
           position: absolute;
           top: -1.094vw;
           left: -0.521vw;
-          font-family: "Akzidenz-Grotesk Pro";
+          font-family: "Akzidenz-Grotesk Pro", sans-serif;
           font-style: normal;
           font-weight: 700;
           font-size: 12.917vw;
@@ -2014,7 +2014,7 @@ body {
               animation: features-arrow 1.7s linear infinite;
             }
             h3 {
-              font-family: "Akzidenz-Grotesk Pro";
+              font-family: "Akzidenz-Grotesk Pro", sans-serif;
               font-style: normal;
               font-weight: 700;
               font-size: 0.729vw;
@@ -2025,7 +2025,7 @@ body {
               transition: 0.3s;
             }
             p {
-              font-family: "Barlow";
+              font-family: "Barlow", sans-serif;
               font-style: normal;
               font-size: 0.052vw;
               line-height: 0.104vw;
@@ -2139,7 +2139,7 @@ body {
                 top: 16.042vw;
                 transform: translateX(109%);
                 h3 {
-                  font-family: "Akzidenz-Grotesk Pro";
+                  font-family: "Akzidenz-Grotesk Pro", sans-serif;
                   font-style: normal;
                   font-weight: 700;
                   font-size: 1.25vw;
@@ -2149,7 +2149,7 @@ body {
                 }
                 p {
                   margin: 0.781vw 0 0 0;
-                  font-family: "Barlow";
+                  font-family: "Barlow", sans-serif;
                   font-style: normal;
                   font-weight: 300;
                   font-size: 1.042vw;
@@ -2343,7 +2343,7 @@ body {
           display: flex;
           align-items: center;
           h3 {
-            font-family: "Akzidenz-Grotesk Pro";
+            font-family: "Akzidenz-Grotesk Pro", sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 12.917vw;
@@ -2371,7 +2371,7 @@ body {
                   position: absolute;
                   top: 0.885vw;
                   left: -0.26vw;
-                  font-family: "Akzidenz-Grotesk Pro";
+                  font-family: "Akzidenz-Grotesk Pro", sans-serif;
                   font-style: normal;
                   font-weight: 700;
                   font-size: 12.917vw;
@@ -2387,7 +2387,7 @@ body {
                   position: absolute;
                   top: 11vw;
                   left: 0;
-                  font-family: "Akzidenz-Grotesk Pro";
+                  font-family: "Akzidenz-Grotesk Pro", sans-serif;
                   font-style: normal;
                   font-weight: 700;
                   font-size: 2.708vw;
@@ -2444,7 +2444,7 @@ body {
               .descripcion-item {
                 width: 22.396vw;
                 h4 {
-                  font-family: "Akzidenz-Grotesk Pro";
+                  font-family: "Akzidenz-Grotesk Pro", sans-serif;
                   font-style: normal;
                   font-weight: 500;
                   font-size: 1.25vw;
@@ -2456,7 +2456,7 @@ body {
                 }
                 p {
                   margin: 0.781vw 0 0 0;
-                  font-family: "Barlow";
+                  font-family: "Barlow", sans-serif;
                   font-style: normal;
                   font-weight: 300;
                   font-size: 1.042vw;
@@ -2497,7 +2497,7 @@ body {
         .tokenomics__left-block {
           z-index: 1;
           .tokenomics__title {
-            font-family: "Akzidenz-Grotesk Pro";
+            font-family: "Akzidenz-Grotesk Pro", sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 2.708vw;
@@ -2609,7 +2609,7 @@ body {
                 transform: translate(100%);
                 opacity: 0;
                 h3 {
-                  font-family: "Akzidenz-Grotesk Pro";
+                  font-family: "Akzidenz-Grotesk Pro", sans-serif;
                   font-style: normal;
                   font-weight: 700;
                   font-size: 1.25vw;
@@ -2619,7 +2619,7 @@ body {
                 }
                 p {
                   margin: 1.563vw 0 0 0;
-                  font-family: "Barlow";
+                  font-family: "Barlow", sans-serif;
                   font-style: normal;
                   font-weight: 300;
                   font-size: 1.042vw;
@@ -2670,7 +2670,7 @@ body {
               justify-content: flex-end;
               gap: 0.833vw;
               h4 {
-                font-family: "Akzidenz-Grotesk Pro";
+                font-family: "Akzidenz-Grotesk Pro", sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 0.729vw;
@@ -2680,7 +2680,7 @@ body {
                 white-space: nowrap;
               }
               span {
-                font-family: "Akzidenz-Grotesk Pro";
+                font-family: "Akzidenz-Grotesk Pro", sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 0.938vw;
@@ -2698,7 +2698,7 @@ body {
             position: absolute;
             bottom: 9.896vw;
             left: 4.688vw;
-            font-family: "Akzidenz-Grotesk Pro";
+            font-family: "Akzidenz-Grotesk Pro", sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 3.229vw;
@@ -2728,7 +2728,7 @@ body {
       .partners__title {
         grid-column-start: 1;
         grid-column-end: 3;
-        font-family: "Akzidenz-Grotesk Pro";
+        font-family: "Akzidenz-Grotesk Pro", sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 2.708vw;
@@ -2739,7 +2739,7 @@ body {
       .partners__descripcion {
         grid-column-start: 5;
         grid-column-end: 8;
-        font-family: "Barlow";
+        font-family: "Barlow", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 1.042vw;
@@ -2793,7 +2793,7 @@ body {
         }
       }
       span {
-        font-family: "Barlow";
+        font-family: "Barlow", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 1.042vw;
@@ -2804,7 +2804,7 @@ body {
         align-self: center;
       }
       .partners__gris-item-strong {
-        font-family: "Akzidenz-Grotesk Pro";
+        font-family: "Akzidenz-Grotesk Pro", sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 0.938vw;
@@ -2980,7 +2980,7 @@ body {
       .contacts__container{
         padding: 9.896vw 0 0 0;
       .contacts__title {
-        font-family: "Akzidenz-Grotesk Pro";
+        font-family: "Akzidenz-Grotesk Pro", sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 2.708vw;
@@ -3057,7 +3057,7 @@ body {
         .footer-subscribe__linkblock {
           display: flex;
           span {
-            font-family: "Barlow";
+            font-family: "Barlow", sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 1.042vw;
@@ -3079,7 +3079,7 @@ body {
             text-transform: uppercase;
             align-items: center;
             color: #fff;
-            font-family: "Akzidenz-Grotesk Pro";
+            font-family: "Akzidenz-Grotesk Pro", sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 0.833vw;
@@ -3156,7 +3156,7 @@ body {
             text-transform: uppercase;
           }
           p {
-            font-family: "Barlow";
+            font-family: "Barlow", sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 0.938vw;
@@ -3224,7 +3224,7 @@ canvas#c3 {
   height: 100%;
 }
 
-@media (min-aspect-ratio: 1920/860) and (min-width: 12001px) {
+@media (min-aspect-ratio: 1920/860) and (min-width: 1281px) {
   body {
     .header-content {
       height: 100vh;
