@@ -327,7 +327,7 @@ function handleTouchMove(evt) {
         return;
     }
 
-    if (Math.abs(startSwipeY - endSwipeY) >= 40) {
+    if (Math.abs(startSwipeY - endSwipeY) >= 0) {
       this.classList.remove('touch');
     } else {
       this.classList.add('touch');
@@ -351,7 +351,7 @@ function handleTouchMove(evt) {
             document.querySelector('.tokenomics__slider__button .button.next').click();
           }
           if (this.id === 'c3') {
-            if (processProgress <= 4) {
+            if (Math.abs(startSwipeY - endSwipeY) >= 100) {
               processProgress++;
               initProcess(processProgress);
             }
