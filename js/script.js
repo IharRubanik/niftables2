@@ -322,10 +322,10 @@ function handleTouchEnd() {
   this.classList.remove('touch');
 };  
 
-window.addEventListener("orientationchange", event => {
-  this.alert('height: '+ window.screen.height+'px')
-  this.alert('width: '+ window.screen.width+'px')
-});
+// window.addEventListener("orientationchange", event => {
+//   this.alert('height: '+ window.screen.height+'px')
+//   this.alert('width: '+ window.screen.width+'px')
+// });
 
 
 
