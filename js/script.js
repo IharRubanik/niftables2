@@ -163,7 +163,7 @@ function initProcess(zi) {
 
 
 function checkProcessSize() {
-  if (window.innerWidth > 1024) {
+  if (window.innerWidth > 1200) {
 const scroll = window.pageYOffset - sticky.offsetTop,
       height = sticky.scrollHeight; 
       scroll < 1 * (height / 6) - 600 ?
@@ -531,7 +531,7 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
           document.querySelector('#triangle7-7').style.opacity = 0;
         }
 
-      } else if (window.innerWidth <= 1024 && window.innerWidth > 768) {
+      } else if (window.innerWidth <= 1200 && window.innerWidth > 768) {
         
         visionLineTablet.style.height = `${percentTabletScrolled+20}%`;
 
