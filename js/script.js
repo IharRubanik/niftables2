@@ -315,13 +315,15 @@ function handleTouchStart(evt) {
     xDown = evt.changedTouches[0].clientX;                                      
     yDown = evt.changedTouches[0].clientY; 
     this.classList.add('touch');
-};          
+};        
 
 function govnocode() {
   document.querySelectorAll('canvas').forEach(el => el.classList.remove('touch'))
 }
 
-this.setInterval(govnocode, 500)
+this.window.addEventListener('touchend', function() {
+  this.setTimeout(govnocode, 500)
+})
 
      
 function handleTouchMove(evt) {
