@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', function() {
       document.querySelector('.purple-triangle').classList.add('active');
       document.querySelector('.city').classList.add('active');
       document.querySelector('.main-info__text b').classList.add('active');
-      document.querySelector('html').classList.remove('active');
+      document.querySelector('body').classList.remove('active');
       document.querySelector('html').style.overflowY = 'auto';
 
       
@@ -25,9 +25,8 @@ let body = document.querySelector(".body");
 let process = document.querySelector(".process");
 
 let arrActive = ([] = document.querySelectorAll(
-  ".header-button, .header, .header-content, .header-name, body, html"
+  ".header-button, .header, .header-content, .header-name, body"
 ));
-console.log(arrActive)
 
 document.querySelector(".header-button").onclick = function () {
   for (i = 0; i < arrActive.length; i++) {
@@ -59,7 +58,7 @@ const line10 = document.querySelector(".line-10");
 let zi = 0;
 
 function initProcess(zi) {
-  if (window.innerWidth <= 1200) {
+  if (window.innerWidth <= 1024) {
   document.querySelector('#first-number').innerHTML = `0${zi+1}`;
 }
   for (let j = 0; j < gridItems.length; j++) {
@@ -163,7 +162,7 @@ function initProcess(zi) {
 
 
 function checkProcessSize() {
-  if (window.innerWidth > 1200) {
+  if (window.innerWidth > 1024) {
 const scroll = window.pageYOffset - sticky.offsetTop,
       height = sticky.scrollHeight; 
       scroll < 1 * (height / 6) - 600 ?
@@ -188,14 +187,14 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener('resize', function() {
   checkProcessSize();
-  if (window.innerWidth > 1200) {
+  if (window.innerWidth > 600) {
     initProcess(0);
   }
 })
 
 window.addEventListener('orientationchange', function() {
   checkProcessSize()
-  if (window.innerWidth > 1200) {
+  if (window.innerWidth > 600) {
     initProcess(0);
   }
 })
@@ -320,14 +319,15 @@ function handleTouchStart(evt) {
 
 function handleTouchEnd() {                                         
   this.classList.remove('touch');
-};  
+};          
+
 
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
         return;
     }
 
-    if (Math.abs(startSwipeY - endSwipeY) >= 500) {
+    if (Math.abs(startSwipeY - endSwipeY) >= 100) {
       this.classList.remove('touch');
     } else {
       this.classList.add('touch');
@@ -351,7 +351,7 @@ function handleTouchMove(evt) {
             document.querySelector('.tokenomics__slider__button .button.next').click();
           }
           if (this.id === 'c3') {
-            if (Math.abs(startSwipeY - endSwipeY) >= 40) {
+            if (processProgress <= 4) {
               processProgress++;
               initProcess(processProgress);
             }
@@ -447,7 +447,7 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
       // console.log(percentScrolled);
       // console.log(percentTabletScrolled );
 
-      if (window.innerWidth > 1200) {
+      if (window.innerWidth > 1024) {
         // VISION CONTENT MOTION
         block.style.transform = `translateX(${wrapper.getBoundingClientRect().y + block.getBoundingClientRect().y}px)`
         // SVG PROGRESS
@@ -523,7 +523,7 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
           document.querySelector('#triangle7-7').style.opacity = 0;
         }
 
-      } else if (window.innerWidth <= 1200 && window.innerWidth > 768) {
+      } else if (window.innerWidth <= 1024 && window.innerWidth > 768) {
         
         visionLineTablet.style.height = `${percentTabletScrolled+20}%`;
 
@@ -670,7 +670,7 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
      })
 
     window.addEventListener('resize', function() {
-      if (window.innerWidth <= 1200) {
+      if (window.innerWidth <= 1024) {
         block.style.transform = `translateX(0px)`
       }
     })
