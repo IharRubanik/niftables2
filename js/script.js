@@ -318,8 +318,7 @@ function handleTouchStart(evt) {
 };        
 
 function govnocode() {
-  console.log('123')
-  // document.querySelectorAll('canvas').forEach(el => el.classList.remove('touch'))
+  document.querySelectorAll('canvas').forEach(el => el.classList.remove('touch'))
 }
 
 var timeoutHandle = window.setTimeout(govnocode, 5000);
