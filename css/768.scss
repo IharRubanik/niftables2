@@ -1,4 +1,4 @@
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   @keyframes nft-gradient-text {
     0% {
       background-position: -56.665vw;
@@ -354,59 +354,59 @@
         }
       }
       .about {
-        .about__container{
-        padding: 3.906vw 3.906vw 19.531vw 3.906vw;
-        .about-text {
-          font-size: 4.427vw;
-          line-height: 5.339vw;
-          max-width: 87.891vw;
-          text-indent: 17.188vw;
-        }
-        .about__flex {
-          margin: 13.021vw 0 0 3.125vw;
-          .about-blocktext {
-            padding: 1.302vw;
-            font-size: 2.604vw;
-            line-height: 3.646vw;
-            max-width: 38.021vw;
-            &::before {
-              border: 0.13vw solid #fff;
-              width: 2.93vw;
-              height: 3.06vw;
-              border-left: 0;
-              border-bottom: 0;
-              right: 0;
-              top: 0;
-              transform: translateY(-100%);
+        .about__container {
+          padding: 3.906vw 3.906vw 19.531vw 3.906vw;
+          .about-text {
+            font-size: 4.427vw;
+            line-height: 5.339vw;
+            max-width: 87.891vw;
+            text-indent: 17.188vw;
+          }
+          .about__flex {
+            margin: 13.021vw 0 0 3.125vw;
+            .about-blocktext {
+              padding: 1.302vw;
+              font-size: 2.604vw;
+              line-height: 3.646vw;
+              max-width: 38.021vw;
+              &::before {
+                border: 0.13vw solid #fff;
+                width: 2.93vw;
+                height: 3.06vw;
+                border-left: 0;
+                border-bottom: 0;
+                right: 0;
+                top: 0;
+                transform: translateY(-100%);
+              }
+              &::after {
+                border: 0.13vw solid #fff;
+                width: 2.93vw;
+                height: 3.06vw;
+                border-right: 0;
+                border-top: 0;
+                top: auto;
+                bottom: 0;
+                left: 0;
+                transform: translate(-100%, 100%);
+              }
             }
-            &::after {
-              border: 0.13vw solid #fff;
-              width: 2.93vw;
-              height: 3.06vw;
-              border-right: 0;
-              border-top: 0;
-              top: auto;
-              bottom: 0;
-              left: 0;
-              transform: translate(-100%, 100%);
+            .about-circle {
+              margin: 0 11.719vw 0 0;
+              img {
+                width: 18.49vw;
+              }
+              &::before {
+                width: 35.763vw;
+                height: 35.763vw;
+              }
+              &::after {
+                width: 44.922vw;
+                height: 44.922vw;
+              }
             }
           }
-          .about-circle {
-            margin: 0 11.719vw 0 0;
-            img {
-              width: 18.49vw;
-            }
-            &::before {
-              width: 35.763vw;
-              height: 35.763vw;
-            }
-            &::after {
-              width: 44.922vw;
-              height: 44.922vw;
-            }
-          }
         }
-      }
       }
       .process {
         padding: 5vw 0 9.345vw 0;
@@ -620,7 +620,6 @@
           .features-royalties {
             left: 57.292vw;
             top: 77.083vw;
-            
           }
           .features-streams {
             top: 85.547vw;
@@ -773,7 +772,7 @@
                 .planet {
                   height: 32.682vw;
                   &:nth-child(5) {
-                    img{
+                    img {
                       transform: scale(1.65) translateY(13%);
                     }
                   }

@@ -1471,6 +1471,7 @@ body {
               width: 10.26vw;
             }
             &::before {
+              border-radius: 50%;
               content: "";
               width: 19.792vw;
               height: 19.792vw;
@@ -1485,6 +1486,7 @@ body {
               animation: 16s about-subtract linear infinite;
             }
             &::after {
+              border-radius: 50%;
               content: "";
               width: 24.479vw;
               height: 24.479vw;
