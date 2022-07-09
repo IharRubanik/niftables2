@@ -617,6 +617,9 @@ html {
   overflow-y: hidden;
   overflow-x: hidden !important;
   width: 100%;
+  &.active{
+    overflow: hidden !important;
+  }
   &::-webkit-scrollbar {
     width: 8px;
   }
