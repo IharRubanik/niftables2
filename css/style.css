@@ -1461,6 +1461,10 @@ html {
   width: 100%;
 }
 
+html.active {
+  overflow: hidden !important;
+}
+
 html::-webkit-scrollbar {
   width: 8px;
 }
@@ -1949,7 +1953,7 @@ body .wrapper .background {
   width: 100%;
   position: absolute;
   top: -1.458vw;
-  left: 2.604vw;
+  left: 0;
   overflow: hidden;
 }
 
@@ -2603,7 +2607,8 @@ body .wrapper .about .about__container .about__flex .about-circle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 7.031vw 0 0;
+  width: 22.917vw;
+  height: 22.917vw;
 }
 
 body .wrapper .about .about__container .about__flex .about-circle img {
@@ -2611,6 +2616,7 @@ body .wrapper .about .about__container .about__flex .about-circle img {
 }
 
 body .wrapper .about .about__container .about__flex .about-circle::before {
+  border-radius: 50%;
   content: "";
   width: 19.792vw;
   height: 19.792vw;
@@ -2628,6 +2634,7 @@ body .wrapper .about .about__container .about__flex .about-circle::before {
 }
 
 body .wrapper .about .about__container .about__flex .about-circle::after {
+  border-radius: 50%;
   content: "";
   width: 24.479vw;
   height: 24.479vw;
