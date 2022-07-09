@@ -286,7 +286,7 @@
     height: 19.733vw;
     position: absolute;
     width: 100%;
-    z-index: 50;
+    z-index: 99;
   }
   body .wrapper .header.active .header-inner {
     z-index: 999;
@@ -808,8 +808,8 @@
             animation: 1s features-slide-img-prev-mobile;
   }
   body .wrapper .features .features__container .features__slider .features__slider-container.active-reverse img {
-    -webkit-animation: 1s features-slide-img-active-reverse-mobile forwards;
-            animation: 1s features-slide-img-active-reverse-mobile forwards;
+    -webkit-animation: 1s features-slide-img-active-reverse-mobile forwards;
+            animation: 1s features-slide-img-active-reverse-mobile forwards;
   }
   body .wrapper .features .features__container .features__slider .features__slider-container.next .slide-text {
     -webkit-animation: 1s features-slide-text-next forwards;
