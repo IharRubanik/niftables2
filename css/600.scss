@@ -606,8 +606,6 @@
       .features {
         overflow: hidden;
         width: 100%;
-        // padding: 2.4vw 0 0 0;
-        // height: 462.667vw;
         .features__container {
           padding: 2.4vw 0 0 0;
           height: 462.667vw;
@@ -891,8 +889,6 @@
       }
       .tokenomics {
         overflow: hidden;
-        // padding: 9.6vw 4vw 0 4vw;
-        // height: 288.667vw;
         .tokenomics__container {
           padding: 9.6vw 4vw 0 4vw;
           height: 288.667vw;
@@ -1158,7 +1154,6 @@
           width: 157.067vw;
           right: -45.333vw;
         }
-        // padding: 22vw 4.267vw 0 4vw;
         .contacts__container {
           padding: 22vw 4.267vw 0 4vw;
 
@@ -1283,11 +1278,9 @@
       }
     }
   }
-
   canvas.touch {
     touch-action: none !important;
   }
-
   canvas#c3 {
     height: calc(100% + 50vw);
   }

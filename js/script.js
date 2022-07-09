@@ -606,7 +606,6 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
       } else if (window.innerWidth <= 600) {
 
         visionLineTablet.style.height = `${percentTabletScrolled+20}%`;
-        console.log(percentTabletScrolled)
         if (percentTabletScrolled >= -16.7) {
           trianglesTablet[0].classList.add('active');
         } else {
