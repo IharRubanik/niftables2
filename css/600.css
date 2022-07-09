@@ -362,7 +362,7 @@
     width: 13.333vw;
     height: 16vw;
     background: #0b0b0c;
-    z-index: 9;
+    z-index: 99;
   }
   body .wrapper .header .header-inner .header-button span {
     height: 8vw;
@@ -921,7 +921,7 @@
   }
   body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet strong {
     top: 20vw;
-    left: 3.733vw;
+    left: 2.733vw;
     font-size: 5.333vw;
   }
   body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet img {
