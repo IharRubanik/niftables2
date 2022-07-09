@@ -282,7 +282,7 @@
     left: 8.267vw;
   }
   body .wrapper .header {
-    overflow-y: visible;
+    overflow: auto;
     height: 19.733vw;
     position: absolute;
     width: 100%;
