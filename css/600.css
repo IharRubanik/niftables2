@@ -286,7 +286,6 @@
     height: 19.733vw;
     position: absolute;
     width: 100%;
-    z-index: 99;
   }
   body .wrapper .header.active .header-inner {
     z-index: 999;
@@ -364,7 +363,7 @@
     width: 13.333vw;
     height: 16vw;
     background: #0b0b0c;
-    z-index: 99;
+    z-index: 100;
   }
   body .wrapper .header .header-inner .header-button span {
     height: 8vw;
