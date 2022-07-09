@@ -365,7 +365,7 @@
     width: 13.333vw;
     height: 16vw;
     background: #0b0b0c;
-    z-index: 100;
+    z-index: 9999;
   }
   body .wrapper .header .header-inner .header-button span {
     height: 8vw;
