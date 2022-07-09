@@ -243,6 +243,7 @@
         height: 19.733vw;
         position: absolute;
         width: 100%;
+        z-index: 50;
         &.active {
           .header-inner {
             z-index: 999;
