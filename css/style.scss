@@ -617,6 +617,9 @@ html {
   overflow-y: hidden;
   overflow-x: hidden !important;
   width: 100%;
+  &.active{
+    overflow: hidden !important;
+  }
   &::-webkit-scrollbar {
     width: 8px;
   }
@@ -1466,7 +1469,8 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 7.031vw 0 0;
+            width: 22.917vw;
+            height: 22.917vw;
             img {
               width: 10.26vw;
             }

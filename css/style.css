@@ -1461,6 +1461,10 @@ html {
   width: 100%;
 }
 
+html.active {
+  overflow: hidden !important;
+}
+
 html::-webkit-scrollbar {
   width: 8px;
 }
@@ -2603,7 +2607,8 @@ body .wrapper .about .about__container .about__flex .about-circle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 7.031vw 0 0;
+  width: 22.917vw;
+  height: 22.917vw;
 }
 
 body .wrapper .about .about__container .about__flex .about-circle img {
