@@ -323,6 +323,7 @@
     font-size: 3.733vw;
   }
   body .wrapper .header .header-inner {
+    z-index: 99;
     background: none;
     position: absolute;
     width: 100%;
