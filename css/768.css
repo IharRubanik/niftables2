@@ -1,4 +1,4 @@
-@media screen and (orientation: landscape) and (max-width: 768px) {
+@media only screen and (orientation: landscape) and (max-width: 768px) {
   @-webkit-keyframes nft-gradient-text {
     0% {
       background-position: -56.665vw;
@@ -1299,7 +1299,7 @@
   }
 }
 
-@media screen and (orientation: landscape) and (min-aspect-ratio: 768 / 1024) and (min-width: 601px) and (max-width: 860px) {
+@media only screen and (min-aspect-ratio: 768 / 1024) and (min-width: 601px) and (max-width: 860px) {
   body .header-content {
     height: 100vh;
     overflow: auto;
