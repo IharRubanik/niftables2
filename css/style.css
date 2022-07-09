@@ -1461,13 +1461,6 @@ html {
   width: 100%;
 }
 
-<<<<<<< HEAD
-html.active {
-  overflow: hidden !important;
-}
-
-=======
->>>>>>> 12de07d160ec0ac1f61ff4b11b52dfb5b7d7bdaa
 html::-webkit-scrollbar {
   width: 8px;
 }
@@ -2323,6 +2316,7 @@ body .wrapper .main .main-info {
 }
 
 body .wrapper .main .main-info .main-info__text {
+  z-index: 9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2459,8 +2453,8 @@ body .wrapper .main .main-info .main-info__bottom button::before {
   right: -88%;
   top: -87%;
   bottom: -28.5%;
-  width: 551.002px;
-  height: 431.002px;
+  width: 28.698vw;
+  height: 22.448vw;
   background-image: url(../img/main/purple-button.svg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -3238,7 +3232,7 @@ body .wrapper .features .features__container .features__wrapper-circle .features
           align-items: flex-end;
   gap: 0.26vw;
   position: relative;
-  width: 11.458vw;
+  width: 12.458vw;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -3462,6 +3456,7 @@ body .wrapper .features .features__container .features__slider .features__slider
   line-height: 1.771vw;
   color: #ffffff;
   margin: 0;
+  text-transform: uppercase;
 }
 
 body .wrapper .features .features__container .features__slider .features__slider-container .slider-item .slide-text p {
@@ -4169,6 +4164,7 @@ body .wrapper .tokenomics .tokenomics__container .tokenomics__right-block {
 }
 
 body .wrapper .tokenomics .tokenomics__container .tokenomics__right-block .tokenomics__items-container {
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4374,9 +4370,13 @@ body .wrapper .partners .partners__gris-item-strong {
 }
 
 body .wrapper .media-about {
-  overflow: hidden;
   position: relative;
   background: radial-gradient(90.75% 78.93% at 40.93% 85.95%, rgba(3, 66, 231, 0.9) 0%, rgba(3, 66, 231, 0) 100%), radial-gradient(86.4% 76.86% at 0% 7.02%, rgba(22, 169, 254, 0.95) 0%, rgba(22, 169, 254, 0) 100%), #cb24ff;
+}
+
+body .wrapper .media-about .media-about_container {
+  width: 100%;
+  overflow: hidden;
 }
 
 body .wrapper .media-about .media-about_container h3 {
@@ -4893,7 +4893,7 @@ canvas#c3 {
   height: 100%;
 }
 
-@media (min-aspect-ratio: 1920 / 860) and (min-width: 1281px) {
+@media only screen and (min-aspect-ratio: 1920 / 860) and (min-width: 1201px) {
   body .header-content {
     height: 100vh;
     overflow: auto;

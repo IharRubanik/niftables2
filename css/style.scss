@@ -18,15 +18,15 @@
   }
   33% {
     left: -78%;
-right: -97.5%;
-top: -42%;
-bottom: -73.5%;
+    right: -97.5%;
+    top: -42%;
+    bottom: -73.5%;
   }
   66% {
     left: -100%;
-right: -75.5%;
-top: -79.5%;
-bottom: -36%;
+    right: -75.5%;
+    top: -79.5%;
+    bottom: -36%;
   }
   100% {
     left: -87.5%;
@@ -38,53 +38,53 @@ bottom: -36%;
 @keyframes main-button-1-1024 {
   0% {
     left: -48.5%;
-right: -1%;
-top: -25%;
-bottom: -24.5%;
+    right: -1%;
+    top: -25%;
+    bottom: -24.5%;
   }
   33% {
     left: -6%;
-right: -43.5%;
-top: -34.5%;
-bottom: -15%;
+    right: -43.5%;
+    top: -34.5%;
+    bottom: -15%;
   }
   66% {
     left: -24.5%;
-right: -25%;
-top: -9.5%;
-bottom: -40%;
+    right: -25%;
+    top: -9.5%;
+    bottom: -40%;
   }
   100% {
     left: -48.5%;
-right: -1%;
-top: -25%;
-bottom: -24.5%;
+    right: -1%;
+    top: -25%;
+    bottom: -24.5%;
   }
 }
 @keyframes main-button-2 {
   0% {
     left: -48.5%;
-right: -1%;
-top: -25%;
-bottom: -24.5%;
+    right: -1%;
+    top: -25%;
+    bottom: -24.5%;
   }
   33% {
     left: -6%;
-right: -43.5%;
-top: -34.5%;
-bottom: -15%;
+    right: -43.5%;
+    top: -34.5%;
+    bottom: -15%;
   }
   66% {
     left: -24.5%;
-right: -25%;
-top: -9.5%;
-bottom: -40%;
+    right: -25%;
+    top: -9.5%;
+    bottom: -40%;
   }
   100% {
     left: -48.5%;
-right: -1%;
-top: -25%;
-bottom: -24.5%;
+    right: -1%;
+    top: -25%;
+    bottom: -24.5%;
   }
 }
 @keyframes main-button-2-1024 {
@@ -617,9 +617,6 @@ html {
   overflow-y: hidden;
   overflow-x: hidden !important;
   width: 100%;
-  &.active {
-    overflow: hidden !important;
-  }
   &::-webkit-scrollbar {
     width: 8px;
   }
@@ -1231,6 +1228,7 @@ body {
         display: flex;
         flex-direction: column;
         .main-info__text {
+          z-index: 9;
           display: flex;
           flex-direction: column;
           text-transform: uppercase;
@@ -1340,8 +1338,8 @@ body {
               right: -88%;
               top: -87%;
               bottom: -28.5%;
-              width: 551.002px;
-              height: 431.002px;
+              width: 28.698vw;
+              height: 22.448vw;
               background-image: url(../img/main/purple-button.svg);
               background-size: 100%;
               background-repeat: no-repeat;
@@ -1987,7 +1985,7 @@ body {
             align-items: flex-end;
             gap: 0.26vw;
             position: relative;
-            width: 11.458vw;
+            width: 12.458vw;
             transition: 0.3s;
             &:hover {
               width: 18.906vw;
@@ -2182,6 +2180,7 @@ body {
                   line-height: 1.771vw;
                   color: #ffffff;
                   margin: 0;
+                  text-transform: uppercase;
                 }
                 p {
                   margin: 0.781vw 0 0 0;
@@ -2698,6 +2697,7 @@ body {
           gap: 0.833vw;
           margin: 0.833vw 0 0 0;
           .tokenomics__items-container {
+            z-index: 1;
             display: flex;
             flex-direction: column;
             gap: 0.833vw;
@@ -2855,7 +2855,6 @@ body {
     }
 
     .media-about {
-      overflow: hidden;
       position: relative;
       background: radial-gradient(
           90.75% 78.93% at 40.93% 85.95%,
@@ -2869,6 +2868,8 @@ body {
         ),
         #cb24ff;
       .media-about_container {
+        width: 100%;
+        overflow: hidden;
         h3 {
           color: #fff;
           font-family: "Akzidenz-Grotesk Pro", sans-serif;
@@ -3260,7 +3261,7 @@ canvas#c3 {
   height: 100%;
 }
 
-@media (min-aspect-ratio: 1920/860) and (min-width: 1281px) {
+@media only screen and (min-aspect-ratio: 1920/860) and (min-width: 1201px) {
   body {
     .header-content {
       height: 100vh;

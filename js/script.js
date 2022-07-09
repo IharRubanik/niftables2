@@ -378,7 +378,6 @@ function toogleSlider(slider) {
   const buttons = slider.querySelectorAll('.button')
   const slides = slider.querySelectorAll('.slider-item')
   const dots = slider.querySelectorAll('.dots')
-  // const canvass = slider.querySelector('.canvas')
   function onButtonClick(e) {
       let direction = e.currentTarget.dataset.direction
       if (direction === 'next') {
@@ -403,14 +402,6 @@ function scrollTo(element) {
     top: window.innerWidth <= 375 ? element.offsetTop : element.offsetTop - document.querySelector('.header-logo').clientHeight
   });
 }
-
-// document.querySelector('.header-subscribe input').addEventListener('focus', function() {
-//   document.querySelector('.header-content').style.paddingBottom = `40vw`;
-//   document.querySelector('.header-content').scroll({top:1000})
-// })
-// document.querySelector('.header-subscribe input').addEventListener('blur', function() {
-//   document.querySelector('.header-content').style.paddingBottom = 0;
-// })
 
 // Scroll script
 document.querySelectorAll('.scroll-link').forEach(el => el.addEventListener('click', function(e) {
@@ -438,9 +429,7 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
           stageTablet = document.querySelector('.vision__descripcion-container'),
           headerHeight = document.querySelector('.header-inner').clientHeight,
           percentTabletScrolled = -1 * (stageTablet.getBoundingClientRect().top / (stageTablet.clientHeight/100));
-    
-      // console.log(percentScrolled);
-      // console.log(percentTabletScrolled );
+
 
       if (window.innerWidth > 1200) {
         // VISION CONTENT MOTION
@@ -538,7 +527,7 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
           trianglesTablet[1].classList.remove('active');
         }
 
-        if (percentTabletScrolled >= 13) {
+        if (percentTabletScrolled >= 14.4) {
           trianglesTablet[2].classList.add('active');
         } else {
           trianglesTablet[2].classList.remove('active');
@@ -550,25 +539,25 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
           trianglesTablet[3].classList.remove('active');
         }
 
-        if (percentTabletScrolled >= 43) {
+        if (percentTabletScrolled >= 43.9) {
           trianglesTablet[4].classList.add('active');
         } else {
           trianglesTablet[4].classList.remove('active');
         }
 
-        if (percentTabletScrolled >= 57) {
+        if (percentTabletScrolled >= 58.8) {
           trianglesTablet[5].classList.add('active');
         } else {
           trianglesTablet[5].classList.remove('active');
         }
 
-        if (percentTabletScrolled >= 75.8) {
+        if (percentTabletScrolled >= 73.7) {
           trianglesTablet[6].classList.add('active');
         } else {
           trianglesTablet[6].classList.remove('active');
         }
       } else if (window.innerWidth <= 768 && window.innerWidth > 600) {
-
+       
         visionLineTablet.style.height = `${percentTabletScrolled+20}%`;
 
 
@@ -578,37 +567,37 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
           trianglesTablet[0].classList.remove('active');
         }
 
-        if (percentTabletScrolled >= -0.46) {
+        if (percentTabletScrolled >= -0.6) {
           trianglesTablet[1].classList.add('active');
         } else {
           trianglesTablet[1].classList.remove('active');
         }
 
-        if (percentTabletScrolled >= 12.8) {
+        if (percentTabletScrolled >= 13.7) {
           trianglesTablet[2].classList.add('active');
         } else {
           trianglesTablet[2].classList.remove('active');
         }
 
-        if (percentTabletScrolled >= 28.6) {
+        if (percentTabletScrolled >= 28.5) {
           trianglesTablet[3].classList.add('active');
         } else {
           trianglesTablet[3].classList.remove('active');
         }
 
-        if (percentTabletScrolled >= 42) {
+        if (percentTabletScrolled >= 43.2) {
           trianglesTablet[4].classList.add('active');
         } else {
           trianglesTablet[4].classList.remove('active');
         }
 
-        if (percentTabletScrolled >= 57.1) {
+        if (percentTabletScrolled >= 57.6) {
           trianglesTablet[5].classList.add('active');
         } else {
           trianglesTablet[5].classList.remove('active');
         }
 
-        if (percentTabletScrolled >= 73.9) {
+        if (percentTabletScrolled >= 72.5) {
           trianglesTablet[6].classList.add('active');
         } else {
           trianglesTablet[6].classList.remove('active');
@@ -617,44 +606,44 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
       } else if (window.innerWidth <= 600) {
 
         visionLineTablet.style.height = `${percentTabletScrolled+20}%`;
-
-        if (percentTabletScrolled >= -16.48) {
+        console.log(percentTabletScrolled)
+        if (percentTabletScrolled >= -16.7) {
           trianglesTablet[0].classList.add('active');
         } else {
           trianglesTablet[0].classList.remove('active');
         }
 
-        if (percentTabletScrolled >= -4.2) {
+        if (percentTabletScrolled >= -2.2) {
           trianglesTablet[1].classList.add('active');
         } else {
           trianglesTablet[1].classList.remove('active');
         }
 
-        if (percentTabletScrolled >= 9.2) {
+        if (percentTabletScrolled >= 12.2) {
           trianglesTablet[2].classList.add('active');
         } else {
           trianglesTablet[2].classList.remove('active');
         }
 
-        if (percentTabletScrolled >= 24.9) {
+        if (percentTabletScrolled >= 26.9) {
           trianglesTablet[3].classList.add('active');
         } else {
           trianglesTablet[3].classList.remove('active');
         }
 
-        if (percentTabletScrolled >= 39.5) {
+        if (percentTabletScrolled >= 41.2) {
           trianglesTablet[4].classList.add('active');
         } else {
           trianglesTablet[4].classList.remove('active');
         }
 
-        if (percentTabletScrolled >= 53.6) {
+        if (percentTabletScrolled >= 55.8) {
           trianglesTablet[5].classList.add('active');
         } else {
           trianglesTablet[5].classList.remove('active');
         }
 
-        if (percentTabletScrolled >= 72.4) {
+        if (percentTabletScrolled >= 70.4) {
           trianglesTablet[6].classList.add('active');
         } else {
           trianglesTablet[6].classList.remove('active');
@@ -669,7 +658,4 @@ const visionLineTablet = document.querySelector('.vision-line-progress'),
         block.style.transform = `translateX(0px)`
       }
     })
-
-
-    // Коммент добавил Игорь
 })

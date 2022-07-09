@@ -171,8 +171,8 @@
     width: 111.027vw;
     left: -25.26vw;
     top: 34.766vw;
-    -webkit-transform: translate(-30.667vw, 25.267vw);
-            transform: translate(-30.667vw, 25.267vw);
+    -webkit-transform: translate(-30.667vw, -7.733vw);
+            transform: translate(-30.667vw, -7.733vw);
     -webkit-animation: main__smoke-buttom3 20s linear infinite;
             animation: main__smoke-buttom3 20s linear infinite;
   }
@@ -180,8 +180,8 @@
     top: -2.344vw;
     right: -0.781vw;
     width: 93.264vw;
-    -webkit-transform: translate(-23.177vw, 1.302vw);
-            transform: translate(-23.177vw, 1.302vw);
+    -webkit-transform: translate(-23.177vw, -8.698vw);
+            transform: translate(-23.177vw, -8.698vw);
     -webkit-animation: main__smoke-top2 20s linear infinite;
             animation: main__smoke-top2 20s linear infinite;
   }
@@ -189,17 +189,17 @@
     top: 2.995vw;
     left: 25vw;
     width: 152vw;
-    -webkit-transform: translate(-47.8vw, 10.6vw);
-            transform: translate(-47.8vw, 10.6vw);
+    -webkit-transform: translate(-54.8vw, -14.4vw);
+            transform: translate(-54.8vw, -14.4vw);
     -webkit-animation: main__smoke-buttom2 20s linear infinite;
             animation: main__smoke-buttom2 20s linear infinite;
   }
   body .wrapper .background .main__smoke-buttom {
     top: -13.021vw;
     left: 41.276vw;
-    width: 77.344vw;
-    -webkit-transform: translate(-40.8vw, 5.067vw);
-            transform: translate(-40.8vw, 5.067vw);
+    width: 118vw;
+    -webkit-transform: translate(-14.8vw, 11.067vw);
+            transform: translate(-14.8vw, 11.067vw);
     -webkit-animation: main__smoke-buttom 20s linear infinite;
             animation: main__smoke-buttom 20s linear infinite;
   }
@@ -207,6 +207,8 @@
     left: 66.146vw;
     top: 0.26vw;
     width: 93.618vw;
+    -webkit-transform: translate(-15.414vw, 7.574vw);
+            transform: translate(-15.414vw, 7.574vw);
     -webkit-animation: main__smoke-top 20s linear infinite;
             animation: main__smoke-top 20s linear infinite;
   }
@@ -390,12 +392,12 @@
     height: 18.229vw;
   }
   body .wrapper .main .main-info .main-info__bottom button::before {
-    width: 350px;
-    height: 270px;
+    width: 45.572vw;
+    height: 35.157vw;
   }
   body .wrapper .main .main-info .main-info__bottom button::after {
-    width: 180px;
-    height: 180px;
+    width: 23.437vw;
+    height: 23.437vw;
   }
   body .wrapper .main .main-info .main-info__bottom button span {
     font-size: 1.432vw;
@@ -602,7 +604,7 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 28.385vw;
+    width: 31.385vw;
     gap: 0.781vw;
   }
   body .wrapper .features .features__container .features__wrapper-circle .features__container-circle:hover {
@@ -670,12 +672,12 @@
     left: 57.292vw;
   }
   body .wrapper .features .features__container .features-royalties {
-    top: 85.547vw;
-    left: 8.464vw;
-  }
-  body .wrapper .features .features__container .features-streams {
     left: 57.292vw;
     top: 77.083vw;
+  }
+  body .wrapper .features .features__container .features-streams {
+    top: 85.547vw;
+    left: 8.464vw;
   }
   body .wrapper .features .features__container .features__slider {
     right: auto;
@@ -795,74 +797,32 @@
     margin: 0 0 10.547vw -1.693vw;
   }
   body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line-tablet {
-    height: 228.385vw;
-    width: 0.13vw;
+    height: 222.785vw;
+    width: 0.26vw;
+    gap: 5.208vw;
   }
   body .wrapper .vision .vision__sticky .vision__content .container__stage .vision-line-progress {
-    top: 0;
-    left: 0;
+    width: 0.26vw;
   }
   body .wrapper .vision .vision__sticky .vision__content .container__stage .triangle-item img {
     width: 5.99vw;
   }
   body .wrapper .vision .vision__sticky .vision__content .container__stage .triangle-item::after {
-    top: 4.557vw;
+    top: 11.328vw;
     left: calc(100% + 2.604vw);
     height: 0.13vw;
     width: 11.719vw;
     background-size: 11.719vw auto;
   }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .triangle-item:nth-child(1) {
-    top: 6.2vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .triangle-item:nth-child(2) {
-    top: 39.5vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .triangle-item:nth-child(3) {
-    top: 71.354vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .triangle-item:nth-child(4) {
-    top: 107.422vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .triangle-item:nth-child(5) {
-    top: 139.6vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .triangle-item:nth-child(6) {
-    top: 172.3vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .triangle-item:nth-child(7) {
-    top: 211.3vw;
-  }
   body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper {
     padding: 0 0 0 14.063vw;
   }
   body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet {
-    width: 100%;
-    height: 27.995vw;
+    height: 32.682vw;
   }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet:nth-child(1) {
-    height: 33.203vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet:nth-child(2) {
-    height: 33.203vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet:nth-child(3) {
-    height: 34.505vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet:nth-child(3) strong {
-    top: 7.813vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet:nth-child(4) {
-    height: 35.807vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet:nth-child(5) {
-    height: 29.297vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet:nth-child(5) strong {
-    top: 5.859vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet:nth-child(6) {
-    height: 39.063vw;
+  body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet:nth-child(5) img {
+    -webkit-transform: scale(1.65) translateY(13%);
+            transform: scale(1.65) translateY(13%);
   }
   body .wrapper .vision .vision__sticky .vision__content .container__stage .planet-wrapper .planet span {
     top: -1.172vw;
@@ -883,29 +843,9 @@
     padding: 0;
   }
   body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container .descripcion-item {
+    margin-top: 14.323vw;
     width: 100%;
     padding: 0 0 0 17.839vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container .descripcion-item:nth-child(1) {
-    top: 13.932vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container .descripcion-item:nth-child(2) {
-    top: 47.266vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container .descripcion-item:nth-child(3) {
-    top: 79.036vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container .descripcion-item:nth-child(4) {
-    top: 114.843vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container .descripcion-item:nth-child(5) {
-    top: 147.135vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container .descripcion-item:nth-child(6) {
-    top: 179.817vw;
-  }
-  body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container .descripcion-item:nth-child(7) {
-    top: 218.88vw;
   }
   body .wrapper .vision .vision__sticky .vision__content .container__stage .vision__descripcion-container .descripcion-item p {
     font-size: 2.344vw;
@@ -1358,7 +1298,7 @@
   }
 }
 
-@media (min-aspect-ratio: 768 / 1024) and (min-width: 601px) and (max-width: 768px) {
+@media only screen and (min-aspect-ratio: 768 / 1024) and (min-width: 601px) and (max-width: 860px) {
   body .header-content {
     height: 100vh;
     overflow: auto;

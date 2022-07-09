@@ -135,7 +135,7 @@
           width: 111.027vw;
           left: -25.26vw;
           top: 34.766vw;
-          transform: translate(-30.667vw, 25.267vw);
+          transform: translate(-30.667vw, -7.733vw);
 
           animation: main__smoke-buttom3 20s linear infinite;
         }
@@ -143,27 +143,29 @@
           top: -2.344vw;
           right: -0.781vw;
           width: 93.264vw;
-          transform: translate(-23.177vw, 1.302vw);
+          transform: translate(-23.177vw, -8.698vw);
           animation: main__smoke-top2 20s linear infinite;
         }
         .main__smoke-buttom2 {
           top: 2.995vw;
           left: 25vw;
           width: 152vw;
-          transform: translate(-47.8vw, 10.6vw);
+          transform: translate(-54.8vw, -14.4vw);
           animation: main__smoke-buttom2 20s linear infinite;
         }
         .main__smoke-buttom {
           top: -13.021vw;
           left: 41.276vw;
-          width: 77.344vw;
-          transform: translate(-40.8vw, 5.067vw);
+          width: 118vw;
+          transform: translate(-14.8vw, 11.067vw);
+
           animation: main__smoke-buttom 20s linear infinite;
         }
         .main__smoke-top {
           left: 66.146vw;
           top: 0.26vw;
           width: 93.618vw;
+          transform: translate(-15.414vw, 7.574vw);
           animation: main__smoke-top 20s linear infinite;
         }
         .main__man {
@@ -333,12 +335,12 @@
               width: 18.229vw;
               height: 18.229vw;
               &::before {
-                width: 350px;
-                height: 270px;
+                width: 45.572vw;
+                height: 35.157vw;
               }
               &::after {
-                width: 180px;
-                height: 180px;
+                width: 23.437vw;
+                height: 23.437vw;
               }
               span {
                 font-size: 1.432vw;
@@ -552,7 +554,7 @@
             .features__container-circle {
               padding: 0.651vw 0 0 3.906vw;
               align-items: flex-start;
-              width: 28.385vw;
+              width: 31.385vw;
               gap: 0.781vw;
               &:hover {
                 padding-right: 0;
@@ -618,12 +620,13 @@
             left: 57.292vw;
           }
           .features-royalties {
-            top: 85.547vw;
-            left: 8.464vw;
-          }
-          .features-streams {
             left: 57.292vw;
             top: 77.083vw;
+            
+          }
+          .features-streams {
+            top: 85.547vw;
+            left: 8.464vw;
           }
           .features__slider {
             right: auto;
@@ -748,74 +751,33 @@
             }
             .container__stage {
               .vision-line-tablet {
-                height: 228.385vw;
-                width: 0.13vw;
+                height: 222.785vw;
+                width: 0.26vw;
+                gap: 5.208vw;
               }
               .vision-line-progress {
-                top: 0;
-                left: 0;
+                width: 0.26vw;
               }
               .triangle-item {
                 img {
                   width: 5.99vw;
                 }
                 &::after {
-                  top: 4.557vw;
+                  top: 11.328vw;
                   left: calc(100% + 2.604vw);
                   height: 0.13vw;
                   width: 11.719vw;
                   background-size: 11.719vw auto;
                 }
-                &:nth-child(1) {
-                  top: 6.2vw;
-                }
-                &:nth-child(2) {
-                  top: 39.5vw;
-                }
-                &:nth-child(3) {
-                  top: 71.354vw;
-                }
-                &:nth-child(4) {
-                  top: 107.422vw;
-                }
-                &:nth-child(5) {
-                  top: 139.6vw;
-                }
-                &:nth-child(6) {
-                  top: 172.3vw;
-                }
-                &:nth-child(7) {
-                  top: 211.3vw;
-                }
               }
               .planet-wrapper {
                 padding: 0 0 0 14.063vw;
                 .planet {
-                  width: 100%;
-                  height: 27.995vw;
-                  &:nth-child(1) {
-                    height: 33.203vw;
-                  }
-                  &:nth-child(2) {
-                    height: 33.203vw;
-                  }
-                  &:nth-child(3) {
-                    height: 34.505vw;
-                    strong {
-                      top: 7.813vw;
-                    }
-                  }
-                  &:nth-child(4) {
-                    height: 35.807vw;
-                  }
+                  height: 32.682vw;
                   &:nth-child(5) {
-                    height: 29.297vw;
-                    strong {
-                      top: 5.859vw;
+                    img{
+                      transform: scale(1.65) translateY(13%);
                     }
-                  }
-                  &:nth-child(6) {
-                    height: 39.063vw;
                   }
                   span {
                     top: -1.172vw;
@@ -837,29 +799,9 @@
               .vision__descripcion-container {
                 padding: 0;
                 .descripcion-item {
+                  margin-top: 14.323vw;
                   width: 100%;
                   padding: 0 0 0 17.839vw;
-                  &:nth-child(1) {
-                    top: 13.932vw;
-                  }
-                  &:nth-child(2) {
-                    top: 47.266vw;
-                  }
-                  &:nth-child(3) {
-                    top: 79.036vw;
-                  }
-                  &:nth-child(4) {
-                    top: 114.843vw;
-                  }
-                  &:nth-child(5) {
-                    top: 147.135vw;
-                  }
-                  &:nth-child(6) {
-                    top: 179.817vw;
-                  }
-                  &:nth-child(7) {
-                    top: 218.88vw;
-                  }
                   p {
                     font-size: 2.344vw;
                   }
@@ -870,8 +812,6 @@
         }
       }
       .tokenomics {
-        // height: 150.271vw;
-        // padding: 5.531vw 3.906vw 0 3.906vw;
         .tokenomics__container {
           height: 150.271vw;
           padding: 5.531vw 3.906vw 0 3.906vw;
@@ -1273,7 +1213,7 @@
     }
   }
 }
-@media (min-aspect-ratio: 768/1024) and (min-width: 601px) and (max-width: 768px) {
+@media only screen and (min-aspect-ratio: 768/1024) and (min-width: 601px) and (max-width: 860px) {
   body {
     .header-content {
       height: 100vh;
