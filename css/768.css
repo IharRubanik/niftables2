@@ -448,8 +448,7 @@
             transform: translate(-100%, 100%);
   }
   body .wrapper .about .about__container .about__flex .about-circle {
-    width: 41.406vw;
-    height: 41.406vw;
+    margin: 0 11.719vw 0 0;
   }
   body .wrapper .about .about__container .about__flex .about-circle img {
     width: 18.49vw;

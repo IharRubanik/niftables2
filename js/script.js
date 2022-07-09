@@ -20,11 +20,11 @@ window.addEventListener('DOMContentLoaded', function() {
     setTimeout(removePreloader, 3500);
   })
 
-let body = document.querySelector(".body");
-let process = document.querySelector(".process");
+// let body = document.querySelector(".body");
+// let process = document.querySelector(".process");
 
 let arrActive = ([] = document.querySelectorAll(
-  ".header-button, .header, .header-content, .header-name, body"
+  ".header-button, .header, .header-content, .header-name, body, html"
 ));
 
 document.querySelector(".header-button").onclick = function () {
